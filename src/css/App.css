@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 html {
   font-size: 14px;
 }
@@ -26,8 +26,23 @@ html {
   display: flex;
   align-items: center;
 }
-.App .main-nav .container .box .logo {
-  width: 50px;
+.App .main-nav .container .box h1 a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.App .main-nav .container .box h1 a .logo {
+  width: 65px;
+}
+.App .main-nav .container .box h1 a div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1rem;
+}
+.App .main-nav .container .box h1 a div span {
+  color: #c11b1b;
 }
 .App .main-nav .container .box .link {
   color: #393939;
@@ -74,6 +89,15 @@ html {
   background-color: #276091;
 }
 
+@media screen and (max-width: 1000px) {
+  .main-nav .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav .container .box:nth-child(2) {
+    margin-top: 1.5rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .sec-nav .container {
     flex-direction: column;

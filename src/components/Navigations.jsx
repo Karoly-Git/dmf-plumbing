@@ -19,7 +19,15 @@ export function MainNavigation() {
         <nav className='main-nav'>
             <div className="container">
                 <div className="box">
-                    <img className='logo' src={logo} alt="DMF Logo" />
+                    <h1>
+                        <Link to='/'>
+                            <img className='logo' src={logo} alt="DMF Logo" />
+                            <div>
+                                <span>DMF Plambing</span>
+                                <span>&#38; Heating</span>
+                            </div>
+                        </Link>
+                    </h1>
                 </div>
 
                 <div className="box">

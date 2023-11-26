@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 $color-very-Dark: #272727;
 $color-Dark: #393939;
@@ -8,7 +8,8 @@ $color-Brown: #bd1900;
 $color-Blue: #2D59A2;
 $color-Green: #94cc4c;
 $color-Orange: #F0942B;
-$color-Logo: #276091;
+$color1-Logo: #276091;
+$color2-Logo: #c11b1b;
 
 html {
     font-size: 14px;
@@ -38,8 +39,28 @@ html {
                 display: flex;
                 align-items: center;
 
-                .logo {
-                    width: 50px;
+                h1 {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        font-size: 2rem;
+
+                        .logo {
+                            width: 65px;
+                        }
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-left: 1rem;
+
+                            span {
+                                color: $color2-Logo;
+                            }
+                        }
+                    }
                 }
 
                 .link {
@@ -94,7 +115,18 @@ html {
 .page {
     padding: 5rem;
     color: white;
-    background-color: $color-Logo;
+    background-color: $color1-Logo;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-nav .container {
+        flex-direction: column;
+        align-items: center;
+
+        .box:nth-child(2) {
+            margin-top: 1.5rem;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
