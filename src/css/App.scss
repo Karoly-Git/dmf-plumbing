@@ -11,6 +11,8 @@ $color-Orange: #F0942B;
 $color1-Logo: #276091;
 $color2-Logo: #c11b1b;
 
+$side-nav-radius: 4px;
+
 html {
     font-size: 14px;
 }
@@ -23,6 +25,68 @@ html {
 }
 
 .App {
+    .side-nav {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            display: inline-flex;
+            flex-direction: column;
+            list-style: none;
+            position: fixed;
+            right: 0;
+            top: 45vh;
+            row-gap: 1px;
+
+            li {
+                display: flex;
+                width: 4rem;
+                height: 4rem;
+
+                div {
+                    height: 100%;
+                    background-color: white;
+                    position: relative;
+                    z-index: 10200;
+
+                    .icon {
+                        font-size: 4rem;
+                        padding: 1.35rem;
+                        color: gray;
+                        cursor: pointer;
+                    }
+                }
+
+                .link {
+                    display: flex;
+                    align-items: center;
+                    position: fixed;
+                    right: 3rem;
+                    height: 4rem;
+                    padding-left: 1.35rem;
+                    padding-right: 2.35rem;
+                    z-index: 10100;
+                    border-radius: $side-nav-radius 0 0 $side-nav-radius;
+                    background-color: $color-Orange;
+                    color: white;
+                    text-decoration: none;
+                }
+
+                &:first-child {
+                    div {
+                        border-radius: $side-nav-radius 0 0 0;
+                    }
+                }
+
+                &:last-child {
+                    div {
+                        border-radius: 0 0 0 $side-nav-radius;
+                    }
+                }
+            }
+        }
+    }
+
     .main-nav {
         display: flex;
         justify-content: center;
@@ -116,9 +180,10 @@ html {
     padding: 5rem;
     color: white;
     background-color: $color1-Logo;
+    min-height: 1000px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     .main-nav .container {
         flex-direction: column;
         align-items: center;
@@ -136,6 +201,20 @@ html {
 
         .box:nth-child(2) {
             margin-top: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-nav {
+        h1 {
+            .logo {
+                width: 50px !important;
+            }
+
+            span {
+                font-size: 1.5rem;
+            }
         }
     }
 }

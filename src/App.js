@@ -7,7 +7,7 @@ import Home from './components/Pages/Home';
 import Prices from './components/Pages/Prices';
 import Terms from './components/Pages/Terms';
 // Component Imports
-import { MainNavigation, SecNavigation, ThirdNavigation } from './components/Navigations';
+import { MainNavigation, SecNavigation, ThirdNavigation, SideNavigation } from './components/Navigations';
 // Style Import
 import './css/App.css';
 
@@ -15,6 +15,8 @@ export default function App() {
   return (
     <Router>
       <div className='App'>
+        <SideNavigation />
+
         <header>
           <SecNavigation />
           {!false && <MainNavigation />}

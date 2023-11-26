@@ -10,6 +10,56 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.App .side-nav {
+  display: flex;
+  flex-direction: column;
+}
+.App .side-nav ul {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  right: 0;
+  top: 45vh;
+  row-gap: 1px;
+}
+.App .side-nav ul li {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+}
+.App .side-nav ul li div {
+  height: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 10200;
+}
+.App .side-nav ul li div .icon {
+  font-size: 4rem;
+  padding: 1.35rem;
+  color: gray;
+  cursor: pointer;
+}
+.App .side-nav ul li .link {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 3rem;
+  height: 4rem;
+  padding-left: 1.35rem;
+  padding-right: 2.35rem;
+  z-index: 10100;
+  border-radius: 4px 0 0 4px;
+  background-color: #F0942B;
+  color: white;
+  text-decoration: none;
+}
+.App .side-nav ul li:first-child div {
+  border-radius: 4px 0 0 0;
+}
+.App .side-nav ul li:last-child div {
+  border-radius: 0 0 0 4px;
+}
 .App .main-nav {
   display: flex;
   justify-content: center;
@@ -87,9 +137,10 @@ html {
   padding: 5rem;
   color: white;
   background-color: #276091;
+  min-height: 1000px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .main-nav .container {
     flex-direction: column;
     align-items: center;
@@ -105,6 +156,14 @@ html {
   }
   .sec-nav .container .box:nth-child(2) {
     margin-top: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-nav h1 .logo {
+    width: 50px !important;
+  }
+  .main-nav h1 span {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 350px) {
