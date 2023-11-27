@@ -36,53 +36,69 @@ html {
             position: fixed;
             right: 0;
             top: 45vh;
-            row-gap: 1px;
+            //row-gap: 1px;
 
             li {
-                display: flex;
-                width: 4rem;
-                height: 4rem;
-
-                div {
-                    height: 100%;
-                    background-color: white;
-                    position: relative;
-                    z-index: 10200;
+                .link {
+                    display: flex;
+                    width: 4rem;
+                    height: 4rem;
 
                     .icon {
                         font-size: 4rem;
                         padding: 1.35rem;
-                        color: gray;
+                        color: rgb(180, 180, 180);
                         cursor: pointer;
+                        transition: color 200ms ease-in-out;
+
+                        &:hover {
+                            color: $color2-Logo;
+                        }
+                    }
+
+                    .box:nth-child(1) {
+                        background-color: white;
+                        position: relative;
+                        z-index: 10200;
+
+                    }
+
+                    .box:nth-child(2) {
+                        display: flex;
+                        align-items: center;
+                        position: fixed;
+                        height: 4rem;
+                        padding-left: 1.35rem;
+                        padding-right: 2.35rem;
+                        border-radius: $side-nav-radius 0 0 $side-nav-radius;
+                        background-color: $color-Orange;
+                        color: #1E2A44;
+                        color: #234D20;
+                        color: black;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                        transition: right 250ms ease-in-out;
+                        z-index: 10100;
                     }
                 }
 
-                .link {
-                    display: flex;
-                    align-items: center;
-                    position: fixed;
-                    right: 3rem;
-                    height: 4rem;
-                    padding-left: 1.35rem;
-                    padding-right: 2.35rem;
-                    z-index: 10100;
-                    border-radius: $side-nav-radius 0 0 $side-nav-radius;
-                    background-color: $color-Orange;
-                    color: white;
-                    text-decoration: none;
-                }
-
                 &:first-child {
-                    div {
+                    .box:nth-child(1) {
                         border-radius: $side-nav-radius 0 0 0;
                     }
                 }
 
                 &:last-child {
-                    div {
+                    .box:nth-child(1) {
                         border-radius: 0 0 0 $side-nav-radius;
                     }
                 }
+
+            }
+
+            li:not(li:last-child) {
+                border-bottom: 1px solid gray;
             }
         }
     }

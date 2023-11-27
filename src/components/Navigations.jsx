@@ -1,10 +1,11 @@
 // React Imports
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // Icon Imports
 import { FaFacebookF as FacebookIcon, FaTwitter as TwitterIcon } from "react-icons/fa";
 import { FaPhone as PhoneIcon } from "react-icons/fa6";
 import { MdEmail as MailIcon } from "react-icons/md";
+import { LiaHandPointUp as PointerIcon } from "react-icons/lia";
 // Image Imports
 import logo from '../img/logo.png';
 
@@ -42,6 +43,43 @@ export function MainNavigation() {
 }
 
 export function SideNavigation() {
+
+    const [positions, setPositions] = useState([42, 42, 42]);
+    const [links, setLinks] = useState([]);
+
+    useEffect(() => {
+        setTimeout(() => {
+            let getLinks = [...document.querySelectorAll('.side-nav ul li .link div:last-child')];
+            let newPositions = [...positions];
+            newPositions.forEach((link, i) => {
+                newPositions[i] -= getLinks[i].clientWidth;
+            })
+            setPositions([...newPositions]);
+            setLinks([...getLinks]);
+        }, 300);
+    }, []);
+
+    function handleMouseEnter(index) {
+        let newPositions = [...positions];
+        newPositions.forEach((link, i) => {
+            if (i !== index) {
+                newPositions[i] -= links[i].clientWidth;
+            } else {
+                newPositions[i] = 42;
+            };
+        })
+
+        setPositions(newPositions);
+    }
+
+    function handleMouseLeave() {
+        let newPositions = [...positions];
+        newPositions.forEach((link, i) => {
+            newPositions[i] -= links[i].clientWidth;
+        })
+        setPositions([...newPositions]);
+    }
+
     const sideLinks = [
         { http: 'tel:+447794156943', icon: <PhoneIcon className='icon' />, text: '+447794156943' },
         { http: 'mailto:info@dmfplumbingandheating.com', icon: <MailIcon className='icon' />, text: 'info@dmfplumbingandheating.com' },
@@ -49,17 +87,24 @@ export function SideNavigation() {
 
     return (
         <nav className='side-nav'>
-            <ul>
-                {sideLinks.map((link) => (
+            <ul onMouseLeave={() => handleMouseLeave()}>
+                <li>
+                    <Link className='link' to='/'>
+                        <div className='box' onMouseEnter={() => handleMouseEnter(0)} ><PointerIcon className='icon' /></div>
+                        <div className='box' style={{ right: `${positions[0]}px` }}>Contact</div>
+                    </Link>
+                </li>
+
+                {sideLinks.map((link, index) => (
                     <li key={link.http + 'side'}>
-                        <div>
-                            {link.icon}
-                        </div>
-                        <a className='link' href={link.http} target="_blank" rel="noopener noreferrer">{link.text}</a>
+                        <a className='link' href={link.http} target="_blank" rel="noopener noreferrer">
+                            <div className='box' onMouseEnter={() => handleMouseEnter(index + 1)}>{link.icon}</div>
+                            <div className='box' style={{ right: `${positions[index + 1]}px` }}>{link.text}</div>
+                        </a>
                     </li>
                 ))}
             </ul>
-        </nav>
+        </nav >
     );
 }
 

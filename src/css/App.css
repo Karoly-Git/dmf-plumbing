@@ -21,44 +21,53 @@ html {
   position: fixed;
   right: 0;
   top: 45vh;
-  row-gap: 1px;
 }
-.App .side-nav ul li {
+.App .side-nav ul li .link {
   display: flex;
   width: 4rem;
   height: 4rem;
 }
-.App .side-nav ul li div {
-  height: 100%;
+.App .side-nav ul li .link .icon {
+  font-size: 4rem;
+  padding: 1.35rem;
+  color: rgb(180, 180, 180);
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+.App .side-nav ul li .link .icon:hover {
+  color: #c11b1b;
+}
+.App .side-nav ul li .link .box:nth-child(1) {
   background-color: white;
   position: relative;
   z-index: 10200;
 }
-.App .side-nav ul li div .icon {
-  font-size: 4rem;
-  padding: 1.35rem;
-  color: gray;
-  cursor: pointer;
-}
-.App .side-nav ul li .link {
+.App .side-nav ul li .link .box:nth-child(2) {
   display: flex;
   align-items: center;
   position: fixed;
-  right: 3rem;
   height: 4rem;
   padding-left: 1.35rem;
   padding-right: 2.35rem;
-  z-index: 10100;
   border-radius: 4px 0 0 4px;
   background-color: #F0942B;
-  color: white;
+  color: #1E2A44;
+  color: #234D20;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-decoration: none;
+  transition: right 250ms ease-in-out;
+  z-index: 10100;
 }
-.App .side-nav ul li:first-child div {
+.App .side-nav ul li:first-child .box:nth-child(1) {
   border-radius: 4px 0 0 0;
 }
-.App .side-nav ul li:last-child div {
+.App .side-nav ul li:last-child .box:nth-child(1) {
   border-radius: 0 0 0 4px;
+}
+.App .side-nav ul li:not(li:last-child) {
+  border-bottom: 1px solid gray;
 }
 .App .main-nav {
   display: flex;
