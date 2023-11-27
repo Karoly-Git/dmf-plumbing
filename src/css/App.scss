@@ -26,23 +26,19 @@ html {
 
 .App {
     .side-nav {
-        display: flex;
-        flex-direction: column;
+        width: 4rem;
+        position: fixed;
+        right: 0;
+        top: 45vh;
 
         ul {
-            display: inline-flex;
-            flex-direction: column;
             list-style: none;
-            position: fixed;
-            right: 0;
-            top: 45vh;
             //row-gap: 1px;
 
             li {
-                .link {
+                a {
                     display: flex;
-                    width: 4rem;
-                    height: 4rem;
+                    text-decoration: none;
 
                     .icon {
                         font-size: 4rem;
@@ -66,8 +62,6 @@ html {
                     .box:nth-child(2) {
                         display: flex;
                         align-items: center;
-                        position: fixed;
-                        height: 4rem;
                         padding-left: 1.35rem;
                         padding-right: 2.35rem;
                         border-radius: $side-nav-radius 0 0 $side-nav-radius;
@@ -78,8 +72,15 @@ html {
                         font-weight: 600;
                         letter-spacing: 1px;
                         text-decoration: none;
-                        transition: right 250ms ease-in-out;
+                        position: relative;
+                        left: -4rem;
+                        transition: all 200ms ease-in-out;
                         z-index: 10100;
+                        opacity: 0;
+
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
 

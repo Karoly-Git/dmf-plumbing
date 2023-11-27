@@ -44,40 +44,46 @@ export function MainNavigation() {
 
 export function SideNavigation() {
 
-    const [positions, setPositions] = useState([42, 42, 42]);
-    const [links, setLinks] = useState([]);
+    const [sizes, setSizes] = useState([]);
+    const [positions, setPositions] = useState([-42, -42, -42]);
+    const [opas, setOpas] = useState([0, 0, 0]);
 
     useEffect(() => {
-        setTimeout(() => {
-            let getLinks = [...document.querySelectorAll('.side-nav ul li .link div:last-child')];
-            let newPositions = [...positions];
-            newPositions.forEach((link, i) => {
-                newPositions[i] -= getLinks[i].clientWidth;
-            })
-            setPositions([...newPositions]);
-            setLinks([...getLinks]);
-        }, 300);
+        let links = [...document.querySelectorAll('.side-nav ul li a div:last-child')];
+
+        let newSizes = [];
+        links.forEach(link => newSizes.push(link.clientWidth));
+        setSizes([...newSizes]);
     }, []);
 
     function handleMouseEnter(index) {
         let newPositions = [...positions];
-        newPositions.forEach((link, i) => {
-            if (i !== index) {
-                newPositions[i] -= links[i].clientWidth;
+        let newOpas = [...opas];
+        //console.log(newPositions)
+        newPositions.forEach((value, i) => {
+            if (index === i) {
+                newPositions[i] -= sizes[i];
+                newOpas[i] = 1;
             } else {
-                newPositions[i] = 42;
-            };
+                newPositions[i] = -42;
+                newOpas[i] = 0;
+            }
         })
-
-        setPositions(newPositions);
+        setPositions([...newPositions]);
+        setTimeout(() => {
+            setOpas([...newOpas]);
+        }, 30);
     }
 
     function handleMouseLeave() {
         let newPositions = [...positions];
-        newPositions.forEach((link, i) => {
-            newPositions[i] -= links[i].clientWidth;
+        let newOpas = [...opas];
+        newPositions.forEach((value, i) => {
+            newPositions[i] = -42;
+            newOpas[i] = 0;
         })
         setPositions([...newPositions]);
+        setOpas([...newOpas]);
     }
 
     const sideLinks = [
@@ -87,19 +93,19 @@ export function SideNavigation() {
 
     return (
         <nav className='side-nav'>
-            <ul onMouseLeave={() => handleMouseLeave()}>
+            <ul >
                 <li>
-                    <Link className='link' to='/'>
-                        <div className='box' onMouseEnter={() => handleMouseEnter(0)} ><PointerIcon className='icon' /></div>
-                        <div className='box' style={{ right: `${positions[0]}px` }}>Contact</div>
+                    <Link className='link' to='/' onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave()}>
+                        <div className='box' ><PointerIcon className='icon' /></div>
+                        <div className='box' style={{ left: `${positions[0]}px`, opacity: opas[0] }}>Contact</div>
                     </Link>
                 </li>
 
                 {sideLinks.map((link, index) => (
                     <li key={link.http + 'side'}>
-                        <a className='link' href={link.http} target="_blank" rel="noopener noreferrer">
-                            <div className='box' onMouseEnter={() => handleMouseEnter(index + 1)}>{link.icon}</div>
-                            <div className='box' style={{ right: `${positions[index + 1]}px` }}>{link.text}</div>
+                        <a href={link.http} target="_blank" rel="noopener noreferrer" onMouseEnter={() => handleMouseEnter(index + 1)} onMouseLeave={() => handleMouseLeave()}>
+                            <div className='box' >{link.icon}</div>
+                            <div className='box' style={{ left: `${positions[index + 1]}px`, opacity: opas[index + 1] }}>{link.text}</div>
                         </a>
                     </li>
                 ))}
