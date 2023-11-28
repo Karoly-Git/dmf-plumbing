@@ -182,14 +182,47 @@ export function SecNavigation() {
 export function ThirdNavigation() {
     const navLinks = [
         { to: '/contact', text: 'Contact' },
+        { to: '/prices-and-charges', text: 'Prices & Charges' },
         { to: '/terms-and-conditions', text: 'Terms & Conditions' },
     ];
 
     return (
         <nav className='third-nav'>
-            {navLinks.map((link) => (
-                <Link key={link.to + 'third'} to={link.to}>{link.text}</Link>
-            ))}
+            <div className='container'>
+                <div className='box'>
+                    <h3>Quick Contact</h3>
+                    <p>
+                        5 Hammer Lane, Haslemere,
+                        <br />
+                        West Sussex
+                        <br />
+                        GU27 3QD
+                    </p>
+                    <p>
+                        Call us now for a quote or advice:
+                        <br />
+                        Phone 0800 118 2460
+                    </p>
+                    <a href='mailto:info@dmfplumbingandheating.com' target="_blank" rel="noopener noreferrer">info@dmfplumbingandheating.com</a>
+                </div>
+
+                <div className='box'>
+                    <h3>Maintenance &#38; Services</h3>
+                    <Link to='/' >Plumbing</Link>
+                    <Link to='/'>Heating &#38; Boilers</Link>
+                    <Link to='/'>Bathroom Fittings</Link>
+                </div>
+            </div>
+            <div className="container">
+                <div className="box link-box">
+                    {navLinks.map((link) => (
+                        <div className="link-wrapper">
+                            <Link className='link' key={link.to + 'main'} to={link.to}>{link.text}</Link>
+                        </div>
+                    ))}
+                </div>
+                <div className='box copyright'>Copyright &copy; {new Date().getFullYear()} DMF Plambing &#38; Heating</div>
+            </div>
         </nav>
     );
 }

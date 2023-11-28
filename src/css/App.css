@@ -10,6 +10,14 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.App footer {
+  display: flex;
+  justify-content: center;
+  background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
+}
+.App footer * {
+  color: white;
+}
 .App .side-nav {
   width: 4rem;
   position: fixed;
@@ -44,11 +52,8 @@ html {
   padding-left: 1.35rem;
   padding-right: 2.35rem;
   border-radius: 4px 0 0 4px;
-  background-color: #F0942B;
-  color: #1E2A44;
-  color: #234D20;
-  color: black;
-  font-weight: 600;
+  background-color: #2D59A2;
+  color: white;
   letter-spacing: 1px;
   text-decoration: none;
   position: relative;
@@ -141,12 +146,73 @@ html {
 .App .sec-nav .container .box .link:hover {
   color: #a0adbe;
 }
+.App .third-nav {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  /*.container:last-child {
+      background: -webkit-radial-gradient(circle, #122A53, transparent);
+  }*/
+}
+.App .third-nav .container {
+  display: flex;
+  max-width: 1100px;
+  padding: 1.5rem;
+}
+.App .third-nav .container .box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.App .third-nav .container .box h3 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.App .third-nav .container .box p {
+  margin-bottom: 1rem;
+}
+.App .third-nav .container .box a {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.App .third-nav .container .box a:hover {
+  text-decoration: underline;
+}
+.App .third-nav .container .box:not(.App .third-nav .container .box:first-child) {
+  margin-left: 2rem;
+}
+.App .third-nav .container .link-box {
+  flex-direction: unset;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.App .third-nav .container .link-box .link-wrapper:not(.link-wrapper:last-child) {
+  border-right: 1px solid gray;
+}
+.App .third-nav .container .link-box .link-wrapper:not(.link-wrapper:last-child) a {
+  margin-right: 1rem;
+}
+.App .third-nav .container .link-box .link-wrapper:not(.link-wrapper:first-child) a {
+  margin-left: 1rem;
+}
+.App .third-nav .container:first-child {
+  padding-bottom: 0;
+}
+.App .third-nav .container:nth-child(2) {
+  flex-direction: column;
+  padding-bottom: 0;
+}
+.App .third-nav .container:nth-child(2) .box {
+  margin: 0 !important;
+}
+.App .third-nav .container:nth-child(2) .copyright {
+  padding-top: 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
 
 .page {
   padding: 5rem;
-  color: white;
-  background-color: #276091;
-  min-height: 1000px;
 }
 
 @media screen and (max-width: 1050px) {

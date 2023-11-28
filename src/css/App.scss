@@ -25,11 +25,22 @@ html {
 }
 
 .App {
+    footer {
+        display: flex;
+        justify-content: center;
+        background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
+
+        * {
+            color: white;
+        }
+    }
+
     .side-nav {
         width: 4rem;
         position: fixed;
         right: 0;
         top: 45vh;
+        //display: none;
 
         ul {
             list-style: none;
@@ -65,11 +76,9 @@ html {
                         padding-left: 1.35rem;
                         padding-right: 2.35rem;
                         border-radius: $side-nav-radius 0 0 $side-nav-radius;
-                        background-color: $color-Orange;
-                        color: #1E2A44;
-                        color: #234D20;
-                        color: black;
-                        font-weight: 600;
+                        background-color: $color-Blue;
+                        color: white;
+                        //font-weight: 600;
                         letter-spacing: 1px;
                         text-decoration: none;
                         position: relative;
@@ -191,13 +200,98 @@ html {
             }
         }
     }
+
+    .third-nav {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+
+        .container {
+            display: flex;
+            max-width: 1100px;
+            padding: 1.5rem;
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+
+                h3 {
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    margin-bottom: 1rem;
+                }
+
+                a {
+                    margin-bottom: 0.5rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &:not(&:first-child) {
+                    margin-left: 2rem;
+                }
+            }
+
+            .link-box {
+                flex-direction: unset;
+                font-size: 0.75rem;
+                font-weight: 600;
+
+                .link-wrapper:not(.link-wrapper:last-child) {
+                    border-right: 1px solid gray;
+
+                    a {
+                        margin-right: 1rem;
+                    }
+                }
+
+                .link-wrapper:not(.link-wrapper:first-child) {
+                    a {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+
+        .container:first-child {
+            padding-bottom: 0;
+        }
+
+        .container:nth-child(2) {
+            flex-direction: column;
+            //padding-top: 0;
+            padding-bottom: 0;
+
+            .box {
+                margin: 0 !important;
+            }
+
+            .copyright {
+                padding-top: 0;
+                font-weight: 600;
+                font-size: 0.9rem;
+                //padding-bottom: 0;
+            }
+        }
+
+        /*.container:last-child {
+            background: -webkit-radial-gradient(circle, #122A53, transparent);
+        }*/
+    }
 }
 
 .page {
     padding: 5rem;
-    color: white;
-    background-color: $color1-Logo;
-    min-height: 1000px;
+    //color: white;
+    //background-color: $color1-Logo;
+    //min-height: 1000px;
 }
 
 @media screen and (max-width: 1050px) {

@@ -33,7 +33,7 @@ export default function App() {
         </main>
 
         <footer>
-          {false && <ThirdNavigation />}
+          <ThirdNavigation />
         </footer>
       </div>
     </Router>
