@@ -10,6 +10,8 @@ import Terms from './components/Pages/Terms';
 import { MainNavigation, SecNavigation, ThirdNavigation, SideNavigation } from './components/Navigations';
 // Style Import
 import './css/App.css';
+// Image Imports
+import cookie from './img/cookie.png';
 
 export default function App() {
   return (
@@ -17,9 +19,13 @@ export default function App() {
       <div className='App'>
         <SideNavigation />
 
+        <div className='cookie-box'>
+          <img src={cookie}></img>
+        </div>
+
         <header>
           <SecNavigation />
-          {!false && <MainNavigation />}
+          <MainNavigation />
         </header>
 
         <main>
