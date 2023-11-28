@@ -273,11 +273,32 @@ html {
                 margin: 0 !important;
             }
 
-            .copyright {
+            .copyright-box {
+                display: flex;
+                flex-direction: unset;
+                justify-content: space-between;
+                align-items: center;
                 padding-top: 0;
+                padding-bottom: 0;
                 font-weight: 600;
                 font-size: 0.9rem;
-                //padding-bottom: 0;
+
+                div {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    .icon {
+                        transform: rotate(180deg);
+                        margin-right: 0.25rem;
+                    }
+
+                    &:hover {
+                        span {
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
         }
 

@@ -6,6 +6,7 @@ import { FaFacebookF as FacebookIcon, FaTwitter as TwitterIcon } from "react-ico
 import { FaPhone as PhoneIcon } from "react-icons/fa6";
 import { MdEmail as MailIcon } from "react-icons/md";
 import { LiaHandPointUp as PointerIcon } from "react-icons/lia";
+import { FaArrowDown as ArrowIcon } from "react-icons/fa6";
 // Image Imports
 import logo from '../img/logo.png';
 
@@ -213,7 +214,17 @@ export function ThirdNavigation() {
                     <Link to='/'>Bathroom Fittings</Link>
                 </div>
             </div>
+
             <div className="container">
+                <div className='box copyright-box'>
+                    <span>
+                        Copyright &copy; {new Date().getFullYear()} DMF Plambing &#38; Heating
+                    </span>
+                    <div>
+                        <ArrowIcon className='icon' />
+                        <span>Scroll To Top</span>
+                    </div>
+                </div>
                 <div className="box link-box">
                     {navLinks.map((link) => (
                         <div className="link-wrapper">
@@ -221,7 +232,7 @@ export function ThirdNavigation() {
                         </div>
                     ))}
                 </div>
-                <div className='box copyright'>Copyright &copy; {new Date().getFullYear()} DMF Plambing &#38; Heating</div>
+
             </div>
         </nav>
     );

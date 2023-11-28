@@ -205,10 +205,27 @@ html {
 .App .third-nav .container:nth-child(2) .box {
   margin: 0 !important;
 }
-.App .third-nav .container:nth-child(2) .copyright {
+.App .third-nav .container:nth-child(2) .copyright-box {
+  display: flex;
+  flex-direction: unset;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 0;
+  padding-bottom: 0;
   font-weight: 600;
   font-size: 0.9rem;
+}
+.App .third-nav .container:nth-child(2) .copyright-box div {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.App .third-nav .container:nth-child(2) .copyright-box div .icon {
+  transform: rotate(180deg);
+  margin-right: 0.25rem;
+}
+.App .third-nav .container:nth-child(2) .copyright-box div:hover span {
+  text-decoration: underline;
 }
 
 .page {
