@@ -1,5 +1,5 @@
 // React Imports
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Page Imports
 import Contact from './components/Pages/Contact';

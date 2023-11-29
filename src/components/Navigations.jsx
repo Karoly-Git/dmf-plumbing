@@ -7,8 +7,11 @@ import { FaPhone as PhoneIcon } from "react-icons/fa6";
 import { MdEmail as MailIcon } from "react-icons/md";
 import { LiaHandPointUp as PointerIcon } from "react-icons/lia";
 import { FaArrowDown as ArrowIcon } from "react-icons/fa6";
+import { ImMobile as MobileIcon } from "react-icons/im";
 // Image Imports
 import logo from '../img/logo.png';
+// Data Imports
+import { contacts } from '../js/contacts.js';
 
 export function MainNavigation() {
     const navLinks = [
@@ -24,9 +27,9 @@ export function MainNavigation() {
                 <div className="box">
                     <h1>
                         <Link to='/'>
-                            <img className='logo' src={logo} alt="DMF Logo" />
+                            <img className='logo' src={logo} alt="DMF Plumbing & Heating logo" />
                             <div>
-                                <span>DMF Plambing</span>
+                                <span>DMF Plumbing</span>
                                 <span>&#38; Heating</span>
                             </div>
                         </Link>
@@ -35,7 +38,7 @@ export function MainNavigation() {
 
                 <div className="box">
                     {navLinks.map((link) => (
-                        <Link className='link' key={link.to + 'main'} to={link.to}>{link.text}</Link>
+                        <Link key={link.to + 'main'} className='link' to={link.to}>{link.text}</Link>
                     ))}
                 </div>
             </div>
@@ -51,8 +54,8 @@ export function SideNavigation() {
 
     useEffect(() => {
         let links = [...document.querySelectorAll('.side-nav ul li a div:last-child')];
-
         let newSizes = [];
+
         links.forEach(link => newSizes.push(link.clientWidth));
         setSizes([...newSizes]);
     }, []);
@@ -60,7 +63,6 @@ export function SideNavigation() {
     function handleMouseEnter(index) {
         let newPositions = [...positions];
         let newOpas = [...opas];
-        //console.log(newPositions)
         newPositions.forEach((value, i) => {
             if (index === i) {
                 newPositions[i] -= sizes[i];
@@ -88,13 +90,14 @@ export function SideNavigation() {
     }
 
     const sideLinks = [
-        { http: 'tel:+447794156943', icon: <PhoneIcon className='icon' />, text: '+447794156943' },
-        { http: 'mailto:info@dmfplumbingandheating.com', icon: <MailIcon className='icon' />, text: 'info@dmfplumbingandheating.com' },
+        { http: `tel:${contacts.mobile}`, icon: <MobileIcon className='icon' />, text: contacts.mobile },
+        { http: `mailto:${contacts.email}`, icon: <MailIcon className='icon' />, text: contacts.email },
     ];
 
     return (
         <nav className='side-nav'>
             <ul >
+
                 <li>
                     <Link className='link' to='/' onMouseEnter={() => handleMouseEnter(0)} onMouseLeave={() => handleMouseLeave()}>
                         <div className='box' ><PointerIcon className='icon' /></div>
@@ -156,9 +159,9 @@ export function SecNavigation() {
     ];
 
     const iconLinks = [
-        { http: 'tel:+447794156943', icon: <PhoneIcon className='icon' /> },
-        { http: 'http://twitter.com', icon: <TwitterIcon className='icon' /> },
-        { http: 'http://facebook.com', icon: <FacebookIcon className='icon' /> },
+        { http: `tel:${contacts.mobile}`, icon: <PhoneIcon className='icon' /> },
+        { http: `${contacts.twitter}`, icon: <TwitterIcon className='icon' /> },
+        { http: `${contacts.facebook}`, icon: <FacebookIcon className='icon' /> },
     ];
 
     return (
@@ -187,6 +190,10 @@ export function ThirdNavigation() {
         { to: '/terms-and-conditions', text: 'Terms & Conditions' },
     ];
 
+    function scrollToTop() {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    };
+
     return (
         <nav className='third-nav'>
             <div className='container'>
@@ -200,11 +207,17 @@ export function ThirdNavigation() {
                         GU27 3QD
                     </p>
                     <p>
-                        Call us now for a quote or advice:
+                        Call us now for a quote or advice.
                         <br />
-                        Phone 0800 118 2460
+                        <br />
+                        <a href={`tel:${contacts.phone}`} target="_blank" rel="noopener noreferrer">
+                            <PhoneIcon className='icon' /> {contacts.phone}
+                        </a>
+
+                        <a href={`mailto:${contacts.email}`} target="_blank" rel="noopener noreferrer">
+                            <MailIcon className='icon' /> {contacts.email}
+                        </a>
                     </p>
-                    <a href='mailto:info@dmfplumbingandheating.com' target="_blank" rel="noopener noreferrer">info@dmfplumbingandheating.com</a>
                 </div>
 
                 <div className='box'>
@@ -218,17 +231,17 @@ export function ThirdNavigation() {
             <div className="container">
                 <div className='box copyright-box'>
                     <span>
-                        Copyright &copy; {new Date().getFullYear()} DMF Plambing &#38; Heating
+                        &copy; {new Date().getFullYear()} DMF Plumbing &#38; Heating
                     </span>
-                    <div>
+                    <div onClick={scrollToTop}>
                         <ArrowIcon className='icon' />
                         <span>Scroll To Top</span>
                     </div>
                 </div>
                 <div className="box link-box">
                     {navLinks.map((link) => (
-                        <div className="link-wrapper">
-                            <Link className='link' key={link.to + 'main'} to={link.to}>{link.text}</Link>
+                        <div key={link.to + 'main'} className="link-wrapper">
+                            <Link className='link' to={link.to}>{link.text}</Link>
                         </div>
                     ))}
                 </div>
