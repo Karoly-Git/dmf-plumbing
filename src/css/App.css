@@ -240,51 +240,6 @@ html {
   border-bottom: 1px solid gray;
 }
 
-.page {
-  background-color: #276091;
-  min-height: 500px;
-}
-.page .head-container {
-  color: white;
-  font-weight: 600;
-}
-.page .head-container .box {
-  display: flex;
-  justify-content: center;
-  height: 150px;
-  background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
-}
-.page .head-container .box .content-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  max-width: 1100px;
-  padding: 1rem;
-}
-.page .head-container .box .content-box div:first-child h2 {
-  font-size: 1.8rem;
-  letter-spacing: 1px;
-}
-.page .head-container .box .content-box div:first-child p {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-.page .head-container .box .content-box div:first-child p .icon {
-  font-size: 1.5rem;
-  margin: 0 0.25rem;
-}
-.page .head-container .box .content-box div:first-child p a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-.page .head-container .box .content-box div:first-child p a:hover {
-  text-decoration: underline;
-}
-
 #cookie-box {
   display: inline-flex;
   justify-content: center;
@@ -392,4 +347,75 @@ html {
   #third-nav .container .link-box .link-wrapper a {
     margin: 0 !important;
   }
+}
+@media screen and (max-width: 600px) {
+  #certs {
+    background-color: red;
+  }
+  #certs img {
+    height: auto;
+    width: auto;
+  }
+  #certs #gas-safe {
+    width: 10vw;
+    height: 10.6870229008vw !important;
+  }
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+.page .head-container {
+  color: white;
+  font-weight: 600;
+}
+.page .head-container .box {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
+}
+.page .head-container .box .content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1100px;
+  padding: 1rem;
+}
+.page .head-container .box .content-box div:first-child h2 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.page .head-container .box .content-box div:first-child p {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.page .head-container .box .content-box div:first-child p .icon {
+  font-size: 1.5rem;
+  margin: 0 0.25rem;
+}
+.page .head-container .box .content-box div:first-child p a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.page .head-container .box .content-box div:first-child p a:hover {
+  text-decoration: underline;
+}
+.page #certs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.page #certs img {
+  height: 5rem;
+  margin: 1rem;
+}
+.page #certs #gas-safe {
+  height: 7rem;
 }/*# sourceMappingURL=App.css.map */

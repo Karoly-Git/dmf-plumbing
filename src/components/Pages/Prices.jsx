@@ -19,9 +19,6 @@ export default function Prices() {
                                 Prices &#38; Charges
                             </p>
                         </div>
-                        <div>
-                            <input></input>
-                        </div>
                     </div>
                 </div>
             </div>

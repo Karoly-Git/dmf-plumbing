@@ -84,4 +84,17 @@
   #third-nav .container .link-box .link-wrapper a {
     margin: 0 !important;
   }
+}
+@media screen and (max-width: 600px) {
+  #certs {
+    background-color: red;
+  }
+  #certs img {
+    height: auto;
+    width: auto;
+  }
+  #certs #gas-safe {
+    width: 10vw;
+    height: 10.6870229008vw !important;
+  }
 }/*# sourceMappingURL=breakpoints.css.map */

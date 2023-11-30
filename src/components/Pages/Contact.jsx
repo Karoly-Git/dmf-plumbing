@@ -19,9 +19,6 @@ export default function Contact() {
                                 Contacts
                             </p>
                         </div>
-                        <div>
-                            <input></input>
-                        </div>
                     </div>
                 </div>
             </div>

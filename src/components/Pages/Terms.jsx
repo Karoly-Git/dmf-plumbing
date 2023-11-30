@@ -19,9 +19,6 @@ export default function Terms() {
                                 Terms &#38; Conditions
                             </p>
                         </div>
-                        <div>
-                            <input></input>
-                        </div>
                     </div>
                 </div>
             </div>
