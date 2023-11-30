@@ -19,7 +19,7 @@ export default function App() {
       <div className='App'>
         <SideNavigation />
 
-        <div className='cookie-box'>
+        <div id='cookie-box'>
           <img src={cookie}></img>
         </div>
 

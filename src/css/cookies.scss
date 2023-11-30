@@ -1,0 +1,21 @@
+#cookie-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: $color-Green;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    cursor: pointer;
+    display: none;
+
+    img {
+        width: 2rem;
+        height: 2rem;
+        transform: rotate(-45deg);
+    }
+}

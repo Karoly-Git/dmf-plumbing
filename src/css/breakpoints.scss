@@ -1,0 +1,136 @@
+// Main navigation breakpoints
+@media screen and (max-width: 1100px) {
+    #main-nav {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .box:nth-child(2) {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #main-nav {
+        h1 {
+            .logo {
+                width: 50px !important;
+            }
+
+            span {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #main-nav {
+        .container {
+            width: 100% !important;
+
+            .box:nth-child(2) {
+                flex-direction: column;
+
+                a:not(a:last-child) {
+                    margin-bottom: 0.35rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #main-nav {
+        h1 {
+            .logo {
+                width: 40px !important;
+            }
+
+            span {
+                font-size: 1.15rem;
+            }
+        }
+    }
+}
+
+// Secondary navigation breakpoints
+@media screen and (max-width: 700px) {
+    #sec-nav {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .box:nth-child(2) {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #sec-nav {
+        .container {
+            .box:nth-child(2) {
+                margin-top: 0;
+            }
+
+            .box:nth-child(1) {
+                flex-direction: column;
+                align-items: center;
+
+                .internal-link {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// Third navigation breakpoints
+@media screen and (max-width: 800px) {
+    #third-nav {
+        .container {
+            //flex-direction: column;
+            //align-items: center;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #third-nav {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+
+            .box {
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #third-nav {
+        .container {
+            padding: 0;
+
+            .link-box {
+                flex-direction: column;
+
+                .link-wrapper {
+                    border: none !important;
+                    margin-bottom: 0.25rem;
+
+                    a {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ export function MainNavigation() {
     ];
 
     return (
-        <nav className='main-nav'>
+        <nav className='navigation' id='main-nav'>
             <div className="container">
                 <div className="box">
                     <h1>
@@ -95,7 +95,7 @@ export function SideNavigation() {
     ];
 
     return (
-        <nav className='side-nav'>
+        <nav id='side-nav'>
             <ul >
 
                 <li>
@@ -165,7 +165,7 @@ export function SecNavigation() {
     ];
 
     return (
-        <nav className='sec-nav'>
+        <nav className='navigation' id='sec-nav'>
             <div className='container'>
                 <div className='box'>
                     {navLinks.map((link) => (
@@ -195,7 +195,7 @@ export function ThirdNavigation() {
     };
 
     return (
-        <nav className='third-nav'>
+        <nav className='navigation' id='third-nav'>
             <div className='container'>
                 <div className='box'>
                     <h3>Quick Contact</h3>
@@ -229,7 +229,8 @@ export function ThirdNavigation() {
             </div>
 
             <div className="container">
-                <div className='box copyright-box'>
+
+                <div className='box' id='copyright-box'>
                     <span>
                         &copy; {new Date().getFullYear()} DMF Plumbing &#38; Heating
                     </span>
@@ -238,6 +239,7 @@ export function ThirdNavigation() {
                         <span>Scroll To Top</span>
                     </div>
                 </div>
+
                 <div className="box link-box">
                     {navLinks.map((link) => (
                         <div key={link.to + 'main'} className="link-wrapper">
