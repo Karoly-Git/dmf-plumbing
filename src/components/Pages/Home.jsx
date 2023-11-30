@@ -1,7 +1,8 @@
 // React Imports
 import React from 'react';
-import Certificates from '../Certificates';
 // Component Imports
+import Certificates from '../Certificates';
+import Available from '../Available';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
             </div>
 
             <Certificates />
+            <Available />
         </div>
     )
 }

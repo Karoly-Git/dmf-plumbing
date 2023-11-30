@@ -9,9 +9,9 @@ import vaillant from '../img/certs/vaillant.jpg';
 export default function Certificates() {
     return (
         <div id='certs'>
-            <img src={checkatrade} alt="Check A Trade logo" />
+            <img id='check-a-trade' src={checkatrade} alt="Check A Trade logo" />
             <img id='gas-safe' src={gassafe} alt="Gas Safe logo" />
-            <img src={vaillant} alt="Villant logo" />
+            <img id='vaillant' src={vaillant} alt="Vaillant logo" />
         </div>
     )
 }

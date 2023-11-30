@@ -349,16 +349,22 @@ html {
   }
 }
 @media screen and (max-width: 600px) {
-  #certs {
-    background-color: red;
-  }
   #certs img {
     height: auto;
     width: auto;
+    margin: 2vw !important;
+  }
+  #certs #check-a-trade {
+    width: 25vw;
+    height: 11.6666666667vw !important;
   }
   #certs #gas-safe {
-    width: 10vw;
-    height: 10.6870229008vw !important;
+    width: 15vw;
+    height: 16.0305343511vw !important;
+  }
+  #certs #vaillant {
+    width: 25vw;
+    height: 10.736196319vw !important;
   }
 }
 .page {
@@ -418,4 +424,53 @@ html {
 }
 .page #certs #gas-safe {
   height: 7rem;
+}
+
+#available {
+  background: url("../img/bg-available.jpg") fixed;
+  /* Use fixed to create a parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Adjust to your preference */
+  display: flex;
+  justify-content: center;
+  /* Set the height of the element to at least the viewport height */
+  overflow: hidden;
+  /* Hide any overflow content */
+}
+#available .container {
+  display: flex;
+  width: 80%;
+  padding: 3rem 0;
+}
+#available .container * {
+  color: white;
+}
+#available .container .box h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#available .container .box p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+#available .container .box:nth-child(1) {
+  width: 70%;
+}
+#available .container .box:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+#available .container .box:nth-child(2) a {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  padding: 0 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 0.25rem;
 }/*# sourceMappingURL=App.css.map */

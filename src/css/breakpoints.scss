@@ -138,17 +138,29 @@
 // Certificates breakpoints
 
 @media screen and (max-width: 600px) {
-    #certs {
-        background-color: red;
+    $rate1: 15vw;
+    $rate2: 25vw;
 
+    #certs {
         img {
             height: auto;
             width: auto;
+            margin: 2vw !important;
+        }
+
+        #check-a-trade {
+            width: $rate2;
+            height: calc($rate2 * 70/150) !important;
         }
 
         #gas-safe {
-            width: 10vw;
-            height: calc(10vw * 98/91.7) !important;
+            width: $rate1;
+            height: calc($rate1 * 98/91.7) !important;
+        }
+
+        #vaillant {
+            width: $rate2;
+            height: calc($rate2 * 70/163) !important;
         }
 
     }
