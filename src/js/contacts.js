@@ -5,9 +5,18 @@ export const contacts = {
     twitter: 'http://twitter.com',
     facebook: 'http://facebook.com',
     address: {
-        l1: '5 Hammer Lane',
-        l2: 'Haslemere',
-        l3: 'West Sussex',
-        l4: 'GU27 3QD',
+        street: '5 Hammer Lane',
+        town: 'Haslemere',
+        county: 'West Sussex',
+        postcode: 'GU27 3QD',
+    },
+    company: {
+        name: 'SW London Plumbing Limited',
+        registeredBusinessAddress: '26 High Street, Haslemere, Surrey, GU27 2HW',
+        tradingName: 'DMF Plumbing & Heating',
+        tradingAddress: '5 Hammer Lane, Haslemere, West Sussex,  GU27 3QD',
+        director: 'Daniel Fitzgerald',
+        vatNumber: '271851494',
+        companyNumber: '07951171',
     }
 };

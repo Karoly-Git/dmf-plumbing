@@ -11,7 +11,7 @@ import { ImMobile as MobileIcon } from "react-icons/im";
 // Image Imports
 import logo from '../img/logo.png';
 // Data Imports
-import { contacts } from '../js/contacts.js';
+import { contacts } from '../js/contacts';
 
 export function MainNavigation() {
     const navLinks = [
@@ -200,11 +200,11 @@ export function ThirdNavigation() {
                 <div className='box'>
                     <h3>Quick Contact</h3>
                     <p>
-                        5 Hammer Lane, Haslemere,
+                        {contacts.address.street}, {contacts.address.town}
                         <br />
-                        West Sussex
+                        {contacts.address.county},
                         <br />
-                        GU27 3QD
+                        {contacts.address.postcode}
                     </p>
                     <p>
                         Call us now for a quote or advice.
@@ -232,7 +232,7 @@ export function ThirdNavigation() {
 
                 <div className='box' id='copyright-box'>
                     <span>
-                        &copy; {new Date().getFullYear()} DMF Plumbing &#38; Heating
+                        &copy; {new Date().getFullYear()} {contacts.company.tradingName}
                     </span>
                     <div onClick={scrollToTop}>
                         <ArrowIcon className='icon' />

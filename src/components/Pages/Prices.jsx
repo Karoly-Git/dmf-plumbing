@@ -6,6 +6,9 @@ import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
 // Component Imports
 import Certificates from '../Certificates';
 import Available from '../Available';
+// Data Imports
+import { contacts } from '../../js/contacts';
+import { netPrices } from '../../js/prices';
 
 export default function Prices() {
     return (
@@ -32,74 +35,49 @@ export default function Prices() {
                 <div className="container">
                     <h2>Charges</h2>
                     <p>
-                        The quality and service provided by <strong>DMF Plumbing &#38; Heating</strong> does not mean higher charges when combined with our comprehensive back up service and guarantee, our charges are competitive and value for money. Work is carried out on an hourly rate, or a fixed price can be given for larger jobs. Our rates are completely transparent and a full schedule is shown on our company charges page, and all invoices show a full breakdown on how your job has been costed.
+                        The quality and service provided by <strong>{contacts.company.tradingName}</strong> does not mean higher charges when combined with our comprehensive back up service and guarantee, our charges are competitive and value for money. Work is carried out on an hourly rate, or a fixed price can be given for larger jobs. Our rates are completely transparent and a full schedule is shown on our company charges page, and all invoices show a full breakdown on how your job has been costed.
                     </p>
 
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th></th>
-                                <th>
-                                    Mon - Fri
-                                    <br />
-                                    8am - 6pm
-                                </th>
-                                <th>
-                                    Mon - Fri
-                                    <br />
-                                    6pm - 10pm
-                                </th>
-                                <th>
-                                    Mon - Sun
-                                    <br />
-                                    10pm - 8am
-                                </th>
-                                <th>
-                                    Sat
-                                    <br />
-                                    8am - 12pm
-                                </th>
-                                <th>
-                                    Sat - Mon
-                                    <br />
-                                    12pm - 8am
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Plumbing
-                                </td>
-                                <td >£85 + VAT = £102</td>
-                                <td >£125 + Vat = £150</td>
-                                <td >£195 + VAT= £234</td>
-                                <td >£125 + VAT = £150</td>
-                                <td >£195 + VAT = £234</td>
-                            </tr>
-                            <tr >
-                                <td>
-                                    <h4 >Heating/Gas</h4>
-                                </td>
-                                <td >£85 + VAT = £102</td>
-                                <td >£125 + Vat = £150</td>
-                                <td >£195 + VAT = £234</td>
-                                <td >£125 + VAT = £150</td>
-                                <td >£195 + VAT = £234</td>
-                            </tr>
-                            <tr >
-                                <td >
-                                    <h4 >Drain Services</h4>
-                                </td>
-                                <td >£85 + VAT = £102</td>
-                                <td >£125 + Vat = £150</td>
-                                <td >£195 + VAT = £234</td>
-                                <td >£125 + VAT = £150</td>
-                                <td >£195 + VAT = £234</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div className="table-container">
+                        <table>
+                            <caption>
+                                Monday - Friday
+                            </caption>
+                            <tbody>
+                                <tr>
+                                    <td><h4>8am - 6pm</h4></td>
+                                    <td>£{netPrices.weekdays.dayTime} + VAT = £{netPrices.weekdays.dayTime * (netPrices.vat)}</td>
+                                </tr>
+                                <tr>
+                                    <td><h4 >6pm - 10pm</h4></td>
+                                    <td>£{netPrices.weekdays.evening} + VAT = £{netPrices.weekdays.evening * (netPrices.vat)}</td>
+                                </tr>
+                                <tr>
+                                    <td><h4 >10pm - 8am</h4></td>
+                                    <td>£{netPrices.weekdays.night} + VAT = £{netPrices.weekdays.night * (netPrices.vat)}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <caption>
+                                Saturday - Sunday
+                            </caption>
+                            <tbody>
+                                <tr>
+                                    <td><h4>8am - 12pm</h4></td>
+                                    <td>£{netPrices.weekends.dayTime} + VAT = £{netPrices.weekends.dayTime * (netPrices.vat)}</td>
+                                </tr>
+                                <tr>
+                                    <td><h4 >12pm - 8am</h4></td>
+                                    <td>£{netPrices.weekends.night} + VAT = £{netPrices.weekends.night * (netPrices.vat)}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                     <p>
-                        **TBA = To be advised on request/ circumstance. <strong>DMF Plumbing &#38; Heating</strong> is a plumbing and services company that has complete transparent charges and we have an honest, upfront, open, and clear pricing system. Our rates are shown here on our website and our call center staff will make customers fully aware of our rates at the time they book their job if you request them.
+                        <strong>{contacts.company.tradingName}</strong> is a plumbing and services company that has complete transparent charges and we have an honest, upfront, open, and clear pricing system. Our rates are shown here on our website and our call center staff will make customers fully aware of our rates at the time they book their job if you request them.
                     </p>
 
                     <p>

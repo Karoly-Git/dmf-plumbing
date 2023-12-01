@@ -440,27 +440,35 @@ html {
 .page-section .container p a:hover {
   text-decoration: underline;
 }
-.page-section table {
+.page-section .table-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   margin-bottom: 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
+}
+.page-section .table-container table {
   border-collapse: collapse;
 }
-.page-section table tbody tr th,
-.page-section table tbody tr td {
-  padding: 10px;
+.page-section .table-container table caption {
+  padding: 1rem;
+  text-align: center;
+  color: #bd1900;
+  font-weight: 600;
+}
+.page-section .table-container table tbody tr td {
+  padding: 1rem;
   text-align: center;
   border: 1px solid #ccc;
 }
-.page-section table tbody tr th {
-  font-weight: bold;
+.page-section .table-container table tbody tr td h4 {
   color: #bd1900;
+  font-weight: 600;
 }
-.page-section table tbody tr td h4 {
-  color: #bd1900;
-}
-.page-section table tbody tr:nth-child(even) {
+.page-section .table-container table tbody tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+.page-section .table-container table:nth-child(2) {
+  margin-left: 2rem;
 }
 
 #certs {
