@@ -412,32 +412,79 @@ html {
 .page .head-container .box .content-box div:first-child p a:hover {
   text-decoration: underline;
 }
-.page #certs {
+
+.page-section {
+  display: flex;
+  justify-content: center;
+}
+.page-section .container {
+  width: 80%;
+  max-width: 1100px;
+  padding: 2rem 0;
+}
+.page-section .container h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #bd1900;
+}
+.page-section .container p {
+  color: #636b75;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.page-section .container p a {
+  color: #bd1900;
+  text-decoration: none;
+}
+.page-section .container p a:hover {
+  text-decoration: underline;
+}
+.page-section table {
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+.page-section table tbody tr th,
+.page-section table tbody tr td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.page-section table tbody tr th {
+  font-weight: bold;
+  color: #bd1900;
+}
+.page-section table tbody tr td h4 {
+  color: #bd1900;
+}
+.page-section table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#certs {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 }
-.page #certs img {
+#certs img {
   height: 5rem;
   margin: 1rem;
 }
-.page #certs #gas-safe {
+#certs #gas-safe {
   height: 7rem;
 }
 
 #available {
   background: url("../img/bg-available.jpg") fixed;
-  /* Use fixed to create a parallax effect */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* Adjust to your preference */
   display: flex;
   justify-content: center;
-  /* Set the height of the element to at least the viewport height */
-  overflow: hidden;
-  /* Hide any overflow content */
+  margin-bottom: 2rem;
 }
 #available .container {
   display: flex;
@@ -471,6 +518,7 @@ html {
   padding: 0 2rem;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 600;
   border-radius: 0.25rem;
 }/*# sourceMappingURL=App.css.map */

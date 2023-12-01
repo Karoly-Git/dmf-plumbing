@@ -77,38 +77,101 @@
             }
         }
     }
+}
 
-    #certs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
+.page-section {
+    display: flex;
+    justify-content: center;
 
-        img {
-            height: 5rem;
-            margin: 1rem;
+    .container {
+        width: 80%;
+        max-width: 1100px;
+        padding: 2rem 0;
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: $color-Brown;
         }
 
-        #gas-safe {
-            height: 7rem;
+        p {
+            color: $color-Light;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+
+            a {
+                color: $color-Brown;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 
+    table {
+        margin-bottom: 1.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+
+        tbody {
+            tr {
+
+                th,
+                td {
+                    padding: 10px;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                }
+
+                th {
+                    font-weight: bold;
+                    color: $color-Brown;
+                }
+
+                td {
+                    h4 {
+                        color: $color-Brown;
+                    }
+                }
+
+                &:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+            }
+        }
+    }
+}
+
+
+#certs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    img {
+        height: 5rem;
+        margin: 1rem;
+    }
+
+    #gas-safe {
+        height: 7rem;
+    }
 }
 
 #available {
     background: url('../img/bg-available.jpg') fixed;
-    /* Use fixed to create a parallax effect */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* Adjust to your preference */
     display: flex;
     justify-content: center;
-    //height: 100vh;
-    /* Set the height of the element to at least the viewport height */
-    overflow: hidden;
-    /* Hide any overflow content */
+    margin-bottom: 2rem;
+    //overflow: hidden;
 
     .container {
         display: flex;
@@ -148,6 +211,7 @@
                 padding: 0 2rem;
                 text-decoration: none;
                 text-transform: uppercase;
+                text-align: center;
                 font-weight: 600;
                 border-radius: 0.25rem;
             }

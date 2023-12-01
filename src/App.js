@@ -8,6 +8,8 @@ import Prices from './components/Pages/Prices';
 import Terms from './components/Pages/Terms';
 // Component Imports
 import { MainNavigation, SecNavigation, ThirdNavigation, SideNavigation } from './components/Navigations';
+import Certificates from './components/Certificates';
+import Available from './components/Available';
 // Style Import
 import './css/App.css';
 // Image Imports
@@ -39,6 +41,8 @@ export default function App() {
         </main>
 
         <footer>
+          <Available />
+          <Certificates />
           <ThirdNavigation />
         </footer>
       </div>

@@ -18,8 +18,6 @@ export default function Home() {
                 </div>
             </div>
 
-            <Certificates />
-            <Available />
         </div>
     )
 }
