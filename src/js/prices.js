@@ -8,5 +8,5 @@ export const netPrices = {
     weekends: {
         dayTime: 125,
         night: 195,
-    },
+    }
 }
