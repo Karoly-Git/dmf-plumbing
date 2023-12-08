@@ -1,24 +1,15 @@
-// Font Imports
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+$color-very-Dark: #272727;
+$color-Dark: #393939;
+$color-Light: #636b75;
+$color-extra-Light: #a0adbe;
+$color-Brown: #bd1900;
+$color-Blue: #2D59A2;
+$color-Green: #94cc4c;
+$color-Orange: #F0942B;
+$color1-Logo: #276091;
+$color2-Logo: #c11b1b;
 
-
-// Style Variables Import
-@import 'variables';
-
-// Reset & Basic Styles Import
-@import 'reset';
-
-// Navigation Style Import
-@import 'navigations';
-
-// Page Style Import
-@import 'pages';
-
-// Cookies Style Import
-@import 'cookies';
-
-// Break Pont Import
-@import 'breakpoints';
+$side-nav-radius: 4px;
 
 .page {
     //padding: 5rem;
@@ -115,7 +106,8 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
+        padding: 1rem 0;
 
         table {
             border-collapse: collapse;
@@ -170,58 +162,24 @@
     }
 }
 
-#available {
-    background: url('../img/bg-available.jpg') fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    //overflow: hidden;
+// Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
-    .container {
-        display: flex;
-        width: 80%;
-        padding: 3rem 0;
+// Reset & Basic Styles Import
+@import 'reset.css';
 
-        * {
-            color: white;
-        }
+// Navigation Style Import
+@import 'navigations.css';
 
-        .box {
-            h2 {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-            }
+// Cookies Style Import
+@import 'cookies.css';
 
-            p {
-                font-size: 1.8rem;
-                line-height: 2.5rem;
-            }
-        }
+// Break Pont Import
+@import 'breakpoints.css';
 
-        .box:nth-child(1) {
-            width: 70%;
-        }
+// Page Styles Import
+@import 'prices.css';
 
-        .box:nth-child(2) {
-            display: flex;
-            justify-content: flex-end;
-            width: 30%;
-
-            a {
-                display: flex;
-                align-items: center;
-                background-color: black;
-                height: 50px;
-                padding: 0 2rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                text-align: center;
-                font-weight: 600;
-                border-radius: 0.25rem;
-            }
-        }
-    }
-}
+// Component Style Imports
+@import 'available.css';
+@import 'services.css';

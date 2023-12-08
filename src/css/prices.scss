@@ -1,0 +1,16 @@
+@media screen and (max-width: 700px) {
+    .page-section {
+        .table-container {
+            flex-direction: column;
+            align-items: center !important;
+
+            table {
+                margin: 0 !important;
+            }
+
+            table:first-child {
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+}

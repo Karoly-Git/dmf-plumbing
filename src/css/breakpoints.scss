@@ -1,3 +1,16 @@
+$color-very-Dark: #272727;
+$color-Dark: #393939;
+$color-Light: #636b75;
+$color-extra-Light: #a0adbe;
+$color-Brown: #bd1900;
+$color-Blue: #2D59A2;
+$color-Green: #94cc4c;
+$color-Orange: #F0942B;
+$color1-Logo: #276091;
+$color2-Logo: #c11b1b;
+
+$side-nav-radius: 4px;
+
 // Main navigation breakpoints
 @media screen and (max-width: 1100px) {
     #main-nav {
@@ -35,7 +48,7 @@
                 flex-direction: column;
 
                 a:not(a:last-child) {
-                    margin-bottom: 0.35rem !important;
+                    margin-bottom: 0.75rem !important;
                 }
             }
         }
@@ -136,7 +149,6 @@
 }
 
 // Certificates breakpoints
-
 @media screen and (max-width: 600px) {
     $rate1: 15vw;
     $rate2: 25vw;

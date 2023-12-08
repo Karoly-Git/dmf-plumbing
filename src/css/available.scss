@@ -1,0 +1,102 @@
+$color-very-Dark: #272727;
+$color-Dark: #393939;
+$color-Light: #636b75;
+$color-extra-Light: #a0adbe;
+$color-Brown: #bd1900;
+$color-Blue: #2D59A2;
+$color-Green: #94cc4c;
+$color-Orange: #F0942B;
+$color1-Logo: #276091;
+$color2-Logo: #c11b1b;
+
+$side-nav-radius: 4px;
+
+
+#available {
+    background: url('../img/bg-available.jpg') fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    //overflow: hidden;
+
+    .container {
+        display: flex;
+        width: 80%;
+        padding: 3rem 0;
+
+        * {
+            color: white;
+        }
+
+        .box {
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
+        }
+
+        .box:nth-child(1) {
+            width: 100%;
+        }
+
+        .box:nth-child(2) {
+            display: flex;
+            justify-content: flex-end;
+            min-width: 30%;
+
+            a {
+                display: flex;
+                align-items: center;
+                background-color: black;
+                height: 50px;
+                padding: 0 2rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                border-radius: 0.25rem;
+                transition: all 150ms ease-in-out;
+
+                &:hover {
+                    background-color: white !important;
+                    color: $color-very-Dark  !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #available {
+        h2 {
+            font-size: 2rem !important;
+        }
+
+        p {
+            font-size: 1.5rem !important;
+            line-height: 2.15rem !important;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #available {
+        .container {
+            flex-direction: column;
+
+            .box:nth-child(2) {
+                justify-content: flex-start;
+                width: unset;
+                margin-top: 2rem;
+            }
+        }
+    }
+}

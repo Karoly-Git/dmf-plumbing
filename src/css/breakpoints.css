@@ -23,7 +23,7 @@
     flex-direction: column;
   }
   #main-nav .container .box:nth-child(2) a:not(a:last-child) {
-    margin-bottom: 0.35rem !important;
+    margin-bottom: 0.75rem !important;
   }
 }
 @media screen and (max-width: 300px) {

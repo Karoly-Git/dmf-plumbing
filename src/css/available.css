@@ -1,0 +1,70 @@
+#available {
+  background: url("../img/bg-available.jpg") fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+#available .container {
+  display: flex;
+  width: 80%;
+  padding: 3rem 0;
+}
+#available .container * {
+  color: white;
+}
+#available .container .box h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#available .container .box p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+#available .container .box:nth-child(1) {
+  width: 100%;
+}
+#available .container .box:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 30%;
+}
+#available .container .box:nth-child(2) a {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  padding: 0 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  transition: all 150ms ease-in-out;
+}
+#available .container .box:nth-child(2) a:hover {
+  background-color: white !important;
+  color: #272727 !important;
+}
+
+@media screen and (max-width: 1000px) {
+  #available h2 {
+    font-size: 2rem !important;
+  }
+  #available p {
+    font-size: 1.5rem !important;
+    line-height: 2.15rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #available .container {
+    flex-direction: column;
+  }
+  #available .container .box:nth-child(2) {
+    justify-content: flex-start;
+    width: unset;
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=available.css.map */
