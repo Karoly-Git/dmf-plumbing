@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
+  padding-top: 2rem;
 }
 .services .container .box {
   display: flex;
@@ -53,11 +54,27 @@
   color: #393939;
   font-weight: 550;
   padding: 0 0 1rem;
+  min-height: 6rem;
 }
 .services .container .box p {
   color: #393939;
   font-size: 1.1rem;
   line-height: 1.5rem;
+}
+.services .container .no-image-box h2 {
+  width: 80%;
+  min-height: 6rem;
+  padding: 1rem 0 0;
+  font-weight: 550;
+  color: #bd1900;
+  padding-bottom: 15px;
+  text-underline-offset: 22px;
+  text-decoration-thickness: 1.5px;
+  border-bottom: 2px solid rgb(220, 220, 220);
+  margin-bottom: 1rem;
+}
+.services .container .no-image-box ul li {
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (max-width: 950px) {

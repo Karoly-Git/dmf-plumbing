@@ -36,6 +36,7 @@ $side-nav-radius: 4px;
         display: flex;
         justify-content: space-between;
         width: 80%;
+        padding-top: 2rem;
 
         .box {
             display: flex;
@@ -70,12 +71,34 @@ $side-nav-radius: 4px;
                 color: $color-Dark;
                 font-weight: 550;
                 padding: 0 0 1rem;
+                min-height: 6rem;
             }
 
             p {
                 color: $color-Dark;
                 font-size: 1.1rem;
                 line-height: 1.5rem;
+            }
+        }
+
+        .no-image-box {
+            h2 {
+                width: 80%;
+                min-height: 6rem;
+                padding: 1rem 0 0;
+                font-weight: 550;
+                color: $color-Brown;
+                padding-bottom: 15px;
+                text-underline-offset: 22px;
+                text-decoration-thickness: 1.5px;
+                border-bottom: 2px solid rgb(220, 220, 220);
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 0.5rem;
+                }
             }
         }
     }

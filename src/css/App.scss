@@ -1,3 +1,4 @@
+// Color Variables
 $color-very-Dark: #272727;
 $color-Dark: #393939;
 $color-Light: #636b75;
@@ -9,22 +10,24 @@ $color-Orange: #F0942B;
 $color1-Logo: #276091;
 $color2-Logo: #c11b1b;
 
+// Miscellaneous Variables
 $side-nav-radius: 4px;
 
-h1 {
+// General Styling
+.slogan {
     width: 100%;
     text-align: center;
-    margin: 3rem 0 2rem;
+    margin: 3rem auto 2rem;
     font-size: 2.25rem;
-    color: $color-Brown;
+    color: $color-Dark;
     padding: 0 2rem;
     line-height: 3.5rem;
     letter-spacing: 2px;
+    max-width: 1000px;
+    font-weight: 550;
 }
 
 .page {
-    //padding: 5rem;
-    //color: white;
     display: flex;
     flex-direction: column;
     min-height: 500px;
@@ -37,7 +40,7 @@ h1 {
             display: flex;
             justify-content: center;
             height: 150px;
-            background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
+            background: -webkit-radial-gradient(circle, $color-Blue, #122A53);
 
             .content-box {
                 display: flex;
@@ -51,7 +54,6 @@ h1 {
                     h2 {
                         font-size: 1.8rem;
                         letter-spacing: 1px;
-                        //font-weight: 500;
                     }
 
                     p {
@@ -78,6 +80,66 @@ h1 {
                 }
             }
         }
+    }
+
+    .service-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+
+        .slogan {
+            margin-top: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            padding-top: 2rem;
+            //background-color: red;
+
+            p {
+                margin-bottom: 1rem;
+                max-width: 400px;
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+                line-height: 1.75rem !important;
+            }
+        }
+    }
+}
+
+.test {
+    background-color: $color1-Logo;
+    border-radius: 2000px 0 0 2000px;
+    align-items: flex-start;
+    margin-left: 5%;
+    padding: 6rem 0;
+
+    .container,
+    h2,
+    p {
+        margin: 0;
+        padding: 0;
+        width: unset !important;
+        text-align: left;
+        color: white;
+    }
+
+    p {
+        max-width: 400px;
+        letter-spacing: 1px;
+        line-height: 1.75rem !important;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .container,
+    h2 {
+        margin-left: 20%;
     }
 }
 
@@ -156,7 +218,6 @@ h1 {
     }
 }
 
-
 #certs {
     display: flex;
     justify-content: center;
@@ -185,7 +246,7 @@ h1 {
 // Cookies Style Import
 @import 'cookies.css';
 
-// Break Pont Import
+// Break Point Import
 @import 'breakpoints.css';
 
 // Page Styles Import

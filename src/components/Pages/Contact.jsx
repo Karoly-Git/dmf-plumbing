@@ -23,7 +23,6 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <Certificates />
             </div>
         </div>
     )
