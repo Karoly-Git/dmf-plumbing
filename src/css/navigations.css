@@ -19,21 +19,21 @@
   align-items: center;
   justify-content: center;
 }
-#main-nav .container .box h1 a {
+#main-nav .container .box h2 a {
   display: flex;
   align-items: center;
   text-decoration: none;
   font-size: 2rem;
 }
-#main-nav .container .box h1 a .logo {
+#main-nav .container .box h2 a .logo {
   width: 65px;
 }
-#main-nav .container .box h1 a div {
+#main-nav .container .box h2 a div {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
 }
-#main-nav .container .box h1 a div span {
+#main-nav .container .box h2 a div span {
   color: #276091;
 }
 #main-nav .container .box .link {

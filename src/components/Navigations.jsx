@@ -25,7 +25,7 @@ export function MainNavigation() {
         <nav className='navigation' id='main-nav'>
             <div className="container">
                 <div className="box">
-                    <h1>
+                    <h2>
                         <Link to='/'>
                             <img className='logo' src={logo} alt="DMF Plumbing & Heating logo" />
                             <div>
@@ -33,7 +33,7 @@ export function MainNavigation() {
                                 <span>&#38; Heating</span>
                             </div>
                         </Link>
-                    </h1>
+                    </h2>
                 </div>
 
                 <div className="box">

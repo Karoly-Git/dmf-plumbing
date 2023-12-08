@@ -11,6 +11,17 @@ $color2-Logo: #c11b1b;
 
 $side-nav-radius: 4px;
 
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0 2rem;
+    font-size: 2.25rem;
+    color: $color-Brown;
+    padding: 0 2rem;
+    line-height: 3.5rem;
+    letter-spacing: 2px;
+}
+
 .page {
     //padding: 5rem;
     //color: white;

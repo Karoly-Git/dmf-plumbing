@@ -11,6 +11,14 @@ $color2-Logo: #c11b1b;
 
 $side-nav-radius: 4px;
 
+// h1
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+    }
+}
+
 // Main navigation breakpoints
 @media screen and (max-width: 1100px) {
     #main-nav {

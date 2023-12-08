@@ -28,6 +28,7 @@
   flex-direction: column;
   width: 30%;
   overflow: hidden;
+  border-radius: 0.75rem;
 }
 .services .container .box .main-img {
   width: 100%;

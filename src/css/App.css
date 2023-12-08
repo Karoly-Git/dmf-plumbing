@@ -6,6 +6,17 @@
 @import 'prices.css';
 @import 'available.css';
 @import 'services.css';
+h1 {
+  width: 100%;
+  text-align: center;
+  margin: 3rem 0 2rem;
+  font-size: 2.25rem;
+  color: #bd1900;
+  padding: 0 2rem;
+  line-height: 3.5rem;
+  letter-spacing: 2px;
+}
+
 .page {
   display: flex;
   flex-direction: column;

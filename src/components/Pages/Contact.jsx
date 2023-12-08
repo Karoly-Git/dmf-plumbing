@@ -1,8 +1,10 @@
+// React Imports
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 // Icon Imports
 import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
+// Component Imports
+import Certificates from '../Certificates';
 
 export default function Contact() {
     return (
@@ -21,6 +23,7 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
+                <Certificates />
             </div>
         </div>
     )
