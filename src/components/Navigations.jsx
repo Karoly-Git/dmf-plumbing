@@ -236,7 +236,6 @@ export function ThirdNavigation() {
                     </span>
                     <div onClick={scrollToTop}>
                         <ArrowIcon className='icon' />
-                        <span>Scroll To Top</span>
                     </div>
                 </div>
 

@@ -225,6 +225,7 @@ $mobile-small: 320px;
         flex-direction: column;
         //padding-top: 0;
         padding-bottom: 0;
+        background: -webkit-radial-gradient(circle, #2D59A2, black);
 
         .box {
             margin: 0 !important;
@@ -241,25 +242,27 @@ $mobile-small: 320px;
             //font-size: 1.15rem;
             width: 100%;
 
+
             div {
                 cursor: pointer;
                 display: flex;
                 align-items: center;
-                margin-left: 2rem;
+
+                background-color: rgba(255, 0, 0, 0.5);
+                position: fixed;
+                right: 1rem;
+                bottom: 1rem;
+                padding: 0.25rem;
+                border-radius: 50%;
 
                 .icon {
                     transform: rotate(180deg);
-                    margin-right: 0.25rem;
                 }
 
                 &:hover {
                     span {
                         text-decoration: underline;
                     }
-                }
-
-                span {
-                    //font-size: 0.9rem;
                 }
             }
         }
@@ -269,8 +272,8 @@ $mobile-small: 320px;
 #side-nav {
     width: 4rem;
     position: fixed;
-    right: 0;
-    top: 45vh;
+    right: -2rem;
+    top: 15vh;
     display: none;
 
     ul {
@@ -344,7 +347,7 @@ $mobile-small: 320px;
     }
 }
 
-@media screen and (max-width: $laptop) {
+@media screen and (max-width: 1200px) {
     #main-nav {
         .container {
             flex-direction: column;
@@ -357,21 +360,32 @@ $mobile-small: 320px;
     }
 }
 
-@media screen and (max-width: $mobile-medium-screen) {
-    #main-nav {
-        h1 {
-            .logo {
-                width: 50px !important;
-            }
+@media screen and (max-width: 800px) {
+    #sec-nav {
+        .container {
+            flex-direction: column;
+            align-items: center;
 
-            span {
-                //font-size: 1.5rem;
+            .box:nth-child(2) {
+                margin-top: 1.5rem;
+            }
+        }
+    }
+
+    #third-nav {
+        .container {
+            //flex-direction: column;
+            //align-items: flex-start;
+            width: 100%;
+
+            .box {
+                margin: 0 !important;
             }
         }
     }
 }
 
-@media screen and (max-width: $tablet-small) {
+@media screen and (max-width: 600px) {
     #main-nav {
         .container {
             width: 100% !important;
@@ -385,37 +399,38 @@ $mobile-small: 320px;
             }
         }
     }
+
+    #third-nav {
+        .container {
+            //padding: 0;
+
+            .link-box {
+                flex-direction: column;
+
+                .link-wrapper {
+                    border: none !important;
+                    margin-bottom: 0.25rem;
+
+                    a {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (max-width: $mobile-small) {
+@media screen and (max-width: 480px) {
     #main-nav {
         h1 {
             .logo {
-                width: 40px !important;
-            }
-
-            span {
-                //font-size: 1.15rem;
+                width: 50px !important;
             }
         }
     }
 }
 
-// Secondary navigation breakpoints
-@media screen and (max-width: $tablet-medium) {
-    #sec-nav {
-        .container {
-            flex-direction: column;
-            align-items: center;
-
-            .box:nth-child(2) {
-                margin-top: 1.5rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: $mobile-medium) {
+@media screen and (max-width: 360px) {
     #sec-nav {
         .container {
             .box:nth-child(2) {
@@ -434,47 +449,11 @@ $mobile-small: 320px;
     }
 }
 
-// Third navigation breakpoints
-@media screen and (max-width: $tablet-large) {
-    #third-nav {
-        .container {
-            //flex-direction: column;
-            //align-items: center;
-            width: 100%;
-        }
-    }
-}
-
-@media screen and (max-width: $tablet-medium) {
-    #third-nav {
-        .container {
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-
-            .box {
-                margin: 0 !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: $mobile-xlarg) {
-    #third-nav {
-        .container {
-            padding: 0;
-
-            .link-box {
-                flex-direction: column;
-
-                .link-wrapper {
-                    border: none !important;
-                    margin-bottom: 0.25rem;
-
-                    a {
-                        margin: 0 !important;
-                    }
-                }
+@media screen and (max-width: 320px) {
+    #main-nav {
+        h1 {
+            .logo {
+                width: 40px !important;
             }
         }
     }

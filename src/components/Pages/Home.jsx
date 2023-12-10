@@ -13,7 +13,7 @@ export default function Home() {
         {
             isActive: true,
             className: 'round-box',
-            slogan: 'Boiler Servicing and Replacement',
+            title: 'Boiler Servicing and Replacement',
             img: <img src={boiler} alt="Gas boiler." />,
             details:
                 <>
@@ -30,37 +30,43 @@ export default function Home() {
         {
             isActive: true,
             className: 'diagonal',
-            slogan: 'Gas Safe Registered Heating Engineers and Gas Fitters',
+            title: '',
             img: <img src={boiler} alt="Gas boiler." />,
             details:
                 <>
-                    <p className='p-style'>
+                    <div>
                         <h3 className='h3-style'>Expert Engineers</h3>
-                        If you need to find a qualified and legitimate central heating engineer, or gas fitter,
-                        to repair or install a gas appliance, then you can rely on us, as our Gas Safe registered
-                        heating engineers are both experienced and fully insured. We are specialists in boiler repair
-                        and replacement and can supply and fit new, energy-efficient boilers throughout London.
-                    </p>
-                    <p className='p-style'>
+                        <p className='p-style'>
+                            If you need to find a qualified and legitimate central heating engineer, or gas fitter,
+                            to repair or install a gas appliance, then you can rely on us, as our Gas Safe registered
+                            heating engineers are both experienced and fully insured. We are specialists in boiler repair
+                            and replacement and can supply and fit new, energy-efficient boilers throughout London.
+                        </p>
+                    </div>
+                    <div>
                         <h3 className='h3-style'>Gas Safe registered</h3>
-                        If you are not familiar with the term, “Gas Safe registered”, it indicates that all
-                        subcontractors or engineers who undertake gas related work for and on behalf of
-                        SW London plumbing and Heating Services have achieved expertise in ensuring safety when
-                        working with gas, and have qualified for registration with Gas safe. Gas Safe
-                        registration was previously known as “Corgi Registered”
-                    </p>
-                    <p className='p-style'>
+                        <p className='p-style'>
+                            If you are not familiar with the term, “Gas Safe registered”, it indicates that all
+                            subcontractors or engineers who undertake gas related work for and on behalf of
+                            SW London plumbing and Heating Services have achieved expertise in ensuring safety when
+                            working with gas, and have qualified for registration with Gas safe. Gas Safe
+                            registration was previously known as “Corgi Registered”
+                        </p>
+                    </div>
+                    <div>
                         <h3 className='h3-style'>Legal and Safe Services</h3>
-                        This gives you the assurance that when our plumbers or gas fitters are working in your home,
-                        you are receiving a legal and safe service, which is important, not only for your safety, but
-                        it is paramount when trying to attain planning permission, insurance, or renting or selling your home.
-                    </p>
+                        <p className='p-style'>
+                            This gives you the assurance that when our plumbers or gas fitters are working in your home,
+                            you are receiving a legal and safe service, which is important, not only for your safety, but
+                            it is paramount when trying to attain planning permission, insurance, or renting or selling your home.
+                        </p>
+                    </div>
                 </>,
         },
         {
             isActive: true,
             className: 'round-box at-right',
-            slogan: 'Landlord Gas Checks',
+            title: 'Landlord Gas Checks',
             img: <img src={boiler} alt="Gas boiler." />,
             details:
                 <>
@@ -95,29 +101,48 @@ export default function Home() {
                 Excellence in Boiler Solutions
             </h1>
 
-            {!false && <Services />}
+            <Services />
+
+            <h2 className='slogan'>
+                Legal and Safe Services for Your Home
+            </h2>
+
+
+            <ServiceDetails
+                key={serviceDetails[0].slogan}
+                className={serviceDetails[0].className}
+                title={serviceDetails[0].title}
+                details={serviceDetails[0].details}
+                img={serviceDetails[0].img}
+            />
+
+            <h2 className='slogan'>
+                Gas Safe Registered Heating Engineers and Gas Fitters
+            </h2>
+
+            <ServiceDetails
+                key={serviceDetails[1].slogan}
+                className={serviceDetails[1].className}
+                title={serviceDetails[1].title}
+                details={serviceDetails[1].details}
+                img={serviceDetails[1].img}
+            />
+
+            <ServiceDetails
+                key={serviceDetails[2].slogan}
+                className={serviceDetails[2].className}
+                title={serviceDetails[2].title}
+                details={serviceDetails[2].details}
+                img={serviceDetails[2].img}
+            />
 
             <h2 className='slogan'>
                 No call-out charge,
                 100% transparency
             </h2>
 
-            {!false && <About />}
+            <About />
 
-            <h2 className='slogan'>
-                Legal and Safe Services for Your Home
-            </h2>
-
-            {serviceDetails.map((service) =>
-                service.isActive &&
-                <ServiceDetails
-                    key={service.slogan}
-                    className={service.className}
-                    slogan={service.slogan}
-                    details={service.details}
-                    img={service.img}
-                />
-            )}
         </div>
     )
 }

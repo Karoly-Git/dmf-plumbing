@@ -16,7 +16,6 @@
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
 }
 .page .head-container {
   color: white;
@@ -115,29 +114,48 @@
   margin-left: 2rem;
 }
 
+/*
+h1 {
+    //background-color: darkred !important;
+}
+
+h2 {
+    //background-color: gold;
+}
+
+h3 {
+    //background-color: slateblue !important;
+}
+
+p {
+    //background-color: green;
+}
+*/
 .h2-style {
-  background-color: transparent !important;
-  padding: 1rem 0 0;
+  padding-bottom: 1rem;
   margin-bottom: 1rem;
   font-weight: 550;
   color: #bd1900;
-  text-decoration: underline;
-  padding-bottom: 15px;
-  text-underline-offset: 22px;
-  text-decoration-thickness: 1.5px;
-  border-bottom: 1.5px solid rgb(220, 220, 220);
   width: 100%;
+  max-width: 500px;
 }
 
 .h3-style {
-  background-color: transparent !important;
   color: #393939;
   font-weight: 550;
   padding: 0 0 1rem;
 }
 
+.h3-img-caption {
+  padding: 0.5rem 1rem;
+  margin-bottom: -4rem;
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10;
+}
+
 .p-style {
-  background-color: transparent !important;
   letter-spacing: 1px;
   line-height: 1.35rem;
   width: 100%;
@@ -150,8 +168,28 @@
   padding: 0 2rem;
   font-size: 2.25rem;
   color: #393939;
-  line-height: 3.5rem;
-  letter-spacing: 2px;
+  line-height: 3rem;
+  letter-spacing: 1px;
   max-width: 1000px;
-  font-weight: 550;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+  /*.h2-style {
+      //font-size: 1.35rem;
+  }
+
+  .h3-style {
+      //font-size: 1.15rem;
+  }*/
+  .slogan {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin: 2rem auto;
+  }
+  .diagonal .container .title {
+    width: 100%;
+    font-size: 1.75rem;
+  }
 }/*# sourceMappingURL=App.css.map */

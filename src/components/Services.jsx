@@ -3,17 +3,17 @@ import React from 'react';
 // Image Imports
 import boiler from '../img/services/boiler.jpg';
 import maintrnance from '../img/services/maintenance.jpg';
-import water from '../img/services/water.jpg';
+import plumbing from '../img/services/plumbing.jpg';
 import logostamp from '../img/services/logostamp.png';
 
 export default function Services() {
     const content = [
         {
             img: {
-                src: water,
+                src: plumbing,
                 alt: 'Close-up of clear water with numerous air bubbles floating upwards.'
             },
-            headline: 'Plumbing Services',
+            headline: 'Plumbing',
             paragraph: 'We offer a highly professional service across London with a team of experienced and qualified plumbers who are available and we guarantee to solve everything from a plumbing related problem to the design and creation of new bathrooms.'
         },
         {
@@ -21,7 +21,7 @@ export default function Services() {
                 src: boiler,
                 alt: 'Close-up view of a white electric hot water boiler with indicator lights and control buttons.'
             },
-            headline: 'Heating & Boiler Repairs',
+            headline: 'Heating & Boilers',
             paragraph: 'We can assist towards ensuring compliance with the Consumer Protection Act and help you avoid sale cancellations and other possible repercussions.'
         },
         {
@@ -43,9 +43,9 @@ export default function Services() {
                         <div
                             key={element.headline}
                             className='card'>
+                            <h3 className='h3-style h3-img-caption'>{element.headline}</h3>
                             <img className='main-img' src={element.img.src} alt={element.img.alt}></img>
                             <img className='logo-stamp-img' src={logostamp} alt=""></img>
-                            <h3 className='h3-style'>{element.headline}</h3>
                             <p className='p-style'>{element.paragraph}</p>
                         </div>
                     )}
