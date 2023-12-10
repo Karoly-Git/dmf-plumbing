@@ -1,3 +1,13 @@
+// Font Imports
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 //Color Variables
 $color-very-Dark: #272727;
 $color-Dark: #393939;
@@ -13,8 +23,6 @@ $color2-Logo: #c11b1b;
 // Miscellaneous Variables
 $side-nav-radius: 4px;
 
-
-
 .page {
     display: flex;
     flex-direction: column;
@@ -27,7 +35,6 @@ $side-nav-radius: 4px;
         .box {
             display: flex;
             justify-content: center;
-            height: 100px;
             background: -webkit-radial-gradient(circle, $color-Blue, #122A53);
 
             .content-box {
@@ -146,33 +153,7 @@ $side-nav-radius: 4px;
     }
 }
 
-.certs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
 
-    img {
-        height: 5rem;
-        margin: 1rem;
-    }
-
-    #gas-safe {
-        height: 7rem;
-    }
-}
-
-// Font Imports
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
-// Reset & Basic Styles Import
-@import 'reset.css';
-
-// Navigation Style Import
-@import 'navigations.css';
-
-// Cookies Style Import
-@import 'cookies.css';
 
 // Break Point Import
 //@import 'breakpoints.css';
@@ -181,8 +162,13 @@ $side-nav-radius: 4px;
 @import 'prices.css';
 
 // Component Style Imports
+@import 'navigations.css';
+@import 'cookies.css';
 @import 'available.css';
+@import 'certs.css';
 @import 'services.css';
+@import 'service-details.css';
+
 
 
 h1 {
@@ -212,6 +198,7 @@ p {
     text-underline-offset: 22px;
     text-decoration-thickness: 1.5px;
     border-bottom: 1.5px solid rgb(220, 220, 220);
+    width: 100%;
 }
 
 .h3-style {
@@ -233,6 +220,7 @@ p {
     width: 100%;
     text-align: center;
     margin: 3rem auto;
+    padding: 0 2rem;
     font-size: 2.25rem;
     color: $color-Dark;
     line-height: 3.5rem;

@@ -1,0 +1,33 @@
+.certs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.certs img {
+  height: 5rem;
+  margin: 1rem;
+}
+.certs #gas-safe {
+  height: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+  .certs img {
+    height: auto;
+    width: auto;
+    margin: 2vw !important;
+  }
+  .certs #check-a-trade {
+    width: 25vw;
+    height: 11.6666666667vw !important;
+  }
+  .certs #gas-safe {
+    width: 15vw;
+    height: 16.0305343511vw !important;
+  }
+  .certs #vaillant {
+    width: 25vw;
+    height: 10.736196319vw !important;
+  }
+}/*# sourceMappingURL=certs.css.map */

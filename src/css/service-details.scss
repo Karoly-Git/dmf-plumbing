@@ -13,6 +13,39 @@ $color2-Logo: #c11b1b;
 // Miscellaneous Variables
 $side-nav-radius: 4px;
 
+// Extra Large Screens, Desktops, and TVs
+$extra-large-2: 4096px;
+$extra-large-1: 3840px;
+
+// Large Screens, Desktops
+$desktop-xxlarge: 2560px;
+$desktop-xlarge: 1920px;
+$desktop-large: 1600px;
+
+// Medium Screens, Desktops
+$desktop-medium: 1440px;
+
+// Screens, Laptops
+$laptop: 1200px;
+$laptop-small: 1366px;
+
+// Medium Tablets
+$tablet-medium-screen: 1024px;
+
+// Large Mobile Devices and Small Tablets
+$tablet-large: 800px;
+$tablet-medium: 768px;
+$tablet-small: 600px;
+
+// Medium Mobile Devices
+$mobile-medium-screen: 480px;
+
+// Small Mobile Devices
+$mobile-xlarge: 414px;
+$mobile-large: 375px;
+$mobile-medium: 360px;
+$mobile-small: 320px;
+
 .round-box {
     display: flex;
     flex-direction: column;
@@ -84,6 +117,7 @@ $side-nav-radius: 4px;
         .title {
             //border: 3px solid red;
             width: 80%;
+            padding: 0 2rem;
             margin-bottom: 2rem;
             text-align: center;
             text-transform: uppercase;
@@ -104,7 +138,7 @@ $side-nav-radius: 4px;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $tablet-medium-screen) {
     .diagonal {
         .container {
             .box {

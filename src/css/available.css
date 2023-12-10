@@ -49,20 +49,20 @@
   color: #272727 !important;
 }
 
-@media screen and (max-width: 1000px) {
-  #available h2 {
+@media screen and (max-width: 1024px) {
+  .available h2 {
     font-size: 2rem !important;
   }
-  #available p {
+  .available p {
     font-size: 1.5rem !important;
     line-height: 2.15rem !important;
   }
 }
-@media screen and (max-width: 700px) {
-  #available .container {
+@media screen and (max-width: 768px) {
+  .available .container {
     flex-direction: column;
   }
-  #available .container .box:nth-child(2) {
+  .available .container .box:nth-child(2) {
     justify-content: flex-start;
     width: unset;
     margin-top: 2rem;

@@ -1,7 +1,5 @@
 // React Imports
 import React from 'react';
-//Style Imports
-import '../css/service-details.css';
 
 export default function ServiceDetails(props) {
     return (

@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-@import 'reset.css';
+@import 'prices.css';
 @import 'navigations.css';
 @import 'cookies.css';
-@import 'prices.css';
 @import 'available.css';
+@import 'certs.css';
 @import 'services.css';
+@import 'service-details.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -17,7 +25,6 @@
 .page .head-container .box {
   display: flex;
   justify-content: center;
-  height: 100px;
   background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
 }
 .page .head-container .box .content-box {
@@ -108,20 +115,6 @@
   margin-left: 2rem;
 }
 
-.certs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-}
-.certs img {
-  height: 5rem;
-  margin: 1rem;
-}
-.certs #gas-safe {
-  height: 7rem;
-}
-
 .h2-style {
   background-color: transparent !important;
   padding: 1rem 0 0;
@@ -133,6 +126,7 @@
   text-underline-offset: 22px;
   text-decoration-thickness: 1.5px;
   border-bottom: 1.5px solid rgb(220, 220, 220);
+  width: 100%;
 }
 
 .h3-style {
@@ -153,6 +147,7 @@
   width: 100%;
   text-align: center;
   margin: 3rem auto;
+  padding: 0 2rem;
   font-size: 2.25rem;
   color: #393939;
   line-height: 3.5rem;

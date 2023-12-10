@@ -1,0 +1,78 @@
+// Extra Large Screens, Desktops, and TVs
+$extra-large-2: 4096px;
+$extra-large-1: 3840px;
+
+// Large Screens, Desktops
+$desktop-xxlarge: 2560px;
+$desktop-xlarge: 1920px;
+$desktop-large: 1600px;
+
+// Medium Screens, Desktops
+$desktop-medium: 1440px;
+
+// Screens, Laptops
+$laptop: 1200px;
+$laptop-small: 1366px;
+
+// Medium Tablets
+$tablet-medium-screen: 1024px;
+
+// Large Mobile Devices and Small Tablets
+$tablet-large: 800px;
+$tablet-medium: 768px;
+$tablet-small: 600px;
+
+// Medium Mobile Devices
+$mobile-medium-screen: 480px;
+
+// Small Mobile Devices
+$mobile-xlarge: 414px;
+$mobile-large: 375px;
+$mobile-medium: 360px;
+$mobile-small: 320px;
+
+.certs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+    img {
+        height: 5rem;
+        margin: 1rem;
+    }
+
+    #gas-safe {
+        height: 7rem;
+    }
+}
+
+
+@media screen and (max-width: $tablet-small) {
+    $rate1: 15vw;
+    $rate2: 25vw;
+
+    .certs {
+        img {
+            height: auto;
+            width: auto;
+            margin: 2vw !important;
+        }
+
+        #check-a-trade {
+            width: $rate2;
+            height: calc($rate2 * 70/150) !important;
+        }
+
+        #gas-safe {
+            width: $rate1;
+            height: calc($rate1 * 98/91.7) !important;
+        }
+
+        #vaillant {
+            width: $rate2;
+            height: calc($rate2 * 70/163) !important;
+        }
+
+    }
+}

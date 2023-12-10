@@ -51,6 +51,7 @@
 }
 .diagonal .container .title {
   width: 80%;
+  padding: 0 2rem;
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -66,7 +67,7 @@
   padding: 1rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .diagonal .container .box {
     flex-direction: column;
   }
