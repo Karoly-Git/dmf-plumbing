@@ -65,17 +65,22 @@ export default function About() {
     ];
 
     return (
-        <div className='services'>
+        <section className='services'>
             <div className='container'>
-                {content.map((element) =>
-                    <div
-                        key={element.headline}
-                        className='box no-image-box'>
-                        <h2>{element.headline}</h2>
-                        {element.list}
-                    </div>
-                )}
+                <h2 className='h2-style'>Comprehensive Plumbing Solutions</h2>
+                <div className='box'>
+                    {content.map((element) =>
+                        <div
+                            key={element.headline}
+                            className='card'>
+                            <h3 className='h3-style'>{element.headline}</h3>
+                            {element.list}
+                        </div>
+                    )}
+                </div>
             </div>
-        </div >
+        </section>
     )
 }
+
+

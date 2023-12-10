@@ -35,20 +35,22 @@ export default function Services() {
     ];
 
     return (
-        <div className='services'>
-            <h2>Services</h2>
+        <section className='services'>
             <div className='container'>
-                {content.map((element) =>
-                    <div
-                        key={element.headline}
-                        className='box'>
-                        <img className='main-img' src={element.img.src} alt={element.img.alt}></img>
-                        <img className='logo-stamp-img' src={logostamp} alt=""></img>
-                        <h2>{element.headline}</h2>
-                        <p>{element.paragraph}</p>
-                    </div>
-                )}
+                <h2 className='h2-style'>Services</h2>
+                <div className='box'>
+                    {content.map((element) =>
+                        <div
+                            key={element.headline}
+                            className='card'>
+                            <img className='main-img' src={element.img.src} alt={element.img.alt}></img>
+                            <img className='logo-stamp-img' src={logostamp} alt=""></img>
+                            <h3 className='h3-style'>{element.headline}</h3>
+                            <p className='p-style'>{element.paragraph}</p>
+                        </div>
+                    )}
+                </div>
             </div>
-        </div >
+        </section>
     )
 }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Available() {
     return (
-        <div id='available'>
+        <section className='available'>
             <div className="container">
                 <div className='box'>
                     <h2>We are Available for you</h2>
@@ -17,6 +17,6 @@ export default function Available() {
                     <Link to={'/contact'}>Contact Us</Link>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

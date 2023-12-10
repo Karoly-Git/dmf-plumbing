@@ -1,3 +1,7 @@
+.h3-style {
+  color: #bd1900 !important;
+}
+
 @media screen and (max-width: 700px) {
   .page-section .table-container {
     flex-direction: column;

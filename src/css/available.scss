@@ -12,14 +12,14 @@ $color2-Logo: #c11b1b;
 $side-nav-radius: 4px;
 
 
-#available {
+.available {
     background: url('../img/bg-available.jpg') fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     //overflow: hidden;
 
     .container {

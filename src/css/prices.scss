@@ -1,3 +1,22 @@
+$color-very-Dark: #272727;
+$color-Dark: #393939;
+$color-Light: #636b75;
+$color-extra-Light: #a0adbe;
+$color-Brown: #bd1900;
+$color-Blue: #2D59A2;
+$color-Green: #94cc4c;
+$color-Orange: #F0942B;
+$color1-Logo: #276091;
+$color2-Logo: #c11b1b;
+
+// Miscellaneous Variables
+$side-nav-radius: 4px;
+
+
+.h3-style {
+    color: $color-Brown  !important;
+}
+
 @media screen and (max-width: 700px) {
     .page-section {
         .table-container {

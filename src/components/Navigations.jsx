@@ -130,7 +130,7 @@ export function MobileNavigation() {
         <nav className='mobile-nav'>
             <div className="container">
                 <div className="box">
-                    <h1>
+                    <h2>
                         <Link to='/'>
                             <img className='logo' src={logo} alt="DMF Logo" />
                             <div>
@@ -138,7 +138,7 @@ export function MobileNavigation() {
                                 <span>&#38; Heating</span>
                             </div>
                         </Link>
-                    </h1>
+                    </h2>
                 </div>
 
                 <div className="box">

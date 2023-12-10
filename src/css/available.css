@@ -1,37 +1,37 @@
-#available {
+.available {
   background: url("../img/bg-available.jpg") fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
-#available .container {
+.available .container {
   display: flex;
   width: 80%;
   padding: 3rem 0;
 }
-#available .container * {
+.available .container * {
   color: white;
 }
-#available .container .box h2 {
+.available .container .box h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-#available .container .box p {
+.available .container .box p {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
-#available .container .box:nth-child(1) {
+.available .container .box:nth-child(1) {
   width: 100%;
 }
-#available .container .box:nth-child(2) {
+.available .container .box:nth-child(2) {
   display: flex;
   justify-content: flex-end;
   min-width: 30%;
 }
-#available .container .box:nth-child(2) a {
+.available .container .box:nth-child(2) a {
   display: flex;
   align-items: center;
   background-color: black;
@@ -44,7 +44,7 @@
   border-radius: 0.25rem;
   transition: all 150ms ease-in-out;
 }
-#available .container .box:nth-child(2) a:hover {
+.available .container .box:nth-child(2) a:hover {
   background-color: white !important;
   color: #272727 !important;
 }

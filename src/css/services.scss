@@ -8,101 +8,62 @@ $color-Green: #94cc4c;
 $color-Orange: #F0942B;
 $color1-Logo: #276091;
 $color2-Logo: #c11b1b;
-
 $side-nav-radius: 4px;
 
 .services {
-    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-
-    &>h2 {
-        width: 80%;
-        padding: 1rem 0 0;
-        font-size: 2rem;
-        font-weight: 550;
-        color: $color-Brown;
-        text-decoration: underline;
-        padding-bottom: 15px;
-        text-underline-offset: 22px;
-        text-decoration-thickness: 1.5px;
-        border-bottom: 2px solid rgb(220, 220, 220);
-        margin-bottom: 1rem;
-    }
+    margin: 2rem 0;
+    //background-color: red;
 
     .container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         width: 80%;
-        padding-top: 2rem;
+        //background-color: blue;
 
         .box {
             display: flex;
-            flex-direction: column;
-            width: 30%;
-            overflow: hidden;
-            border-radius: 0.75rem;
+            justify-content: space-between;
+            //border: 5px solid yellow;
 
-            .main-img {
-                width: 100%;
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: 30%;
                 border-radius: 0.75rem;
-                margin-bottom: -50px;
-            }
 
-            .logo-stamp-img {
-                height: 50px;
-                align-self: flex-end;
-                position: relative;
-                border-radius: 25px 0 0 25px;
-                background-color: rgba(255, 255, 255, 0.85);
-                position: relative;
-                top: -10px;
-            }
+                .main-img {
+                    border-radius: 0.75rem;
+                    margin-bottom: -3rem;
+                }
 
-            h3 {
-                color: $color-extra-Light;
-                font-weight: 100;
-                padding: 1rem 0;
-            }
+                .logo-stamp-img {
+                    $stamp-height: 2.5rem;
+                    height: $stamp-height;
+                    width: calc(289/87 * $stamp-height);
+                    border-radius: 25px 0 0 25px;
+                    background-color: rgba(255, 255, 255, 0.85);
+                    margin-bottom: 1rem;
+                    align-self: flex-end;
+                }
 
-            h2 {
-                color: $color-Dark;
-                font-weight: 550;
-                padding: 1rem 0;
-                //min-height: 6rem;
-            }
+                ul {
+                    list-style: none;
 
-            p {
-                color: $color-Dark;
-                font-size: 1.1rem;
-                line-height: 1.5rem;
-            }
-        }
-
-        .no-image-box {
-            h2 {
-                width: 80%;
-                //min-height: 6rem;
-                padding: 1rem 0 0;
-                font-weight: 550;
-                color: $color-Brown;
-                padding-bottom: 15px;
-                text-underline-offset: 22px;
-                text-decoration-thickness: 1.5px;
-                border-bottom: 2px solid rgb(220, 220, 220);
-                margin-bottom: 1rem;
-            }
-
-            ul {
-                li {
-                    margin-bottom: 0.5rem;
+                    li {
+                        padding-bottom: 0.25rem;
+                    }
                 }
             }
         }
     }
 }
+
+/*
+overflow: hidden;
 
 @media screen and (max-width: 950px) {
     .services {
@@ -127,10 +88,6 @@ $side-nav-radius: 4px;
     .services {
         padding: 2rem;
 
-        &>h2 {
-            width: 100%;
-        }
-
         .container {
             width: 100%;
 
@@ -144,3 +101,4 @@ $side-nav-radius: 4px;
         }
     }
 }
+*/

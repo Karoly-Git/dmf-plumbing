@@ -2,23 +2,9 @@
 @import 'reset.css';
 @import 'navigations.css';
 @import 'cookies.css';
-@import 'breakpoints.css';
 @import 'prices.css';
 @import 'available.css';
 @import 'services.css';
-.slogan {
-  width: 100%;
-  text-align: center;
-  margin: 4rem auto;
-  font-size: 2.25rem;
-  color: #393939;
-  padding: 0 2rem;
-  line-height: 3.5rem;
-  letter-spacing: 2px;
-  max-width: 1000px;
-  font-weight: 550;
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -31,7 +17,7 @@
 .page .head-container .box {
   display: flex;
   justify-content: center;
-  height: 150px;
+  height: 100px;
   background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
 }
 .page .head-container .box .content-box {
@@ -122,16 +108,55 @@
   margin-left: 2rem;
 }
 
-#certs {
+.certs {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  margin: 2rem 0;
 }
-#certs img {
+.certs img {
   height: 5rem;
   margin: 1rem;
 }
-#certs #gas-safe {
+.certs #gas-safe {
   height: 7rem;
+}
+
+.h2-style {
+  background-color: transparent !important;
+  padding: 1rem 0 0;
+  margin-bottom: 1rem;
+  font-weight: 550;
+  color: #bd1900;
+  text-decoration: underline;
+  padding-bottom: 15px;
+  text-underline-offset: 22px;
+  text-decoration-thickness: 1.5px;
+  border-bottom: 1.5px solid rgb(220, 220, 220);
+}
+
+.h3-style {
+  background-color: transparent !important;
+  color: #393939;
+  font-weight: 550;
+  padding: 0 0 1rem;
+}
+
+.p-style {
+  background-color: transparent !important;
+  letter-spacing: 1px;
+  line-height: 1.35rem;
+  width: 100%;
+}
+
+.slogan {
+  width: 100%;
+  text-align: center;
+  margin: 3rem auto;
+  font-size: 2.25rem;
+  color: #393939;
+  line-height: 3.5rem;
+  letter-spacing: 2px;
+  max-width: 1000px;
+  font-weight: 550;
 }/*# sourceMappingURL=App.css.map */

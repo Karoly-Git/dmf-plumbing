@@ -1,107 +1,81 @@
 .services {
-  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-.services > h2 {
-  width: 80%;
-  padding: 1rem 0 0;
-  font-size: 2rem;
-  font-weight: 550;
-  color: #bd1900;
-  text-decoration: underline;
-  padding-bottom: 15px;
-  text-underline-offset: 22px;
-  text-decoration-thickness: 1.5px;
-  border-bottom: 2px solid rgb(220, 220, 220);
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 .services .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   width: 80%;
-  padding-top: 2rem;
 }
 .services .container .box {
   display: flex;
+  justify-content: space-between;
+}
+.services .container .box .card {
+  display: flex;
   flex-direction: column;
   width: 30%;
-  overflow: hidden;
   border-radius: 0.75rem;
 }
-.services .container .box .main-img {
-  width: 100%;
+.services .container .box .card .main-img {
   border-radius: 0.75rem;
-  margin-bottom: -50px;
+  margin-bottom: -3rem;
 }
-.services .container .box .logo-stamp-img {
-  height: 50px;
-  align-self: flex-end;
-  position: relative;
+.services .container .box .card .logo-stamp-img {
+  height: 2.5rem;
+  width: 8.3045977011rem;
   border-radius: 25px 0 0 25px;
   background-color: rgba(255, 255, 255, 0.85);
-  position: relative;
-  top: -10px;
-}
-.services .container .box h3 {
-  color: #a0adbe;
-  font-weight: 100;
-  padding: 1rem 0;
-}
-.services .container .box h2 {
-  color: #393939;
-  font-weight: 550;
-  padding: 1rem 0;
-}
-.services .container .box p {
-  color: #393939;
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-}
-.services .container .no-image-box h2 {
-  width: 80%;
-  padding: 1rem 0 0;
-  font-weight: 550;
-  color: #bd1900;
-  padding-bottom: 15px;
-  text-underline-offset: 22px;
-  text-decoration-thickness: 1.5px;
-  border-bottom: 2px solid rgb(220, 220, 220);
   margin-bottom: 1rem;
+  align-self: flex-end;
 }
-.services .container .no-image-box ul li {
-  margin-bottom: 0.5rem;
+.services .container .box .card ul {
+  list-style: none;
+}
+.services .container .box .card ul li {
+  padding-bottom: 0.25rem;
 }
 
+/*
+overflow: hidden;
+
 @media screen and (max-width: 950px) {
-  .services .container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .services .container .box {
-    width: 100%;
-  }
-  .services .container .box:not(.services .container .box:last-child) {
-    margin-bottom: 2rem;
-  }
+    .services {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            .box {
+                width: 100%;
+
+                &:not(&:last-child) {
+                    margin-bottom: 2rem;
+                }
+
+            }
+        }
+    }
 }
+
 @media screen and (max-width: 700px) {
-  .services {
-    padding: 2rem;
-  }
-  .services > h2 {
-    width: 100%;
-  }
-  .services .container {
-    width: 100%;
-  }
-  .services .container .box {
-    overflow: hidden;
-  }
-  .services .container .box .main-img {
-    margin-top: -5rem;
-  }
-}/*# sourceMappingURL=services.css.map */
+    .services {
+        padding: 2rem;
+
+        .container {
+            width: 100%;
+
+            .box {
+                overflow: hidden;
+
+                .main-img {
+                    margin-top: -5rem;
+                }
+            }
+        }
+    }
+}
+*//*# sourceMappingURL=services.css.map */
