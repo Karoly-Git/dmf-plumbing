@@ -68,7 +68,9 @@ export default function About() {
         <div className='services'>
             <div className='container'>
                 {content.map((element) =>
-                    <div className='box no-image-box'>
+                    <div
+                        key={element.headline}
+                        className='box no-image-box'>
                         <h2>{element.headline}</h2>
                         {element.list}
                     </div>

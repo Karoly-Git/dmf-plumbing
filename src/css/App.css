@@ -9,7 +9,7 @@
 .slogan {
   width: 100%;
   text-align: center;
-  margin: 3rem auto 2rem;
+  margin: 4rem auto;
   font-size: 2.25rem;
   color: #393939;
   padding: 0 2rem;
@@ -50,7 +50,6 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  font-size: 0.9rem;
 }
 .page .head-container .box .content-box div:first-child p .icon {
   font-size: 1.5rem;
@@ -64,57 +63,6 @@
 .page .head-container .box .content-box div:first-child p a:hover {
   text-decoration: underline;
 }
-.page .service-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
-}
-.page .service-details .slogan {
-  margin-top: 0;
-}
-.page .service-details .container {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  padding-top: 2rem;
-}
-.page .service-details .container p {
-  margin-bottom: 1rem;
-  max-width: 400px;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  line-height: 1.75rem !important;
-}
-
-.test {
-  background-color: #276091;
-  border-radius: 2000px 0 0 2000px;
-  align-items: flex-start;
-  margin-left: 5%;
-  padding: 6rem 0;
-}
-.test .container,
-.test h2,
-.test p {
-  margin: 0;
-  padding: 0;
-  width: unset !important;
-  text-align: left;
-  color: white;
-}
-.test p {
-  max-width: 400px;
-  letter-spacing: 1px;
-  line-height: 1.75rem !important;
-}
-.test h2 {
-  margin-bottom: 1rem;
-}
-.test .container,
-.test h2 {
-  margin-left: 20%;
-}
 
 .page-section {
   display: flex;
@@ -126,7 +74,6 @@
   padding: 2rem 0;
 }
 .page-section .container h2 {
-  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #bd1900;

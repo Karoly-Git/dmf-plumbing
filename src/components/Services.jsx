@@ -9,7 +9,6 @@ import logostamp from '../img/services/logostamp.png';
 export default function Services() {
     const content = [
         {
-            nr: '01',
             img: {
                 src: water,
                 alt: 'Close-up of clear water with numerous air bubbles floating upwards.'
@@ -18,7 +17,6 @@ export default function Services() {
             paragraph: 'We offer a highly professional service across London with a team of experienced and qualified plumbers who are available and we guarantee to solve everything from a plumbing related problem to the design and creation of new bathrooms.'
         },
         {
-            nr: '02',
             img: {
                 src: boiler,
                 alt: 'Close-up view of a white electric hot water boiler with indicator lights and control buttons.'
@@ -27,7 +25,6 @@ export default function Services() {
             paragraph: 'We can assist towards ensuring compliance with the Consumer Protection Act and help you avoid sale cancellations and other possible repercussions.'
         },
         {
-            nr: '03',
             img: {
                 src: maintrnance,
                 alt: 'A collection of plumbing tools spread out on an open blueprint.'
@@ -39,13 +36,14 @@ export default function Services() {
 
     return (
         <div className='services'>
-            <h2>DMF Plumbing Services</h2>
+            <h2>Services</h2>
             <div className='container'>
                 {content.map((element) =>
-                    <div className='box'>
+                    <div
+                        key={element.headline}
+                        className='box'>
                         <img className='main-img' src={element.img.src} alt={element.img.alt}></img>
                         <img className='logo-stamp-img' src={logostamp} alt=""></img>
-                        <h3>{element.nr}</h3>
                         <h2>{element.headline}</h2>
                         <p>{element.paragraph}</p>
                     </div>

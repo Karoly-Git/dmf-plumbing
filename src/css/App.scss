@@ -17,7 +17,7 @@ $side-nav-radius: 4px;
 .slogan {
     width: 100%;
     text-align: center;
-    margin: 3rem auto 2rem;
+    margin: 4rem auto;
     font-size: 2.25rem;
     color: $color-Dark;
     padding: 0 2rem;
@@ -60,7 +60,7 @@ $side-nav-radius: 4px;
                         display: flex;
                         align-items: center;
                         font-weight: 600;
-                        font-size: 0.9rem;
+                        //font-size: 0.9rem;
 
                         .icon {
                             font-size: 1.5rem;
@@ -81,66 +81,6 @@ $side-nav-radius: 4px;
             }
         }
     }
-
-    .service-details {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem 0;
-
-        .slogan {
-            margin-top: 0;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            padding-top: 2rem;
-            //background-color: red;
-
-            p {
-                margin-bottom: 1rem;
-                max-width: 400px;
-                font-size: 1.1rem;
-                letter-spacing: 1px;
-                line-height: 1.75rem !important;
-            }
-        }
-    }
-}
-
-.test {
-    background-color: $color1-Logo;
-    border-radius: 2000px 0 0 2000px;
-    align-items: flex-start;
-    margin-left: 5%;
-    padding: 6rem 0;
-
-    .container,
-    h2,
-    p {
-        margin: 0;
-        padding: 0;
-        width: unset !important;
-        text-align: left;
-        color: white;
-    }
-
-    p {
-        max-width: 400px;
-        letter-spacing: 1px;
-        line-height: 1.75rem !important;
-    }
-
-    h2 {
-        margin-bottom: 1rem;
-    }
-
-    .container,
-    h2 {
-        margin-left: 20%;
-    }
 }
 
 .page-section {
@@ -153,7 +93,7 @@ $side-nav-radius: 4px;
         padding: 2rem 0;
 
         h2 {
-            font-size: 1.3rem;
+            //font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 1rem;
             color: $color-Brown;

@@ -1,3 +1,8 @@
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 700px) {
   h1 {
     font-size: 2rem !important;

@@ -53,8 +53,7 @@
 .services .container .box h2 {
   color: #393939;
   font-weight: 550;
-  padding: 0 0 1rem;
-  min-height: 6rem;
+  padding: 1rem 0;
 }
 .services .container .box p {
   color: #393939;
@@ -63,7 +62,6 @@
 }
 .services .container .no-image-box h2 {
   width: 80%;
-  min-height: 6rem;
   padding: 1rem 0 0;
   font-weight: 550;
   color: #bd1900;
