@@ -97,17 +97,17 @@ export default function Contact() {
             <form onSubmit={handleSubmit(onSubmit)}>
 
 
-                {errors.senderName && <span><p className='error'>{errors.senderName?.message}</p></span>}
+                {errors.providedName && <span><p className='error'>{errors.providedName?.message}</p></span>}
                 <input placeholder="Name*" {...register('providedName')}></input>
 
-                {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
+                {errors.providedEmail && <span><p className='error'>{errors.providedEmail?.message}</p></span>}
                 <input placeholder="Email*" {...register('providedEmail')}></input>
 
-                {errors.senderEmail && <span><p className='error'>{errors.senderEmail?.message}</p></span>}
+                {errors.providedSubject && <span><p className='error'>{errors.providedSubject?.message}</p></span>}
                 <input placeholder="Message*" {...register('providedSubject')}></input>
 
 
-                {errors.text && <span><p className='error'>{errors.text?.message}</p></span>}
+                {errors.providedMessage && <span><p className='error'>{errors.providedMessage?.message}</p></span>}
                 <textarea placeholder="Type your message here*" {...register('providedMessage')}></textarea>
 
                 <button>Submit</button>

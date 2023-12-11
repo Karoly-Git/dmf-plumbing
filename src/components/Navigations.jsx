@@ -224,7 +224,7 @@ export function ThirdNavigation() {
                     <h3>Maintenance &#38; Services</h3>
                     <Link to='/' >Plumbing</Link>
                     <Link to='/'>Heating &#38; Boilers</Link>
-                    <Link to='/'>Bathroom Fittings</Link>
+                    <Link to='/'>Maintenance</Link>
                 </div>
             </div>
 
