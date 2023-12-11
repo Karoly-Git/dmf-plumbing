@@ -211,11 +211,11 @@ export function ThirdNavigation() {
                         <br />
                         <br />
                         <a href={`tel:${contacts.phone}`} target="_blank" rel="noopener noreferrer">
-                            <PhoneIcon className='icon' /> {contacts.phone}
+                            <PhoneIcon className='icon' /><span>{contacts.phone}</span>
                         </a>
 
                         <a href={`mailto:${contacts.email}`} target="_blank" rel="noopener noreferrer">
-                            <MailIcon className='icon' /> {contacts.email}
+                            <MailIcon className='icon' /><span>{contacts.email}</span>
                         </a>
                     </p>
                 </div>

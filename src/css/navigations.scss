@@ -223,7 +223,6 @@ $mobile-small: 320px;
 
     .container:nth-child(2) {
         flex-direction: column;
-        //padding-top: 0;
         padding-bottom: 0;
         background: -webkit-radial-gradient(circle, #2D59A2, black);
 
@@ -347,6 +346,7 @@ $mobile-small: 320px;
     }
 }
 
+// Main Navigation Breakpoints
 @media screen and (max-width: 1200px) {
     #main-nav {
         .container {
@@ -361,31 +361,6 @@ $mobile-small: 320px;
 }
 
 @media screen and (max-width: 800px) {
-    #sec-nav {
-        .container {
-            flex-direction: column;
-            align-items: center;
-
-            .box:nth-child(2) {
-                margin-top: 1.5rem;
-            }
-        }
-    }
-
-    #third-nav {
-        .container {
-            //flex-direction: column;
-            //align-items: flex-start;
-            width: 100%;
-
-            .box {
-                margin: 0 !important;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
     #main-nav {
         .container {
             width: 100% !important;
@@ -399,25 +374,6 @@ $mobile-small: 320px;
             }
         }
     }
-
-    #third-nav {
-        .container {
-            //padding: 0;
-
-            .link-box {
-                flex-direction: column;
-
-                .link-wrapper {
-                    border: none !important;
-                    margin-bottom: 0.25rem;
-
-                    a {
-                        margin: 0 !important;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -425,6 +381,20 @@ $mobile-small: 320px;
         h1 {
             .logo {
                 width: 50px !important;
+            }
+        }
+    }
+}
+
+// Sec Navigation Breakpoints
+@media screen and (max-width: 600px) {
+    #sec-nav {
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .box:nth-child(2) {
+                margin-top: 1.5rem;
             }
         }
     }
@@ -449,11 +419,76 @@ $mobile-small: 320px;
     }
 }
 
-@media screen and (max-width: 320px) {
-    #main-nav {
-        h1 {
-            .logo {
-                width: 40px !important;
+// Third Navigation Breakpoints
+@media screen and (max-width: 800px) {
+    #third-nav {
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+
+            .box {
+                margin: 0 !important;
+                width: 100%;
+            }
+        }
+
+        .container:first-child {
+
+            .box:nth-child(2) {
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #third-nav {
+        .container {
+            .link-box {
+                flex-direction: column;
+
+                .link-wrapper {
+                    border: none !important;
+                    margin-bottom: 0.25rem;
+
+                    a {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #third-nav {
+        .container {
+            padding: 0;
+
+            .box {
+                p {
+                    a {
+                        display: inline;
+
+                        .icon {
+                            margin-right: 1rem;
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                padding-top: 1rem;
             }
         }
     }

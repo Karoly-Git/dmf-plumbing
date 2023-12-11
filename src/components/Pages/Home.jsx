@@ -2,11 +2,9 @@
 import React from 'react';
 // Component Imports
 import Services from '../Services';
-import Certificates from '../Certificates';
 import About from '../About';
 import ServiceDetails from '../ServiceDetails';
-// Image Imports
-import boiler from '../../img/services/boiler3.png';
+import { MainSlider } from '../Sliders';
 
 export default function Home() {
     const serviceDetails = [
@@ -14,7 +12,6 @@ export default function Home() {
             isActive: true,
             className: 'round-box',
             title: 'Boiler Servicing and Replacement',
-            img: <img src={boiler} alt="Gas boiler." />,
             details:
                 <>
                     <p className='p-style'>
@@ -31,7 +28,6 @@ export default function Home() {
             isActive: true,
             className: 'diagonal',
             title: '',
-            img: <img src={boiler} alt="Gas boiler." />,
             details:
                 <>
                     <div>
@@ -67,7 +63,6 @@ export default function Home() {
             isActive: true,
             className: 'round-box at-right',
             title: 'Landlord Gas Checks',
-            img: <img src={boiler} alt="Gas boiler." />,
             details:
                 <>
                     <p className='p-style'>
@@ -88,13 +83,14 @@ export default function Home() {
         <div className='page home'>
             <div className='head-container'>
                 <div className='box'>
-                    <div className='content-box'>
+                    <div className='content-box' style={{ width: 'unset', padding: '2rem', justifyContent: 'center' }}>
                         <div>
-                            <h2>Home</h2>
+                            <MainSlider />
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <h1 className='slogan'>
                 Precision in Plumbing, Warmth in Heating,
@@ -113,7 +109,6 @@ export default function Home() {
                 className={serviceDetails[0].className}
                 title={serviceDetails[0].title}
                 details={serviceDetails[0].details}
-                img={serviceDetails[0].img}
             />
 
             <h2 className='slogan'>
@@ -125,7 +120,6 @@ export default function Home() {
                 className={serviceDetails[1].className}
                 title={serviceDetails[1].title}
                 details={serviceDetails[1].details}
-                img={serviceDetails[1].img}
             />
 
             <ServiceDetails
@@ -133,7 +127,6 @@ export default function Home() {
                 className={serviceDetails[2].className}
                 title={serviceDetails[2].title}
                 details={serviceDetails[2].details}
-                img={serviceDetails[2].img}
             />
 
             <h2 className='slogan'>

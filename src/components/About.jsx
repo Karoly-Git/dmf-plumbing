@@ -1,19 +1,9 @@
 // React Imports
 import React from 'react';
-// Image Imports
-import boiler from '../img/services/boiler.jpg';
-import maintrnance from '../img/services/maintenance.jpg';
-import water from '../img/services/water.jpg';
-import logostamp from '../img/services/logostamp.png';
 
 export default function About() {
     const content = [
         {
-            nr: '01',
-            img: {
-                src: water,
-                alt: 'Close-up of clear water with numerous air bubbles floating upwards.'
-            },
             headline: 'Plumbing Services',
             list: <ul>
                 <li>Plumbing</li>
@@ -31,11 +21,6 @@ export default function About() {
             </ul>
         },
         {
-            nr: '02',
-            img: {
-                src: boiler,
-                alt: 'Close-up view of a white electric hot water boiler with indicator lights and control buttons.'
-            },
             headline: 'Experience & Professionalism',
             list: <ul>
                 <li>100% transparent charges</li>
@@ -50,11 +35,6 @@ export default function About() {
 
         },
         {
-            nr: '03',
-            img: {
-                src: maintrnance,
-                alt: 'A collection of plumbing tools spread out on an open blueprint.'
-            },
             headline: 'Recent Feedback',
             list: <ul>
                 <li>Feedback 1</li>

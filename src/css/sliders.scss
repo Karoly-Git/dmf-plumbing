@@ -1,0 +1,48 @@
+$main-slider-width: 80vw;
+
+.main-slider {
+    width: $main-slider-width;
+    margin: 0 auto !important;
+
+    .box {
+        width: $main-slider-width  !important;
+        height: calc(640/1900 * $main-slider-width) !important;
+
+        img {
+            width: 100%;
+        }
+
+        .short {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-slider {
+        .box {
+            height: calc(640/1400 * $main-slider-width) !important;
+
+            .short {
+                display: unset;
+            }
+
+            .long {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .home {
+        .head-container {
+            .box {
+                .content-box {
+                    padding: 2rem 0 !important;
+                }
+            }
+        }
+    }
+}
