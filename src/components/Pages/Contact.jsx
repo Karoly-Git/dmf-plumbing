@@ -3,16 +3,23 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-// Icon Imports
-import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
-
-// Component Imports
-import Certificates from '../Certificates';
-
 // Form Handling Imports
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
+
+// Icon Imports
+import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
+import { FaPhone as PhoneIcon } from "react-icons/fa6";
+import { MdEmail as MailIcon } from "react-icons/md";
+import { MdLocationOn as LocationIcon } from "react-icons/md";
+
+// Data Imports
+import { contacts } from '../../js/contacts';
+
+// Component Imports
+import Available from '../Available';
+
 
 export default function Contact() {
     const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
@@ -94,9 +101,39 @@ export default function Contact() {
                 </div>
             </div>
 
+            <div className='info-box'>
+                <p>For prompt assistance, please contact our office at:</p>
+                <p>
+                    <a className='strong' href={`tel:${contacts.phone}`} rel="noopener noreferrer">
+                        <PhoneIcon className='icon' />
+                        {contacts.phone}
+                    </a>
+                </p>
+
+                <p>If you prefer to reach out via email, you can use the following address:</p>
+                <p>
+                    <a className='strong' href={`mailto:${contacts.email}`} rel="noopener noreferrer">
+                        <MailIcon className='icon' />
+                        <span className='short'>{contacts.email.slice(0, 8)}...</span>
+                        <span className='full'>{contacts.email}</span>
+                    </a>
+                </p>
+
+                <p>You can also visit us at our office located at:</p>
+                <p>
+                    <a className='strong' href={contacts.maps} rel="noopener noreferrer" target='_blank'>
+                        <LocationIcon className='icon' />
+                        {contacts.address.street}, {contacts.address.town}, {contacts.address.county}, {contacts.address.postcode}
+                    </a>
+                </p>
+
+
+                <p>Alternatively, you can use the contact form below to send us a direct email message, and a dedicated member of our team will respond to your inquiry within 24 hours.</p>
+
+                <p>We appreciate your comments and questions and look forward to assisting you.</p>
+            </div>
+
             <form onSubmit={handleSubmit(onSubmit)}>
-
-
                 {errors.providedName && <span><p className='error'>{errors.providedName?.message}</p></span>}
                 <input placeholder="Name*" {...register('providedName')}></input>
 
@@ -110,9 +147,12 @@ export default function Contact() {
                 {errors.providedMessage && <span><p className='error'>{errors.providedMessage?.message}</p></span>}
                 <textarea placeholder="Type your message here*" {...register('providedMessage')}></textarea>
 
-                <button>Submit</button>
-
+                <div>
+                    <button>Submit</button>
+                </div>
             </form>
+
+            <Available />
         </div>
     )
 }

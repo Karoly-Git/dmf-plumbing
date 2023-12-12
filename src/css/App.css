@@ -15,6 +15,13 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .page {
   display: flex;
   flex-direction: column;

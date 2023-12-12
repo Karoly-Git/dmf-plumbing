@@ -5,6 +5,7 @@ import Services from '../Services';
 import About from '../About';
 import ServiceDetails from '../ServiceDetails';
 import { MainSlider } from '../Sliders';
+import Available from '../Available';
 
 export default function Home() {
     const serviceDetails = [
@@ -135,6 +136,8 @@ export default function Home() {
             </h2>
 
             <About />
+
+            <Available />
 
         </div>
     )

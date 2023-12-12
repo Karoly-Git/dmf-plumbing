@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 // Icon Imports
 import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
 // Component Imports
-import Certificates from '../Certificates';
 import Available from '../Available';
 // Data Imports
 import { contacts } from '../../js/contacts';
@@ -112,6 +111,8 @@ export default function Prices() {
 
                 </div>
             </section >
+
+            <Available />
         </div >
     )
 }

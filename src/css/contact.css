@@ -1,27 +1,52 @@
+.contact .short {
+  display: none;
+}
+.contact .info-box,
 .contact form {
+  max-width: 40rem;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 0 0 150px;
+  margin: 0 0 0 9rem;
   padding: 2rem 2rem 0;
+}
+.contact .info-box p {
+  margin-bottom: 1.25rem;
+}
+.contact .info-box p a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 550;
+  color: #276091;
+}
+.contact .info-box p a .icon {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  margin-right: 1rem;
+}
+.contact .info-box p a:hover {
+  color: #bd1900;
+}
+.contact form {
+  max-width: 30rem;
 }
 .contact form input {
   padding: 0.75rem;
   margin-bottom: 2rem;
+  font-size: 1rem;
 }
 .contact form textarea {
   padding: 0.5rem;
   min-height: 5rem;
   margin-bottom: 2rem;
   resize: vertical;
+  font-size: 1rem;
 }
 .contact form button {
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #2D59A2;
-  height: 50px;
-  width: 175px;
+  padding: 0.5rem 2rem;
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -34,18 +59,31 @@
   transition: all 150ms ease-in-out;
 }
 .contact form button:hover {
-  background-color: #F0942B;
+  background-color: #94cc4c;
   color: black;
 }
 .contact form .error {
   margin-bottom: 0.5rem;
   color: red;
 }
+.contact .available .box:nth-child(2) {
+  display: none;
+}
 
-@media screen and (max-width: 768px) {
-  form {
+@media screen and (max-width: 848px) {
+  .info-box,
+form {
+    max-width: 40rem !important;
     width: 100%;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contact .full {
+    display: none;
+  }
+  .contact .short {
+    display: inline;
   }
 }/*# sourceMappingURL=contact.css.map */

@@ -1,27 +1,53 @@
-$color-very-Dark: #272727;
-$color-Dark: #393939;
-$color-Light: #636b75;
-$color-extra-Light: #a0adbe;
-$color-Brown: #bd1900;
-$color-Blue: #2D59A2;
-$color-Green: #94cc4c;
-$color-Orange: #F0942B;
-$color1-Logo: #276091;
-$color2-Logo: #c11b1b;
+// Variable Imports
+@import './variables';
 
 .contact {
 
+    .short {
+        display: none;
+    }
+
+    .info-box,
     form {
+        max-width: 40rem;
         display: flex;
         flex-direction: column;
-        max-width: 400px;
-        //border: 3px solid black;
-        margin: 0 0 0 150px;
+        margin: 0 0 0 9rem;
         padding: 2rem 2rem 0;
+
+    }
+
+    .info-box {
+        p {
+            margin-bottom: 1.25rem;
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 550;
+                color: $color1-Logo;
+
+                .icon {
+                    min-width: 1.5rem;
+                    min-height: 1.5rem;
+                    margin-right: 1rem;
+                }
+
+                &:hover {
+                    color: $color-Brown;
+                }
+            }
+        }
+    }
+
+    form {
+        max-width: 30rem;
 
         input {
             padding: 0.75rem;
             margin-bottom: 2rem;
+            font-size: 1rem;
         }
 
         textarea {
@@ -29,15 +55,14 @@ $color2-Logo: #c11b1b;
             min-height: 5rem;
             margin-bottom: 2rem;
             resize: vertical;
+            font-size: 1rem;
         }
 
         button {
-            display: flex;
             justify-content: center;
             align-items: center;
             background-color: $color-Blue;
-            height: 50px;
-            width: 175px;
+            padding: 0.5rem 2rem;
             text-transform: uppercase;
             text-align: center;
             font-weight: 600;
@@ -50,7 +75,7 @@ $color2-Logo: #c11b1b;
             transition: all 150ms ease-in-out;
 
             &:hover {
-                background-color: $color-Orange;
+                background-color: $color-Green;
                 color: black;
             }
         }
@@ -60,12 +85,34 @@ $color2-Logo: #c11b1b;
             color: red;
         }
     }
+
+    .available {
+        .box:nth-child(2) {
+            display: none;
+        }
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 848px) {
+
+    .info-box,
     form {
+        max-width: 40rem !important;
         width: 100%;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .contact {
+        .full {
+            display: none;
+        }
+
+        .short {
+            display: inline;
+        }
     }
 }

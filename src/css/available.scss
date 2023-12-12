@@ -1,47 +1,5 @@
-$color-very-Dark: #272727;
-$color-Dark: #393939;
-$color-Light: #636b75;
-$color-extra-Light: #a0adbe;
-$color-Brown: #bd1900;
-$color-Blue: #2D59A2;
-$color-Green: #94cc4c;
-$color-Orange: #F0942B;
-$color1-Logo: #276091;
-$color2-Logo: #c11b1b;
-
-$side-nav-radius: 4px;
-// Extra Large Screens, Desktops, and TVs
-$extra-large-2: 4096px;
-$extra-large-1: 3840px;
-
-// Large Screens, Desktops
-$desktop-xxlarge: 2560px;
-$desktop-xlarge: 1920px;
-$desktop-large: 1600px;
-
-// Medium Screens, Desktops
-$desktop-medium: 1440px;
-
-// Screens, Laptops
-$laptop: 1200px;
-$laptop-small: 1366px;
-
-// Medium Tablets
-$tablet-medium-screen: 1024px;
-
-// Large Mobile Devices and Small Tablets
-$tablet-large: 800px;
-$tablet-medium: 768px;
-$tablet-small: 600px;
-
-// Medium Mobile Devices
-$mobile-medium-screen: 480px;
-
-// Small Mobile Devices
-$mobile-xlarge: 414px;
-$mobile-large: 375px;
-$mobile-medium: 360px;
-$mobile-small: 320px;
+// Variable Imports
+@import './variables';
 
 .available {
     background: url('../img/bg-available.jpg') fixed;

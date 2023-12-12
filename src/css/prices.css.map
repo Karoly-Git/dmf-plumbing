@@ -1,1 +1,1 @@
-{"version":3,"sources":["prices.scss","prices.css"],"names":[],"mappings":"AA+CA;EACI,yBAAA;AC9CJ;;ADiDA;EAEQ;IACI,sBAAA;IACA,8BAAA;EC/CV;EDiDU;IACI,oBAAA;EC/Cd;EDkDU;IACI,8BAAA;EChDd;AACF","file":"prices.css"}
+{"version":3,"sources":["prices.scss","prices.css"],"names":[],"mappings":"AAGA;EACI,yBAAA;ACFJ;;ADKA;EAEQ;IACI,sBAAA;IACA,8BAAA;ECHV;EDKU;IACI,oBAAA;ECHd;EDMU;IACI,8BAAA;ECJd;AACF","file":"prices.css"}
