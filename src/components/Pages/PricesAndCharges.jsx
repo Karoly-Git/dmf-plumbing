@@ -1,36 +1,23 @@
 // React Imports
 import React from 'react';
-import { Link } from 'react-router-dom';
-// Icon Imports
-import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
-// Component Imports
-import Available from '../Available';
+
 // Data Imports
 import { contacts } from '../../js/contacts';
 import { netPrices } from '../../js/prices';
 
-export default function Prices() {
-    return (
-        <div className='page prices'>
+// Component Imports
+import Available from '../Available';
+import HeadContainer from '../HeadContainer';
 
-            <div className='head-container'>
-                <div className='box'>
-                    <div className='content-box'>
-                        <div>
-                            <h2>Prices &#38; Charges</h2>
-                            <p>
-                                <Link to={'/'}>Home</Link>
-                                <ArrowIcon className='icon' />
-                                Prices &#38; Charges
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+export default function PricesAndCharges() {
+    return (
+        <div className='page policies-and-pricing'>
+
+            <HeadContainer h2="Prices &#38; Charges" />
 
             <h1 className='slogan'>Transparent Pricing</h1>
 
-            <section className='page-section'>
+            <section>
                 <div className="container">
                     <h3 className='h3-style'>Charges</h3>
                     <p className='p-style'>

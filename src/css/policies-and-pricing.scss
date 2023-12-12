@@ -1,0 +1,102 @@
+// Variable Imports
+@import './variables';
+
+.policies-and-pricing {
+    section {
+        display: flex;
+        justify-content: center;
+
+        .container {
+            width: 80%;
+            max-width: 1100px;
+            padding: 2rem 0;
+
+            h2 {
+                //font-size: 1.3rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                color: $color-Brown;
+            }
+
+            .h3-style {
+                color: $color-Brown  !important;
+            }
+
+
+            p {
+                color: $color-Light;
+                line-height: 1.8;
+                margin-bottom: 1.5rem;
+
+                a {
+                    color: $color-Brown;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+            padding: 1rem 0;
+
+            table {
+                border-collapse: collapse;
+
+                caption {
+                    padding: 1rem;
+                    text-align: center;
+                    color: $color-Brown;
+                    font-weight: 600;
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 1rem;
+                            text-align: center;
+                            border: 1px solid #ccc;
+
+                            h4 {
+                                color: $color-Brown;
+                                font-weight: 600;
+                            }
+                        }
+
+                        &:nth-child(even) {
+                            background-color: #f2f2f2;
+                        }
+                    }
+                }
+            }
+
+            table:nth-child(2) {
+                margin-left: 2rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .policies-and-pricing {
+        .table-container {
+            flex-direction: column;
+            align-items: center !important;
+
+            table {
+                margin: 0 !important;
+            }
+
+            table:first-child {
+                margin-bottom: 1rem !important;
+            }
+        }
+    }
+}

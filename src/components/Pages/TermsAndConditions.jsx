@@ -1,36 +1,26 @@
 // React Imports
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 // Icon Imports
 import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
+
 // Component Imports
 import Available from '../Available';
+import HeadContainer from '../HeadContainer';
+
 // Data Imports
 import { netPrices } from '../../js/prices';
 import { contacts } from '../../js/contacts';
 
-export default function Terms() {
+export default function TermsAndConditions() {
     return (
-        <div className='page terms'>
+        <div className='page policies-and-pricing'>
 
-            <div className='head-container'>
-                <div className='box'>
-                    <div className='content-box'>
-                        <div>
-                            <h2>Terms &#38; Conditions</h2>
-                            <p>
-                                <Link to={'/'}>Home</Link>
-                                <ArrowIcon className='icon' />
-                                Terms &#38; Conditions
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <HeadContainer h2="Terms &#38; Conditions" />
 
             <h1 className='slogan'>Service Agreement and Terms</h1>
 
-            <section className='page-section'>
+            <section>
                 <div className="container">
                     <h3 className='h3-style'>Agreement</h3>
                     <p className='p-style'>

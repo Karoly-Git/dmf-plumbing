@@ -12,16 +12,15 @@
   width: 80%;
   padding: 3rem 0;
 }
-.available .container * {
-  color: white;
-}
 .available .container .box h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: white;
 }
 .available .container .box p {
   font-size: 1.8rem;
   line-height: 2.5rem;
+  color: white;
 }
 .available .container .box:nth-child(1) {
   width: 100%;
@@ -42,6 +41,7 @@
   text-align: center;
   font-weight: 600;
   border-radius: 0.25rem;
+  color: white;
   transition: all 150ms ease-in-out;
 }
 .available .container .box:nth-child(2) a:hover {

@@ -1,6 +1,5 @@
 // React Imports
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 // Form Handling Imports
@@ -9,7 +8,6 @@ import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 // Icon Imports
-import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
 import { FaPhone as PhoneIcon } from "react-icons/fa6";
 import { MdEmail as MailIcon } from "react-icons/md";
 import { MdLocationOn as LocationIcon } from "react-icons/md";
@@ -19,6 +17,7 @@ import { contacts } from '../../js/contacts';
 
 // Component Imports
 import Available from '../Available';
+import HeadContainer from '../HeadContainer';
 
 
 export default function Contact() {
@@ -86,71 +85,61 @@ export default function Contact() {
     return (
         <div className='page contact'>
 
-            <div className='head-container'>
-                <div className='box'>
-                    <div className='content-box'>
-                        <div>
-                            <h2>Contacts</h2>
-                            <p>
-                                <Link to={'/'}>Home</Link>
-                                <ArrowIcon className='icon' />
-                                Contacts
-                            </p>
-                        </div>
+            <HeadContainer h2="Contactss" />
+
+            <div className='form-container'>
+
+                <div className='info-box'>
+                    <p>For prompt assistance, please contact our office at:</p>
+                    <p>
+                        <a className='strong' href={`tel:${contacts.phone}`} rel="noopener noreferrer">
+                            <PhoneIcon className='icon' />
+                            {contacts.phone}
+                        </a>
+                    </p>
+
+                    <p>If you prefer to reach out via email, you can use the following address:</p>
+                    <p>
+                        <a className='strong' href={`mailto:${contacts.email}`} rel="noopener noreferrer">
+                            <MailIcon className='icon' />
+                            <span className='full'>{contacts.email}</span>
+                            <span className='short'>{contacts.email.slice(0, 8)}...</span>
+                        </a>
+                    </p>
+
+                    <p>You can also visit us at our office located at:</p>
+                    <p>
+                        <a className='strong' href={contacts.maps} rel="noopener noreferrer" target='_blank'>
+                            <LocationIcon className='icon' />
+                            {contacts.address.street}, {contacts.address.town}, {contacts.address.county}, {contacts.address.postcode}
+                        </a>
+                    </p>
+
+
+                    <p>Alternatively, you can use the contact form below to send us a direct email message, and a dedicated member of our team will respond to your inquiry within 24 hours.</p>
+
+                    <p>We appreciate your comments and questions and look forward to assisting you.</p>
+                </div>
+
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    {errors.providedName && <span><p className='error'>{errors.providedName?.message}</p></span>}
+                    <input placeholder="Name*" {...register('providedName')}></input>
+
+                    {errors.providedEmail && <span><p className='error'>{errors.providedEmail?.message}</p></span>}
+                    <input placeholder="Email*" {...register('providedEmail')}></input>
+
+                    {errors.providedSubject && <span><p className='error'>{errors.providedSubject?.message}</p></span>}
+                    <input placeholder="Message*" {...register('providedSubject')}></input>
+
+
+                    {errors.providedMessage && <span><p className='error'>{errors.providedMessage?.message}</p></span>}
+                    <textarea placeholder="Type your message here*" {...register('providedMessage')}></textarea>
+
+                    <div>
+                        <button>Submit</button>
                     </div>
-                </div>
+                </form>
             </div>
-
-            <div className='info-box'>
-                <p>For prompt assistance, please contact our office at:</p>
-                <p>
-                    <a className='strong' href={`tel:${contacts.phone}`} rel="noopener noreferrer">
-                        <PhoneIcon className='icon' />
-                        {contacts.phone}
-                    </a>
-                </p>
-
-                <p>If you prefer to reach out via email, you can use the following address:</p>
-                <p>
-                    <a className='strong' href={`mailto:${contacts.email}`} rel="noopener noreferrer">
-                        <MailIcon className='icon' />
-                        <span className='short'>{contacts.email.slice(0, 8)}...</span>
-                        <span className='full'>{contacts.email}</span>
-                    </a>
-                </p>
-
-                <p>You can also visit us at our office located at:</p>
-                <p>
-                    <a className='strong' href={contacts.maps} rel="noopener noreferrer" target='_blank'>
-                        <LocationIcon className='icon' />
-                        {contacts.address.street}, {contacts.address.town}, {contacts.address.county}, {contacts.address.postcode}
-                    </a>
-                </p>
-
-
-                <p>Alternatively, you can use the contact form below to send us a direct email message, and a dedicated member of our team will respond to your inquiry within 24 hours.</p>
-
-                <p>We appreciate your comments and questions and look forward to assisting you.</p>
-            </div>
-
-            <form onSubmit={handleSubmit(onSubmit)}>
-                {errors.providedName && <span><p className='error'>{errors.providedName?.message}</p></span>}
-                <input placeholder="Name*" {...register('providedName')}></input>
-
-                {errors.providedEmail && <span><p className='error'>{errors.providedEmail?.message}</p></span>}
-                <input placeholder="Email*" {...register('providedEmail')}></input>
-
-                {errors.providedSubject && <span><p className='error'>{errors.providedSubject?.message}</p></span>}
-                <input placeholder="Message*" {...register('providedSubject')}></input>
-
-
-                {errors.providedMessage && <span><p className='error'>{errors.providedMessage?.message}</p></span>}
-                <textarea placeholder="Type your message here*" {...register('providedMessage')}></textarea>
-
-                <div>
-                    <button>Submit</button>
-                </div>
-            </form>
 
             <Available />
         </div>

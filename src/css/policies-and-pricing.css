@@ -1,0 +1,73 @@
+.policies-and-pricing section {
+  display: flex;
+  justify-content: center;
+}
+.policies-and-pricing section .container {
+  width: 80%;
+  max-width: 1100px;
+  padding: 2rem 0;
+}
+.policies-and-pricing section .container h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #bd1900;
+}
+.policies-and-pricing section .container .h3-style {
+  color: #bd1900 !important;
+}
+.policies-and-pricing section .container p {
+  color: #636b75;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+.policies-and-pricing section .container p a {
+  color: #bd1900;
+  text-decoration: none;
+}
+.policies-and-pricing section .container p a:hover {
+  text-decoration: underline;
+}
+.policies-and-pricing section .table-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  padding: 1rem 0;
+}
+.policies-and-pricing section .table-container table {
+  border-collapse: collapse;
+}
+.policies-and-pricing section .table-container table caption {
+  padding: 1rem;
+  text-align: center;
+  color: #bd1900;
+  font-weight: 600;
+}
+.policies-and-pricing section .table-container table tbody tr td {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.policies-and-pricing section .table-container table tbody tr td h4 {
+  color: #bd1900;
+  font-weight: 600;
+}
+.policies-and-pricing section .table-container table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.policies-and-pricing section .table-container table:nth-child(2) {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .policies-and-pricing .table-container {
+    flex-direction: column;
+    align-items: center !important;
+  }
+  .policies-and-pricing .table-container table {
+    margin: 0 !important;
+  }
+  .policies-and-pricing .table-container table:first-child {
+    margin-bottom: 1rem !important;
+  }
+}/*# sourceMappingURL=policies-and-pricing.css.map */

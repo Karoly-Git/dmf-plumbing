@@ -3,88 +3,96 @@
 
 .contact {
 
-    .short {
-        display: none;
-    }
+    .form-container {
+        width: 80%;
+        max-width: 1100px;
+        padding: 3rem 1rem 0;
+        margin: 0 auto;
 
-    .info-box,
-    form {
-        max-width: 40rem;
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 0 9rem;
-        padding: 2rem 2rem 0;
+        .info-box,
+        form {
+            display: flex;
+            flex-direction: column;
+        }
 
-    }
+        .info-box {
+            margin-bottom: 4rem;
+            max-width: 40rem;
 
-    .info-box {
-        p {
-            margin-bottom: 1.25rem;
+            p {
+                margin-bottom: 1.25rem;
 
-            a {
-                display: inline-flex;
-                align-items: center;
-                text-decoration: none;
-                font-weight: 550;
-                color: $color1-Logo;
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    text-decoration: none;
+                    font-weight: 550;
+                    color: $color1-Logo;
 
-                .icon {
-                    min-width: 1.5rem;
-                    min-height: 1.5rem;
-                    margin-right: 1rem;
+                    .icon {
+                        min-width: 1.5rem;
+                        min-height: 1.5rem;
+                        margin-right: 1rem;
+                    }
+
+                    .short {
+                        display: none;
+                    }
+
+
+                    &:hover {
+                        color: $color-Brown;
+                    }
                 }
+            }
+        }
+
+        form {
+            max-width: 30rem;
+
+            input {
+                padding: 0.75rem;
+                margin-bottom: 2rem;
+                font-size: 1rem;
+            }
+
+            textarea {
+                padding: 0.5rem;
+                min-height: 5rem;
+                margin-bottom: 2rem;
+                resize: vertical;
+                font-size: 1rem;
+            }
+
+            button {
+                justify-content: center;
+                align-items: center;
+                background-color: $color-Blue;
+                padding: 0.5rem 2rem;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                font-size: 1rem;
+                color: white;
+                border-radius: 0.25rem;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                transition: all 150ms ease-in-out;
 
                 &:hover {
-                    color: $color-Brown;
+                    background-color: $color-Green;
+                    color: black;
                 }
             }
-        }
-    }
 
-    form {
-        max-width: 30rem;
-
-        input {
-            padding: 0.75rem;
-            margin-bottom: 2rem;
-            font-size: 1rem;
-        }
-
-        textarea {
-            padding: 0.5rem;
-            min-height: 5rem;
-            margin-bottom: 2rem;
-            resize: vertical;
-            font-size: 1rem;
-        }
-
-        button {
-            justify-content: center;
-            align-items: center;
-            background-color: $color-Blue;
-            padding: 0.5rem 2rem;
-            text-transform: uppercase;
-            text-align: center;
-            font-weight: 600;
-            font-size: 1rem;
-            color: white;
-            border-radius: 0.25rem;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            transition: all 150ms ease-in-out;
-
-            &:hover {
-                background-color: $color-Green;
-                color: black;
+            .error {
+                margin-bottom: 0.5rem;
+                color: red;
             }
         }
-
-        .error {
-            margin-bottom: 0.5rem;
-            color: red;
-        }
     }
+
 
     .available {
         .box:nth-child(2) {
@@ -93,26 +101,26 @@
     }
 }
 
-@media screen and (max-width: 848px) {
+@media screen and (max-width: 600px) {
 
-    .info-box,
-    form {
-        max-width: 40rem !important;
-        width: 100%;
-        margin-left: auto !important;
-        margin-right: auto !important;
+    .contact {
+        .form-container {
+            width: 100%;
+
+            .info-box,
+            form {
+                max-width: unset;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
+    .full {
+        display: none;
+    }
 
-    .contact {
-        .full {
-            display: none;
-        }
-
-        .short {
-            display: inline;
-        }
+    .short {
+        display: inline !important;
     }
 }

@@ -1,48 +1,55 @@
-.contact .short {
-  display: none;
+.contact .form-container {
+  width: 80%;
+  max-width: 1100px;
+  padding: 3rem 1rem 0;
+  margin: 0 auto;
 }
-.contact .info-box,
-.contact form {
-  max-width: 40rem;
+.contact .form-container .info-box,
+.contact .form-container form {
   display: flex;
   flex-direction: column;
-  margin: 0 0 0 9rem;
-  padding: 2rem 2rem 0;
 }
-.contact .info-box p {
+.contact .form-container .info-box {
+  margin-bottom: 4rem;
+  max-width: 40rem;
+}
+.contact .form-container .info-box p {
   margin-bottom: 1.25rem;
 }
-.contact .info-box p a {
+.contact .form-container .info-box p a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   font-weight: 550;
   color: #276091;
 }
-.contact .info-box p a .icon {
+.contact .form-container .info-box p a .icon {
   min-width: 1.5rem;
   min-height: 1.5rem;
   margin-right: 1rem;
 }
-.contact .info-box p a:hover {
+.contact .form-container .info-box p a .short {
+  display: none;
+}
+.contact .form-container .info-box p a:hover {
   color: #bd1900;
 }
-.contact form {
+.contact .form-container form {
   max-width: 30rem;
 }
-.contact form input {
+.contact .form-container form input {
   padding: 0.75rem;
   margin-bottom: 2rem;
   font-size: 1rem;
 }
-.contact form textarea {
+.contact .form-container form textarea {
   padding: 0.5rem;
   min-height: 5rem;
   margin-bottom: 2rem;
   resize: vertical;
   font-size: 1rem;
 }
-.contact form button {
+.contact .form-container form button {
   justify-content: center;
   align-items: center;
   background-color: #2D59A2;
@@ -58,11 +65,11 @@
   outline: none;
   transition: all 150ms ease-in-out;
 }
-.contact form button:hover {
+.contact .form-container form button:hover {
   background-color: #94cc4c;
   color: black;
 }
-.contact form .error {
+.contact .form-container form .error {
   margin-bottom: 0.5rem;
   color: red;
 }
@@ -70,20 +77,20 @@
   display: none;
 }
 
-@media screen and (max-width: 848px) {
-  .info-box,
-form {
-    max-width: 40rem !important;
+@media screen and (max-width: 600px) {
+  .contact .form-container {
     width: 100%;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  }
+  .contact .form-container .info-box,
+.contact .form-container form {
+    max-width: unset;
   }
 }
 @media screen and (max-width: 480px) {
-  .contact .full {
+  .full {
     display: none;
   }
-  .contact .short {
-    display: inline;
+  .short {
+    display: inline !important;
   }
 }/*# sourceMappingURL=contact.css.map */

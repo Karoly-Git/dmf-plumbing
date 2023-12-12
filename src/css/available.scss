@@ -9,26 +9,23 @@
     display: flex;
     justify-content: center;
     margin: 2rem 0;
-    //overflow: hidden;
 
     .container {
         display: flex;
         width: 80%;
         padding: 3rem 0;
 
-        * {
-            color: white;
-        }
-
         .box {
             h2 {
                 font-size: 3rem;
                 margin-bottom: 1rem;
+                color: white;
             }
 
             p {
                 font-size: 1.8rem;
                 line-height: 2.5rem;
+                color: white;
             }
         }
 
@@ -52,6 +49,7 @@
                 text-align: center;
                 font-weight: 600;
                 border-radius: 0.25rem;
+                color: white;
                 transition: all 150ms ease-in-out;
 
                 &:hover {

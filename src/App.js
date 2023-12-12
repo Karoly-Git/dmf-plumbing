@@ -1,17 +1,21 @@
 // React Imports
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 // Page Imports
 import Contact from './components/Pages/Contact';
 import Home from './components/Pages/Home';
-import Prices from './components/Pages/Prices';
-import Terms from './components/Pages/Terms';
+import PricesAndCharges from './components/Pages/PricesAndCharges';
+import TermsAndConditions from './components/Pages/TermsAndConditions';
+
 // Component Imports
 import { MainNavigation, SecNavigation, ThirdNavigation, SideNavigation } from './components/Navigations';
 import Certificates from './components/Certificates';
 import Available from './components/Available';
+
 // Style Import
 import './css/App.css';
+
 // Image Imports
 import cookie from './img/cookie.png';
 
@@ -34,8 +38,8 @@ export default function App() {
           <Routes>
             <Route path='*' element={<div>Requested Page Not Found</div>} />
             <Route path='/' element={<Home />} />
-            <Route path='/prices-and-charges' element={<Prices />} />
-            <Route path='/terms-and-conditions' element={<Terms />} />
+            <Route path='/prices-and-charges' element={<PricesAndCharges />} />
+            <Route path='/terms-and-conditions' element={<TermsAndConditions />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
         </main>
