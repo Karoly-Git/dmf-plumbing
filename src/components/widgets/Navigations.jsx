@@ -1,6 +1,7 @@
 // React Imports
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+
 // Icon Imports
 import { FaFacebookF as FacebookIcon, FaTwitter as TwitterIcon } from "react-icons/fa";
 import { FaPhone as PhoneIcon } from "react-icons/fa6";
@@ -8,10 +9,12 @@ import { MdEmail as MailIcon } from "react-icons/md";
 import { LiaHandPointUp as PointerIcon } from "react-icons/lia";
 import { FaArrowDown as ArrowIcon } from "react-icons/fa6";
 import { ImMobile as MobileIcon } from "react-icons/im";
+
 // Image Imports
-import logo from '../img/logo.png';
+import logo from '../../img/logo.png';
+
 // Data Imports
-import { contacts } from '../js/contacts';
+import { contacts } from '../../js/contacts';
 
 export function MainNavigation() {
     const navLinks = [

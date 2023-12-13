@@ -4,13 +4,13 @@ import React from 'react';
 // Icon Imports
 import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
 
-// Component Imports
-import Available from '../Available';
-import HeadContainer from '../HeadContainer';
-
 // Data Imports
 import { netPrices } from '../../js/prices';
 import { contacts } from '../../js/contacts';
+
+// Component Imports
+import Available from '../widgets/Available';
+import HeadContainer from '../widgets/HeadContainer';
 
 export default function TermsAndConditions() {
     return (

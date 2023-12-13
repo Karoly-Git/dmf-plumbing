@@ -2,11 +2,11 @@
 import React from 'react';
 
 // Component Imports
-import Services from '../Services';
-import About from '../About';
-import ServiceDetails from '../ServiceDetails';
-import { MainSlider } from '../Sliders';
-import Available from '../Available';
+import Services from '../widgets/Services';
+import About from '../widgets/About';
+import ServiceDetails from '../widgets/ServiceDetails';
+import { MainSlider } from '../widgets/Sliders';
+import Available from '../widgets/Available';
 
 export default function Home() {
     const serviceDetails = [

@@ -16,8 +16,8 @@ import { MdLocationOn as LocationIcon } from "react-icons/md";
 import { contacts } from '../../js/contacts';
 
 // Component Imports
-import Available from '../Available';
-import HeadContainer from '../HeadContainer';
+import Available from '../widgets/Available';
+import HeadContainer from '../widgets/HeadContainer';
 
 
 export default function Contact() {

@@ -6,8 +6,8 @@ import { contacts } from '../../js/contacts';
 import { netPrices } from '../../js/prices';
 
 // Component Imports
-import Available from '../Available';
-import HeadContainer from '../HeadContainer';
+import Available from '../widgets/Available';
+import HeadContainer from '../widgets/HeadContainer';
 
 export default function PricesAndCharges() {
     return (

@@ -3,16 +3,17 @@ import React from "react";
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-// Image Imports
-import slide01 from "../img/sliders/main-slider/slide_01.jpg";
-import slide03 from "../img/sliders/main-slider/slide_03.jpg";
-import slide05 from "../img/sliders/main-slider/slide_05.jpg";
-import even from "../img/sliders/main-slider/even.jpg";
 
-import slide01cut from "../img/sliders/main-slider/slide_01-cut.jpg";
-import slide03cut from "../img/sliders/main-slider/slide_03-cut.jpg";
-import slide05cut from "../img/sliders/main-slider/slide_05-cut.jpg";
-import evencut from "../img/sliders/main-slider/even-cut.jpg";
+// Image Imports
+import slide01 from "../../img/sliders/main-slider/slide_01.jpg";
+import slide03 from "../../img/sliders/main-slider/slide_03.jpg";
+import slide05 from "../../img/sliders/main-slider/slide_05.jpg";
+import even from "../../img/sliders/main-slider/even.jpg";
+
+import slide01cut from "../../img/sliders/main-slider/slide_01-cut.jpg";
+import slide03cut from "../../img/sliders/main-slider/slide_03-cut.jpg";
+import slide05cut from "../../img/sliders/main-slider/slide_05-cut.jpg";
+import evencut from "../../img/sliders/main-slider/even-cut.jpg";
 
 export function MainSlider() {
 
