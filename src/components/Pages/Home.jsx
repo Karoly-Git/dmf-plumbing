@@ -7,6 +7,7 @@ import About from '../widgets/About';
 import ServiceDetails from '../widgets/ServiceDetails';
 import { MainSlider } from '../widgets/Sliders';
 import Available from '../widgets/Available';
+import SloganContainer from '../widgets/SloganContainer';
 
 export default function Home() {
     const serviceDetails = [
@@ -93,50 +94,40 @@ export default function Home() {
                 </div>
             </div>
 
+            <SloganContainer h1="Precision in Plumbing, Warmth in Heating, Excellence in Boiler Solutions" />
 
-            <h1 className='slogan'>
-                Precision in Plumbing, Warmth in Heating,
-                Excellence in Boiler Solutions
-            </h1>
+            <div className="wrapper">
+                <Services />
 
-            <Services />
+                <SloganContainer h2="Legal and Safe Services for Your Home" />
 
-            <h2 className='slogan'>
-                Legal and Safe Services for Your Home
-            </h2>
+                <ServiceDetails
+                    key={serviceDetails[0].slogan}
+                    className={serviceDetails[0].className}
+                    title={serviceDetails[0].title}
+                    details={serviceDetails[0].details}
+                />
 
+                <SloganContainer h2="Gas Safe Registered Heating Engineers and Gas Fitters" />
 
-            <ServiceDetails
-                key={serviceDetails[0].slogan}
-                className={serviceDetails[0].className}
-                title={serviceDetails[0].title}
-                details={serviceDetails[0].details}
-            />
+                <ServiceDetails
+                    key={serviceDetails[1].slogan}
+                    className={serviceDetails[1].className}
+                    title={serviceDetails[1].title}
+                    details={serviceDetails[1].details}
+                />
 
-            <h2 className='slogan'>
-                Gas Safe Registered Heating Engineers and Gas Fitters
-            </h2>
+                <ServiceDetails
+                    key={serviceDetails[2].slogan}
+                    className={serviceDetails[2].className}
+                    title={serviceDetails[2].title}
+                    details={serviceDetails[2].details}
+                />
 
-            <ServiceDetails
-                key={serviceDetails[1].slogan}
-                className={serviceDetails[1].className}
-                title={serviceDetails[1].title}
-                details={serviceDetails[1].details}
-            />
+                <SloganContainer h2="No call-out charge, 100% transparency" />
 
-            <ServiceDetails
-                key={serviceDetails[2].slogan}
-                className={serviceDetails[2].className}
-                title={serviceDetails[2].title}
-                details={serviceDetails[2].details}
-            />
-
-            <h2 className='slogan'>
-                No call-out charge,
-                100% transparency
-            </h2>
-
-            <About />
+                <About />
+            </div>
 
             <Available />
 

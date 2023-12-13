@@ -7,10 +7,15 @@
 }
 
 a {
+  color: #bd1900;
+  text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 .h2-style {
@@ -39,11 +44,22 @@ a {
 
 .p-style {
   letter-spacing: 1px;
-  line-height: 1.35rem;
-  width: 100%;
+  line-height: 1.7;
+}
+.p-style:not(.p-style:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .page {
   display: flex;
   flex-direction: column;
+}
+.page .wrapper {
+  padding: 0 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .page .wrapper {
+    padding: 0 1rem;
+  }
 }/*# sourceMappingURL=reset.css.map */

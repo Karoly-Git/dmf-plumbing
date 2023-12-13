@@ -8,7 +8,8 @@
 .services .container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
+  max-width: 1000px;
 }
 .services .container .box {
   display: flex;
@@ -62,9 +63,8 @@
     margin-bottom: 4rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .services {
-    padding: 0.5rem;
     margin: 1rem 0;
   }
   .services .container {

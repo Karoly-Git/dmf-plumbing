@@ -6,11 +6,10 @@
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+  padding: 2rem;
 }
 .available .container {
   display: flex;
-  width: 80%;
-  padding: 3rem 0;
 }
 .available .container .box h2 {
   font-size: 3rem;
@@ -49,15 +48,6 @@
   color: #272727 !important;
 }
 
-@media screen and (max-width: 1024px) {
-  .available h2 {
-    font-size: 2rem !important;
-  }
-  .available p {
-    font-size: 1.5rem !important;
-    line-height: 2.15rem !important;
-  }
-}
 @media screen and (max-width: 768px) {
   .available .container {
     flex-direction: column;
@@ -66,5 +56,19 @@
     justify-content: flex-start;
     width: unset;
     margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .available {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .available h2 {
+    font-size: 2rem !important;
+  }
+  .available p {
+    font-size: 1.5rem !important;
+    line-height: 2.15rem !important;
   }
 }/*# sourceMappingURL=available.css.map */

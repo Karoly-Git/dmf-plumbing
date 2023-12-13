@@ -10,7 +10,7 @@
         justify-content: space-between;
         width: 80%;
         max-width: 1100px;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }
 
@@ -307,7 +307,7 @@
             align-items: center;
 
             .box:nth-child(2) {
-                margin-top: 1.5rem;
+                margin-top: 1rem;
             }
         }
     }
@@ -317,6 +317,21 @@
     #main-nav {
         .container {
             width: 100% !important;
+
+            /*.box:nth-child(2) {
+                flex-direction: column;
+
+                a:not(a:last-child) {
+                    margin-bottom: 0.75rem !important;
+                }
+            }*/
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #main-nav {
+        .container {
 
             .box:nth-child(2) {
                 flex-direction: column;
@@ -340,6 +355,14 @@
 }
 
 // Sec Navigation Breakpoints
+@media screen and (max-width: 800px) {
+    #sec-nav {
+        .container {
+            width: 100%;
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     #sec-nav {
         .container {

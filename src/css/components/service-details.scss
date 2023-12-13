@@ -4,9 +4,12 @@
 .round-box {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    min-width: 80%;
+    max-width: 800px;
     margin: 2rem 0;
     padding: 4rem 0;
+    position: relative;
+    left: -2rem;
     border-radius: 0 2000px 2000px 0;
     background-color: $color-Blue;
     background: -webkit-radial-gradient(circle, $color-Blue, #122A53);
@@ -38,9 +41,10 @@
 }
 
 .at-right {
+    left: 2rem;
     align-items: flex-end; //
-    margin: 2rem 0;
-    align-self: flex-end;
+    border: 3px solid black;
+    margin: 5rem 0 5rem auto;
     border-radius: 2000px 0 0 2000px; //
     background-color: $color-Brown; //
     background: -webkit-radial-gradient(circle, $color-Brown, #122A53);
@@ -77,11 +81,11 @@
 
         .box {
             display: flex;
-            justify-content: center;
-            width: calc(80% + 2rem);
+            justify-content: space-between;
+            max-width: 1200px;
 
-            p {
-                padding: 1rem;
+            div {
+                width: 30%;
             }
         }
     }
@@ -92,6 +96,16 @@
         .container {
             .box {
                 flex-direction: column;
+
+                div {
+                    width: 100%;
+                    max-width: 800px;
+                    //background-color: red;
+
+                    &:not(&:last-child) {
+                        margin-bottom: 3rem;
+                    }
+                }
             }
         }
     }
@@ -99,7 +113,9 @@
 
 @media screen and (max-width: 800px) {
     .round-box {
-        width: 100%;
+        //position: fixed;
+        //left: 0;
+        width: calc(100% + 4rem);
         border-radius: 0;
 
         .container {
@@ -108,6 +124,11 @@
             width: 100%;
             padding: 0 1rem;
         }
+
+    }
+
+    .at-right {
+        left: -2rem !important;
     }
 
     .diagonal {
@@ -117,5 +138,17 @@
                 font-size: 1.75rem;
             }
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .round-box {
+        //position: fixed;
+        left: -1rem;
+        width: calc(100% + 2rem);
+    }
+
+    .at-right {
+        left: -1rem !important;
     }
 }

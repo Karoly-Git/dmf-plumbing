@@ -1,55 +1,54 @@
-.contact .form-container {
-  width: 80%;
-  max-width: 1100px;
-  padding: 3rem 1rem 0;
+.contact .wrapper .form-container {
+  max-width: 1000px;
+  padding: 3rem 0 0;
   margin: 0 auto;
 }
-.contact .form-container .info-box,
-.contact .form-container form {
+.contact .wrapper .form-container .info-box,
+.contact .wrapper .form-container form {
   display: flex;
   flex-direction: column;
 }
-.contact .form-container .info-box {
+.contact .wrapper .form-container .info-box {
   margin-bottom: 4rem;
   max-width: 40rem;
 }
-.contact .form-container .info-box p {
+.contact .wrapper .form-container .info-box p {
   margin-bottom: 1.25rem;
 }
-.contact .form-container .info-box p a {
+.contact .wrapper .form-container .info-box p a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
   font-weight: 550;
   color: #276091;
 }
-.contact .form-container .info-box p a .icon {
+.contact .wrapper .form-container .info-box p a .icon {
   min-width: 1.5rem;
   min-height: 1.5rem;
   margin-right: 1rem;
 }
-.contact .form-container .info-box p a .short {
+.contact .wrapper .form-container .info-box p a .short {
   display: none;
 }
-.contact .form-container .info-box p a:hover {
+.contact .wrapper .form-container .info-box p a:hover {
   color: #bd1900;
 }
-.contact .form-container form {
+.contact .wrapper .form-container form {
   max-width: 30rem;
 }
-.contact .form-container form input {
+.contact .wrapper .form-container form input {
   padding: 0.75rem;
   margin-bottom: 2rem;
   font-size: 1rem;
 }
-.contact .form-container form textarea {
+.contact .wrapper .form-container form textarea {
   padding: 0.5rem;
   min-height: 5rem;
   margin-bottom: 2rem;
   resize: vertical;
   font-size: 1rem;
 }
-.contact .form-container form button {
+.contact .wrapper .form-container form button {
   justify-content: center;
   align-items: center;
   background-color: #2D59A2;
@@ -65,32 +64,32 @@
   outline: none;
   transition: all 150ms ease-in-out;
 }
-.contact .form-container form button:hover {
+.contact .wrapper .form-container form button:hover {
   background-color: #94cc4c;
   color: black;
 }
-.contact .form-container form .error {
+.contact .wrapper .form-container form .error {
   margin-bottom: 0.5rem;
   color: red;
 }
 .contact .available .box:nth-child(2) {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 600px) {
-  .contact .form-container {
+  .contact .wrapper .form-container {
     width: 100%;
   }
-  .contact .form-container .info-box,
-.contact .form-container form {
+  .contact .wrapper .form-container .info-box,
+.contact .wrapper .form-container form {
     max-width: unset;
   }
 }
 @media screen and (max-width: 480px) {
-  .full {
+  .full-email {
     display: none;
   }
-  .short {
+  .short-email {
     display: inline !important;
   }
 }/*# sourceMappingURL=contact.css.map */

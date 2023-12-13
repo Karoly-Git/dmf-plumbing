@@ -1,9 +1,12 @@
 .round-box {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  min-width: 80%;
+  max-width: 800px;
   margin: 2rem 0;
   padding: 4rem 0;
+  position: relative;
+  left: -2rem;
   border-radius: 0 2000px 2000px 0;
   background-color: #2D59A2;
   background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
@@ -29,9 +32,10 @@
 }
 
 .at-right {
+  left: 2rem;
   align-items: flex-end;
-  margin: 2rem 0;
-  align-self: flex-end;
+  border: 3px solid black;
+  margin: 5rem 0 5rem auto;
   border-radius: 2000px 0 0 2000px;
   background-color: #bd1900;
   background: -webkit-radial-gradient(circle, #bd1900, #122A53);
@@ -65,21 +69,28 @@
 }
 .diagonal .container .box {
   display: flex;
-  justify-content: center;
-  width: calc(80% + 2rem);
+  justify-content: space-between;
+  max-width: 1200px;
 }
-.diagonal .container .box p {
-  padding: 1rem;
+.diagonal .container .box div {
+  width: 30%;
 }
 
 @media screen and (max-width: 1024px) {
   .diagonal .container .box {
     flex-direction: column;
   }
+  .diagonal .container .box div {
+    width: 100%;
+    max-width: 800px;
+  }
+  .diagonal .container .box div:not(.diagonal .container .box div:last-child) {
+    margin-bottom: 3rem;
+  }
 }
 @media screen and (max-width: 800px) {
   .round-box {
-    width: 100%;
+    width: calc(100% + 4rem);
     border-radius: 0;
   }
   .round-box .container {
@@ -88,8 +99,20 @@
     width: 100%;
     padding: 0 1rem;
   }
+  .at-right {
+    left: -2rem !important;
+  }
   .diagonal .container .title {
     width: 100%;
     font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .round-box {
+    left: -1rem;
+    width: calc(100% + 2rem);
+  }
+  .at-right {
+    left: -1rem !important;
   }
 }/*# sourceMappingURL=service-details.css.map */

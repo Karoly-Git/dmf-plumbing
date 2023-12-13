@@ -38,7 +38,6 @@ export default function Services() {
     return (
         <section className='services'>
             <div className='container'>
-                <h2 className='h2-style'>Services</h2>
                 <div className='box'>
                     {content.map((element) =>
                         <div

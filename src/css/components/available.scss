@@ -9,11 +9,10 @@
     display: flex;
     justify-content: center;
     margin: 2rem 0;
+    padding: 2rem;
 
     .container {
         display: flex;
-        width: 80%;
-        padding: 3rem 0;
 
         .box {
             h2 {
@@ -61,20 +60,7 @@
     }
 }
 
-@media screen and (max-width: $tablet-medium-screen) {
-    .available {
-        h2 {
-            font-size: 2rem !important;
-        }
-
-        p {
-            font-size: 1.5rem !important;
-            line-height: 2.15rem !important;
-        }
-    }
-}
-
-@media screen and (max-width: $tablet-medium) {
+@media screen and (max-width: 768px) {
     .available {
         .container {
             flex-direction: column;
@@ -84,6 +70,25 @@
                 width: unset;
                 margin-top: 2rem;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .available {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .available {
+        h2 {
+            font-size: 2rem !important;
+        }
+
+        p {
+            font-size: 1.5rem !important;
+            line-height: 2.15rem !important;
         }
     }
 }
