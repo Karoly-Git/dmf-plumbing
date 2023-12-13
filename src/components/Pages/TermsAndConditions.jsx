@@ -1,9 +1,6 @@
 // React Imports
 import React from 'react';
 
-// Icon Imports
-import { IoIosArrowRoundForward as ArrowIcon } from "react-icons/io";
-
 // Data Imports
 import { netPrices } from '../../js/prices';
 import { contacts } from '../../js/contacts';
