@@ -1,0 +1,51 @@
+// Font Imports
+@import './fonts';
+
+// Variable Imports
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    user-select: none;
+}
+
+.h2-style {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 550;
+    color: $color-Brown;
+    width: 100%;
+    max-width: 500px;
+}
+
+.h3-style {
+    color: $color-Dark;
+    font-weight: 550;
+    padding: 0 0 1rem;
+}
+
+.h3-img-caption {
+    padding: 0.75rem 1rem;
+    margin-bottom: -4rem;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 10;
+}
+
+.p-style {
+    letter-spacing: 1px;
+    line-height: 1.35rem;
+    width: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+}

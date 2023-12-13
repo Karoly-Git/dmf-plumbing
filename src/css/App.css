@@ -1,11 +1,13 @@
-@import './reset.css';
-@import 'contact.css';
-@import 'home.css';
-@import 'policies-and-pricing.css';
-@import 'navigations.css';
-@import 'cookies.css';
-@import 'available.css';
-@import 'certs.css';
-@import 'sliders.css';
-@import 'services.css';
-@import 'service-details.css';/*# sourceMappingURL=App.css.map */
+@import './assets/reset.css';
+@import './pages/contact.css';
+@import './pages/home.css';
+@import './pages/policies-and-pricing.css';
+@import './components/navigations.css';
+@import './components/cookies.css';
+@import './components/available.css';
+@import './components/certs.css';
+@import './components/sliders.css';
+@import './components/services.css';
+@import './components/service-details.css';
+@import './components/head-container.css';
+@import './components/slogan.css';/*# sourceMappingURL=App.css.map */

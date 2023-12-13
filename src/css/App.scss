@@ -1,20 +1,21 @@
-// Variable Imports
-@import './variables';
+// Variables Import
+@import './assets/variables';
 
-// Reset Imports
-@import './reset.css';
-
+// Reset Import
+@import './assets/reset.css';
 
 // Page Style Imports
-@import 'contact.css';
-@import 'home.css';
-@import 'policies-and-pricing.css';
+@import './pages/contact.css';
+@import './pages/home.css';
+@import './pages/policies-and-pricing.css';
 
 // Component Style Imports
-@import 'navigations.css';
-@import 'cookies.css';
-@import 'available.css';
-@import 'certs.css';
-@import 'sliders.css';
-@import 'services.css';
-@import 'service-details.css';
+@import './components/navigations.css';
+@import './components/cookies.css';
+@import './components/available.css';
+@import './components/certs.css';
+@import './components/sliders.css';
+@import './components/services.css';
+@import './components/service-details.css';
+@import './components/head-container.css';
+@import './components/slogan.css';

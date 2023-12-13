@@ -1,8 +1,8 @@
 // Variable Imports
-@import './variables';
+@import '../assets/variables';
 
 .available {
-    background: url('../img/bg-available.jpg') fixed;
+    background: url('../../img/bg-available.jpg') fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

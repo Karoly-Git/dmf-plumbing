@@ -1,7 +1,7 @@
 // React Imports
 import React from 'react';
 // Image Imports
-import boiler from '../img/services/boiler.jpg';
+import boiler from '../img/services/boiler2.png';
 import maintrnance from '../img/services/maintenance.jpg';
 import plumbing from '../img/services/plumbing.jpg';
 import logostamp from '../img/services/logostamp.png';

@@ -88,4 +88,8 @@
     width: 100%;
     padding: 0 1rem;
   }
+  .diagonal .container .title {
+    width: 100%;
+    font-size: 1.75rem;
+  }
 }/*# sourceMappingURL=service-details.css.map */
