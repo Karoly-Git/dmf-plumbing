@@ -43,7 +43,7 @@ export default function Services() {
                         <div
                             key={element.headline}
                             className='card'>
-                            <h3 className='h3-style h3-img-caption'>{element.headline}</h3>
+                            <h3 className='h3-style img-caption'>{element.headline}</h3>
                             <img className='main-img' src={element.img.src} alt={element.img.alt}></img>
                             <img className='logo-stamp-img' src={logostamp} alt=""></img>
                             <p className='p-style'>{element.paragraph}</p>

@@ -1,6 +1,7 @@
 .head-container {
   color: white;
   font-weight: 600;
+  margin-bottom: 2rem;
 }
 .head-container .box {
   display: flex;
