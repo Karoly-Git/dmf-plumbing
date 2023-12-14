@@ -75,6 +75,9 @@
 .diagonal .container .box div {
   width: 30%;
 }
+.diagonal .container .box div p ul {
+  list-style: none;
+}
 
 @media screen and (max-width: 1024px) {
   .diagonal .container .box {

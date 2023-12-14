@@ -80,6 +80,77 @@ export default function Home() {
                     </p>
                 </>,
         },
+        {
+            isActive: true,
+            className: 'diagonal',
+            title: '',
+            details:
+                <>
+                    <div>
+                        <h3 className='h3-style'>Plumbing Services</h3>
+                        <p className='p-style'>
+                            Welcome to our Plumbing Services where we offer a
+                            comprehensive range of solutions to meet all your plumbing
+                            and heating needs. Whether you require assistance with
+                            plumbing, heating, boilers, drainage, gas services,
+                            maintenance, or commercial installations, our certified
+                            experts are here to provide top-notch services without any
+                            call-out rates. From new installations to gas inspections and
+                            beyond, we've got you covered. Explore our offerings and
+                            experience unmatched expertise in the world of plumbing and
+                            heating.
+                        </p>
+                        <p className='p-style'>
+                            {false && <ul>
+                                <li>Plumbing</li>
+                                <li>Heating &#38; Boilers</li>
+                                <li>Drainage</li>
+                                <li>Gas</li>
+                                <li>Maintenance</li>
+                                <li>Commercial gas</li>
+                                <li>Commercial plumbing</li>
+                                <li>New Installations</li>
+                                <li>No Call out Rates</li>
+                                <li>Certified Installations</li>
+                                <li>Gas Inspections</li>
+                                <li>And more…</li>
+                            </ul>}
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className='h3-style'>Experience & Professionalism</h3>
+                        <p className='p-style'>
+                            Discover the essence of Experience & Professionalism with
+                            our plumbing services. At our company, we believe in 100%
+                            transparent charges, backed by a team of qualified
+                            operatives who provide quality workmanship. With guaranteed
+                            work and a commitment to customer satisfaction, we offer
+                            working hours customer support and never impose a call-out
+                            charge. From bathroom fitting to shower pump installations,
+                            trust us for excellence in every aspect of plumbing and
+                            heating services.
+                        </p>
+                        <p className='p-style'>
+                            {false && <ul>
+                                <li>100% transparent charges</li>
+                                <li>Working hours customer support</li>
+                                <li>Guaranteed work</li>
+                                <li>Quality workmanship</li>
+                                <li>No call-out charge</li>
+                                <li>Qualified operatives</li>
+                                <li>Bathroom fitting</li>
+                                <li>Shower pump installs</li>
+                            </ul>}
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className='h3-style'>Recent Feedbacks</h3>
+                        <p className='p-style'>
+                            "Exceptional service! Transparent pricing, professional team, and top-notch workmanship. No hidden fees, and they even offer working hours customer support. Highly recommend for all your plumbing needs, from bathroom fitting to shower pump installs. A truly hassle-free experience!"
+                        </p>
+                    </div>
+                </>,
+        },
     ];
 
     return (
@@ -117,6 +188,8 @@ export default function Home() {
                     details={serviceDetails[1].details}
                 />
 
+                <SloganContainer h2="No call-out charge, 100% transparency" />
+
                 <ServiceDetails
                     key={serviceDetails[2].slogan}
                     className={serviceDetails[2].className}
@@ -124,13 +197,17 @@ export default function Home() {
                     details={serviceDetails[2].details}
                 />
 
-                <SloganContainer h2="No call-out charge, 100% transparency" />
+                <SloganContainer h2="Comprehensive Plumbing Solutions" />
 
-                <About />
+                <ServiceDetails
+                    key={serviceDetails[3].slogan}
+                    className={serviceDetails[3].className}
+                    title={serviceDetails[3].title}
+                    details={serviceDetails[3].details}
+                />
             </div>
 
             <Available />
-
         </div>
     )
 }
