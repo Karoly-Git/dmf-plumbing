@@ -43,11 +43,11 @@
 .at-right {
     left: 2rem;
     align-items: flex-end; //
-    border: 3px solid black;
     margin: 2rem 0 2rem auto;
     border-radius: 2000px 0 0 2000px; //
     background-color: $color-Brown; //
     background: -webkit-radial-gradient(circle, $color-Brown, #122A53);
+    //border: 3px solid black;
 
     .container {
         padding-left: 2rem; //

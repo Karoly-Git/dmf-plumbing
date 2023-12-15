@@ -6,6 +6,7 @@ import { motion as m } from 'framer-motion';
 import Services from '../widgets/Services';
 import ServiceDetails from '../widgets/ServiceDetails';
 import { MainSlider } from '../widgets/Sliders';
+import { ReviewSlider } from '../widgets/MySlider';
 import MySlider from '../widgets/MySlider';
 import Available from '../widgets/Available';
 import SloganContainer from '../widgets/SloganContainer';
@@ -147,7 +148,7 @@ export default function Home() {
                     <div>
                         <h3 className='h3-style'>Recent Feedbacks</h3>
                         <p className='p-style'>
-                            "Exceptional service! Transparent pricing, professional team, and top-notch workmanship. No hidden fees, and they even offer working hours customer support. Highly recommend for all your plumbing needs, from bathroom fitting to shower pump installs. A truly hassle-free experience!"
+                            "DMF's Gas Safe registration is a testament to their commitment to safety and expertise. Their engineers handled my gas-related needs with exceptional care, ensuring a safe and efficient service that I highly recommend."
                         </p>
                     </div>
                 </>,

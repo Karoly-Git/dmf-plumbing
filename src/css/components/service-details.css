@@ -34,7 +34,6 @@
 .at-right {
   left: 2rem;
   align-items: flex-end;
-  border: 3px solid black;
   margin: 2rem 0 2rem auto;
   border-radius: 2000px 0 0 2000px;
   background-color: #bd1900;

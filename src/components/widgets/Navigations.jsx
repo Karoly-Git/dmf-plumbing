@@ -247,9 +247,9 @@ export function ThirdNavigation() {
 
                 <div className='box'>
                     <h3>Maintenance &#38; Services</h3>
-                    <Link to='/' >Plumbing</Link>
-                    <Link to='/'>Heating &#38; Boilers</Link>
-                    <Link to='/'>Maintenance</Link>
+                    <Link to='/' style={{ pointerEvents: 'none' }}>Plumbing</Link>
+                    <Link to='/' style={{ pointerEvents: 'none' }}>Heating &#38; Boilers</Link>
+                    <Link to='/' style={{ pointerEvents: 'none' }}>Maintenance</Link>
                 </div>
             </div>
 

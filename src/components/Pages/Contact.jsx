@@ -19,6 +19,7 @@ import { contacts } from '../../js/contacts';
 // Component Imports
 import Available from '../widgets/Available';
 import HeadContainer from '../widgets/HeadContainer';
+import SloganContainer from '../widgets/SloganContainer';
 
 
 export default function Contact() {
@@ -92,6 +93,8 @@ export default function Contact() {
 
             <HeadContainer h2="Contacts" />
 
+            <SloganContainer h1="Get in touch" />
+
             <div className="wrapper">
                 <div className='form-container'>
 
@@ -149,6 +152,6 @@ export default function Contact() {
             </div>
 
             <Available />
-        </m.div>
+        </m.div >
     )
 }

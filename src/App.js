@@ -18,10 +18,12 @@ import TermsAndConditions from './components/pages/TermsAndConditions';
 // Component Imports
 import { MainNavigation, SecNavigation, ThirdNavigation, SideNavigation } from './components/widgets/Navigations';
 import Certificates from './components/widgets/Certificates';
+import GoToTopOnPageChange from './components/widgets/GoToTopOnPageChange';
 
 export default function App() {
   return (
     <Router>
+      <GoToTopOnPageChange />
       <m.div
         className='App'
         initial={{ opacity: 0 }}

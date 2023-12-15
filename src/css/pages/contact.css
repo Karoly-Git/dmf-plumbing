@@ -1,6 +1,6 @@
 .contact .wrapper .form-container {
   max-width: 1000px;
-  padding: 3rem 0 0;
+  padding: 2rem 0 0;
   margin: 0 auto;
 }
 .contact .wrapper .form-container .info-box,
@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 .contact .wrapper .form-container .info-box {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   max-width: 40rem;
 }
 .contact .wrapper .form-container .info-box p {
