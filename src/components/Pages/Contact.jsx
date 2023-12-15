@@ -1,6 +1,7 @@
 // React Imports
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { motion as m } from 'framer-motion';
 
 // Form Handling Imports
 import { useForm } from 'react-hook-form';
@@ -83,7 +84,11 @@ export default function Contact() {
     }
 
     return (
-        <div className='page contact'>
+        <m.div
+            className='page contact'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}>
 
             <HeadContainer h2="Contacts" />
 
@@ -144,6 +149,6 @@ export default function Contact() {
             </div>
 
             <Available />
-        </div>
+        </m.div>
     )
 }

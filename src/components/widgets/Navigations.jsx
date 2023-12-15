@@ -187,6 +187,9 @@ export function SecNavigation() {
 }
 
 export function ThirdNavigation() {
+
+    const [isToTopVisible, setIsToTopVisible] = useState(false);
+
     const navLinks = [
         { to: '/contact', text: 'Contact' },
         { to: '/prices-and-charges', text: 'Prices & Charges' },
@@ -196,6 +199,23 @@ export function ThirdNavigation() {
     function scrollToTop() {
         window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     };
+
+    useEffect(() => {
+        function makeButtonVisible() {
+            let scrollY = window.scrollY;
+            const shouldShow = scrollY > 400;
+
+            if (shouldShow !== isToTopVisible) {
+                setIsToTopVisible(shouldShow);
+            }
+        }
+
+        window.addEventListener('scroll', makeButtonVisible);
+
+        return () => {
+            window.removeEventListener('scroll', makeButtonVisible);
+        }
+    }, [isToTopVisible]);
 
     return (
         <nav className='navigation' id='third-nav'>
@@ -237,7 +257,10 @@ export function ThirdNavigation() {
                     <span>
                         &copy; {new Date().getFullYear()} {contacts.company.tradingName}
                     </span>
-                    <div onClick={scrollToTop}>
+                    <div
+                        onClick={scrollToTop}
+                        style={isToTopVisible ? { opacity: 1 } : { opacity: 0 }}
+                    >
                         <ArrowIcon className='icon' />
                     </div>
                 </div>

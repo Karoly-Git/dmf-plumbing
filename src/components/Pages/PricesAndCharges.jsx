@@ -1,5 +1,6 @@
 // React Imports
 import React from 'react';
+import { motion as m } from 'framer-motion';
 
 // Data Imports
 import { contacts } from '../../js/contacts';
@@ -12,7 +13,11 @@ import SloganContainer from '../widgets/SloganContainer';
 
 export default function PricesAndCharges() {
     return (
-        <div className='page policies-and-pricing'>
+        <m.div
+            className='page policies-and-pricing'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}>
 
             <HeadContainer h2="Prices &#38; Charges" />
 
@@ -103,6 +108,6 @@ export default function PricesAndCharges() {
             </div>
 
             <Available />
-        </div >
+        </m.div >
     )
 }

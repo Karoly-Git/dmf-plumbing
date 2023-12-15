@@ -1,11 +1,12 @@
 // React Imports
 import React from 'react';
+import { motion as m } from 'framer-motion';
 
 // Component Imports
 import Services from '../widgets/Services';
-import About from '../widgets/About';
 import ServiceDetails from '../widgets/ServiceDetails';
 import { MainSlider } from '../widgets/Sliders';
+import MySlider from '../widgets/MySlider';
 import Available from '../widgets/Available';
 import SloganContainer from '../widgets/SloganContainer';
 
@@ -154,12 +155,18 @@ export default function Home() {
     ];
 
     return (
-        <div className='page home'>
+        <m.div
+            className='page home'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}>
+
             <div className='head-container'>
                 <div className='box'>
-                    <div className='content-box' style={{ width: 'unset', padding: '2rem', justifyContent: 'center' }}>
+                    <div className='content-box'>
                         <div>
-                            <MainSlider />
+                            {false && <MainSlider />}
+                            {!false && <MySlider />}
                         </div>
                     </div>
                 </div>
@@ -208,6 +215,6 @@ export default function Home() {
             </div>
 
             <Available />
-        </div>
+        </m.div>
     )
 }

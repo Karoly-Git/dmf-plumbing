@@ -153,13 +153,16 @@
   align-items: center;
   background-color: #c11b1b;
   position: fixed;
+  z-index: 20;
   right: 1rem;
   bottom: 1rem;
   padding: 0.25rem;
   border-radius: 50%;
+  transition: opacity 350ms ease-in-out;
 }
 #third-nav .container:nth-child(2) #copyright-box div .icon {
   transform: rotate(180deg);
+  font-size: 1.5rem;
 }
 #third-nav .container:nth-child(2) #copyright-box div:hover span {
   text-decoration: underline;

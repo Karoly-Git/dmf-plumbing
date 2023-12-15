@@ -1,5 +1,6 @@
 // React Imports
 import React from 'react';
+import { motion as m } from 'framer-motion';
 
 // Data Imports
 import { netPrices } from '../../js/prices';
@@ -12,7 +13,11 @@ import SloganContainer from '../widgets/SloganContainer';
 
 export default function TermsAndConditions() {
     return (
-        <div className='page policies-and-pricing'>
+        <m.div
+            className='page policies-and-pricing'
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}>
 
             <HeadContainer h2="Terms &#38; Conditions" />
 
@@ -131,6 +136,6 @@ export default function TermsAndConditions() {
             </div>
 
             <Available />
-        </div>
+        </m.div>
     )
 }

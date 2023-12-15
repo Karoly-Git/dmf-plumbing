@@ -1,2 +1,22 @@
 // Variable Imports
-@import '../variables';
+@import '../assets/variables.scss';
+
+.home {
+    .head-container {
+        .box {
+            .content-box {
+                padding: 1rem 0;
+                justify-content: center;
+                width: unset;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home {
+        .head-container {
+            display: none;
+        }
+    }
+}

@@ -2,16 +2,16 @@
 import React from 'react';
 
 // Image Imports
-import boiler from '../../img/services/boiler2.png';
-import maintrnance from '../../img/services/maintenance.jpg';
-import plumbing from '../../img/services/plumbing.jpg';
+import img1 from '../../img/services/water.jpg';
+import img2 from '../../img/services/boiler.jpg';
+import img3 from '../../img/services/maintenance.jpg';
 import logostamp from '../../img/services/logostamp.png';
 
 export default function Services() {
     const content = [
         {
             img: {
-                src: plumbing,
+                src: img1,
                 alt: 'Close-up of clear water with numerous air bubbles floating upwards.'
             },
             headline: 'Plumbing',
@@ -19,7 +19,7 @@ export default function Services() {
         },
         {
             img: {
-                src: boiler,
+                src: img2,
                 alt: 'Close-up view of a white electric hot water boiler with indicator lights and control buttons.'
             },
             headline: 'Heating & Boilers',
@@ -27,7 +27,7 @@ export default function Services() {
         },
         {
             img: {
-                src: maintrnance,
+                src: img3,
                 alt: 'A collection of plumbing tools spread out on an open blueprint.'
             },
             headline: 'Maintenance',

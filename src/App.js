@@ -1,6 +1,7 @@
 // React Imports
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { motion as m } from 'framer-motion';
 
 // Style Import
 import '../src/css/App.css';
@@ -21,7 +22,12 @@ import Certificates from './components/widgets/Certificates';
 export default function App() {
   return (
     <Router>
-      <div className='App'>
+      <m.div
+        className='App'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}>
+
         <SideNavigation />
 
         <div id='cookie-box'>
@@ -47,7 +53,7 @@ export default function App() {
           <Certificates />
           <ThirdNavigation />
         </footer>
-      </div>
+      </m.div>
     </Router>
   )
 }
