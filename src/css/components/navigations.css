@@ -69,10 +69,15 @@
   align-items: center;
   background: -webkit-radial-gradient(circle, #2D59A2, #122A53);
 }
+#third-nav .short-email {
+  display: none;
+}
 #third-nav * {
   color: white;
 }
 #third-nav .container {
+  width: 80%;
+  max-width: unset;
   justify-content: flex-start;
 }
 #third-nav .container .box {
@@ -131,12 +136,15 @@
   padding-bottom: 0;
 }
 #third-nav .container:nth-child(2) {
+  width: 100%;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 0;
   background: -webkit-radial-gradient(circle, #2D59A2, black);
 }
 #third-nav .container:nth-child(2) .box {
   margin: 0 !important;
+  width: 80% !important;
 }
 #third-nav .container:nth-child(2) #copyright-box {
   display: flex;
@@ -285,21 +293,29 @@
     margin-bottom: 1rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   #third-nav .container {
-    flex-direction: column;
-    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
+  }
+  #third-nav .container:nth-child(2) {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 800px) {
+  #third-nav .full-email {
+    display: none;
+  }
+  #third-nav .short-email {
+    display: inline;
   }
   #third-nav .container .box {
     margin: 0 !important;
     width: 100%;
   }
-  #third-nav .container:first-child .box:nth-child(2) {
-    display: none;
-  }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) and (max-width: 600px) {
   #third-nav .container .link-box {
     flex-direction: column;
   }
@@ -311,23 +327,42 @@
     margin: 0 !important;
   }
 }
-@media screen and (max-width: 414px) {
-  #third-nav .container {
-    padding: 0;
+@media screen and (max-width: 1024px) and (max-width: 360px) {
+  #third-nav .container:first-child {
+    flex-direction: column;
   }
-  #third-nav .container .box p a {
-    display: inline;
+  #third-nav .container:first-child .box:first-child {
+    padding-bottom: 0;
   }
-  #third-nav .container .box p a .icon {
-    margin-right: 1rem;
-  }
-  #third-nav .container .box p a span {
-    display: none;
-  }
-  #third-nav .container .box p:last-child {
-    margin-bottom: 0;
-  }
-  #third-nav .container:nth-child(2) {
-    padding-top: 1rem;
-  }
-}/*# sourceMappingURL=navigations.css.map */
+}
+/*@media screen and (max-width: 414px) {
+    #third-nav {
+        .container {
+            padding: 0;
+
+            .box {
+                p {
+                    a {
+                        display: inline;
+
+                        .icon {
+                            margin-right: 1rem;
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                padding-top: 1rem;
+            }
+        }
+    }
+}*//*# sourceMappingURL=navigations.css.map */

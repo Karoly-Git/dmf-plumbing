@@ -238,7 +238,9 @@ export function ThirdNavigation() {
                         </a>
 
                         <a href={`mailto:${contacts.email}`} target="_blank" rel="noopener noreferrer">
-                            <MailIcon className='icon' /><span>{contacts.email}</span>
+                            <MailIcon className='icon' />
+                            <span className='full-email'>{contacts.email}</span>
+                            <span className='short-email'>{contacts.email.slice(0, 8)}...</span>
                         </a>
                     </p>
                 </div>
