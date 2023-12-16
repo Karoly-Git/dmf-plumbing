@@ -2,7 +2,7 @@
 @import '../assets/variables';
 
 .available {
-    background: url('../../img/bg-available.jpg') fixed;
+    background: url('../../img/bg-available.png') fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,12 +19,14 @@
                 font-size: 3rem;
                 margin-bottom: 1rem;
                 color: white;
+                text-shadow: 2px 1px black;
             }
 
             p {
                 font-size: 1.8rem;
                 line-height: 2.5rem;
                 color: white;
+                text-shadow: 2px 1px black;
             }
         }
 

@@ -2,6 +2,9 @@
 import React from 'react';
 import { motion as m } from 'framer-motion';
 
+// Image Imports
+import headIcon from '../../img/terms-and-conditions-icon.png'
+
 // Data Imports
 import { netPrices } from '../../js/prices';
 import { contacts } from '../../js/contacts';
@@ -19,7 +22,7 @@ export default function TermsAndConditions() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}>
 
-            <HeadContainer h2="Terms &#38; Conditions" />
+            <HeadContainer h2="Terms &#38; Conditions" headIcon={headIcon} />
 
             <SloganContainer h1="Service Agreement and Terms" />
 

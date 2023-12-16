@@ -18,6 +18,7 @@ export default function HeadContainer(props) {
                             {props.h2}
                         </p>
                     </div>
+                    {props.headIcon ? <img className='icon' src={props.headIcon} alt="icon" /> : <></>}
                 </div>
             </div>
         </div>

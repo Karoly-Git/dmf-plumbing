@@ -1,9 +1,9 @@
-.my-slider {
+.main-slider {
   width: 80vw;
   height: 25vw;
   max-height: 400px;
 }
-.my-slider .my-box {
+.main-slider .slider-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,16 +12,16 @@
   max-height: 400px;
   position: relative;
 }
-.my-slider .my-box img {
+.main-slider .slider-box img {
   height: 25vw;
   max-height: 400px;
 }
-.my-slider .box-1 {
+.main-slider .box-1 {
   top: 0;
 }
-.my-slider .box-2 {
+.main-slider .box-2 {
   top: -100%;
 }
-.my-slider .box-3 {
+.main-slider .box-3 {
   top: -200%;
-}/*# sourceMappingURL=my-slider.css.map */
+}/*# sourceMappingURL=main-slider.css.map */

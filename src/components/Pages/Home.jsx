@@ -2,12 +2,15 @@
 import React from 'react';
 import { motion as m } from 'framer-motion';
 
+// Image Imports
+import legalAndSafe from '../../img/legal-and-safe.png';
+import noCallOut from '../../img/no-call-out.png';
+import gasSafe from '../../img/gas-safe-registered.png';
+
 // Component Imports
 import Services from '../widgets/Services';
 import ServiceDetails from '../widgets/ServiceDetails';
-import { MainSlider } from '../widgets/Sliders';
-import { ReviewSlider } from '../widgets/MySlider';
-import MySlider from '../widgets/MySlider';
+import MainSlider, { ReviewSlider } from '../widgets/Sliders';
 import Available from '../widgets/Available';
 import SloganContainer from '../widgets/SloganContainer';
 
@@ -31,7 +34,7 @@ export default function Home() {
         },
         {
             isActive: true,
-            className: 'diagonal',
+            className: 'diagonal bg-1-paralax',
             title: '',
             details:
                 <>
@@ -147,9 +150,7 @@ export default function Home() {
                     </div>
                     <div>
                         <h3 className='h3-style'>Recent Feedbacks</h3>
-                        <p className='p-style'>
-                            "DMF's Gas Safe registration is a testament to their commitment to safety and expertise. Their engineers handled my gas-related needs with exceptional care, ensuring a safe and efficient service that I highly recommend."
-                        </p>
+                        <ReviewSlider />
                     </div>
                 </>,
         },
@@ -166,19 +167,19 @@ export default function Home() {
                 <div className='box'>
                     <div className='content-box'>
                         <div>
-                            {false && <MainSlider />}
-                            {!false && <MySlider />}
+                            <MainSlider />
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <SloganContainer h1="Precision in Plumbing, Warmth in Heating, Excellence in Boiler Solutions" />
 
             <div className="wrapper">
                 <Services />
 
-                <SloganContainer h2="Legal and Safe Services for Your Home" />
+                <SloganContainer h2="Legal and Safe Services for Your Home" sloganIcon={legalAndSafe} />
 
                 <ServiceDetails
                     key={serviceDetails[0].slogan}
@@ -187,7 +188,7 @@ export default function Home() {
                     details={serviceDetails[0].details}
                 />
 
-                <SloganContainer h2="Gas Safe Registered Heating Engineers and Gas Fitters" />
+                <SloganContainer h2="Gas Safe Registered Heating Engineers and Gas Fitters" sloganIcon={gasSafe} />
 
                 <ServiceDetails
                     key={serviceDetails[1].slogan}
@@ -196,7 +197,7 @@ export default function Home() {
                     details={serviceDetails[1].details}
                 />
 
-                <SloganContainer h2="No call-out charge, 100% transparency" />
+                <SloganContainer h2="No call-out charge, 100% transparency" sloganIcon={noCallOut} />
 
                 <ServiceDetails
                     key={serviceDetails[2].slogan}

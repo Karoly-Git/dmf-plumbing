@@ -10,7 +10,8 @@
 }
 .head-container .box .content-box {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   align-items: center;
   width: 80%;
   max-width: 1100px;
@@ -36,4 +37,8 @@
 }
 .head-container .box .content-box div:first-child p a:hover {
   text-decoration: underline;
+}
+.head-container .box .content-box .icon {
+  width: 3.25rem;
+  margin-right: 2rem;
 }/*# sourceMappingURL=head-container.css.map */

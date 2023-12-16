@@ -13,7 +13,8 @@
 
         .content-box {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
             align-items: center;
             width: 80%;
             max-width: 1100px;
@@ -45,6 +46,11 @@
                         }
                     }
                 }
+            }
+
+            .icon {
+                width: 3.25rem;
+                margin-right: 2rem;
             }
         }
     }

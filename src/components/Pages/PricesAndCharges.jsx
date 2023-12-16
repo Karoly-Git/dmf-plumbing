@@ -6,6 +6,9 @@ import { motion as m } from 'framer-motion';
 import { contacts } from '../../js/contacts';
 import { netPrices } from '../../js/prices';
 
+// Image Imports
+import headIcon from '../../img/prices-and-charges-icon.png'
+
 // Component Imports
 import Available from '../widgets/Available';
 import HeadContainer from '../widgets/HeadContainer';
@@ -19,7 +22,7 @@ export default function PricesAndCharges() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}>
 
-            <HeadContainer h2="Prices &#38; Charges" />
+            <HeadContainer h2="Prices &#38; Charges" headIcon={headIcon} />
 
             <SloganContainer h1="Transparent Pricing" />
 

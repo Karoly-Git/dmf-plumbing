@@ -13,6 +13,9 @@ import { FaPhone as PhoneIcon } from "react-icons/fa6";
 import { MdEmail as MailIcon } from "react-icons/md";
 import { MdLocationOn as LocationIcon } from "react-icons/md";
 
+// Image Imports
+import headIcon from '../../img/contact-icon.png'
+
 // Data Imports
 import { contacts } from '../../js/contacts';
 
@@ -91,7 +94,7 @@ export default function Contact() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}>
 
-            <HeadContainer h2="Contacts" />
+            <HeadContainer h2="Contacts" headIcon={headIcon} />
 
             <SloganContainer h1="Get in touch" />
 

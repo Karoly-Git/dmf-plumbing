@@ -3,7 +3,14 @@
 
 .slogan-container {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 3rem 0;
+
+    .icon {
+        width: 10rem;
+        margin-bottom: 4rem;
+    }
 
     .slogan {
         width: 100%;

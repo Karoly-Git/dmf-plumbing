@@ -1,12 +1,12 @@
 $size: 25vw;
 
-.my-slider {
+.main-slider {
     width: 80vw;
     height: $size;
     max-height: 400px;
     //border: 1px solid red;
 
-    .my-box {
+    .slider-box {
         display: flex;
         justify-content: center;
         align-items: center;
