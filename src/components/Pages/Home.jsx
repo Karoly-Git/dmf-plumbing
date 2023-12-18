@@ -6,6 +6,7 @@ import { motion as m } from 'framer-motion';
 import legalAndSafe from '../../img/legal-and-safe.png';
 import noCallOut from '../../img/no-call-out.png';
 import gasSafe from '../../img/gas-safe-registered.png';
+import solutions from '../../img/solutions.png';
 
 // Component Imports
 import Services from '../widgets/Services';
@@ -58,7 +59,7 @@ export default function Home() {
                         </p>
                     </div>
                     <div>
-                        <h3 className='h3-style'>Legal and Safe Services</h3>
+                        <h3 className='h3-style'>Legal and Safe Plumbing Services</h3>
                         <p className='p-style'>
                             This gives you the assurance that when our plumbers or gas fitters are working in your home,
                             you are receiving a legal and safe service, which is important, not only for your safety, but
@@ -179,7 +180,7 @@ export default function Home() {
             <div className="wrapper">
                 <Services />
 
-                <SloganContainer h2="Legal and Safe Services for Your Home" sloganIcon={legalAndSafe} />
+                <SloganContainer h2="Legal and Safe Plumbing Services for Your Home" sloganIcon={legalAndSafe} />
 
                 <ServiceDetails
                     key={serviceDetails[0].slogan}
@@ -206,7 +207,7 @@ export default function Home() {
                     details={serviceDetails[2].details}
                 />
 
-                <SloganContainer h2="Comprehensive Plumbing Solutions" />
+                <SloganContainer h2="Comprehensive Plumbing Solutions" sloganIcon={solutions} />
 
                 <ServiceDetails
                     key={serviceDetails[3].slogan}
