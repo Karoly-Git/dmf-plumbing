@@ -13,29 +13,6 @@
     }
 }
 
-.home {
-    .review-slider {
-        height: 200px !important;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        width: 100% !important;
-        //border: 3px solid black;
-
-        .review {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 200px !important;
-            width: 100%;
-            font-style: italic;
-            font-size: 1.2rem;
-            //background-color: green;
-        }
-    }
-}
-
 @media screen and (max-width: 800px) {
     .home {
         .head-container {

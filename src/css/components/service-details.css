@@ -78,6 +78,16 @@
   list-style: none;
 }
 
+.center .container .box {
+  justify-content: center;
+}
+.center .container .box div {
+  width: 40%;
+}
+.center .container .box div:not(.center .container .box div:last-child) {
+  margin-right: 2rem;
+}
+
 @media screen and (max-width: 1024px) {
   .diagonal .container .box {
     flex-direction: column;

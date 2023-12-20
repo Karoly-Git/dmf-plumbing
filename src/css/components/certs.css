@@ -5,29 +5,34 @@
   margin: 2rem 0;
 }
 .certs img {
-  height: 5rem;
-  margin: 1rem;
-}
-.certs #gas-safe {
   height: 7rem;
+  margin: 0 2rem;
+}
+.certs #checkatrade {
+  padding: 1rem;
+}
+.certs #vaillant {
+  padding: 0.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .certs img {
     height: auto;
     width: auto;
     margin: 2vw !important;
   }
-  .certs #check-a-trade {
+  .certs #checkatrade {
+    padding: 0;
     width: 25vw;
-    height: 11.6666666667vw !important;
+    height: 6.2688064193vw !important;
   }
-  .certs #gas-safe {
+  .certs #gassafe {
     width: 15vw;
-    height: 16.0305343511vw !important;
+    height: 10.78vw !important;
   }
   .certs #vaillant {
+    padding: 0;
     width: 25vw;
-    height: 10.736196319vw !important;
+    height: 10.9482758621vw !important;
   }
 }/*# sourceMappingURL=certs.css.map */

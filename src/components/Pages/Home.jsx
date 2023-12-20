@@ -88,7 +88,7 @@ export default function Home() {
         },
         {
             isActive: true,
-            className: 'diagonal',
+            className: 'diagonal center',
             title: '',
             details:
                 <>
@@ -149,10 +149,6 @@ export default function Home() {
                             </ul>}
                         </p>
                     </div>
-                    <div>
-                        <h3 className='h3-style'>Recent Feedbacks</h3>
-                        <ReviewSlider />
-                    </div>
                 </>,
         },
     ];
@@ -181,6 +177,8 @@ export default function Home() {
                 <Services />
 
                 <SloganContainer h2="Legal and Safe Plumbing Services for Your Home" sloganIcon={legalAndSafe} />
+
+                <ReviewSlider />
 
                 <ServiceDetails
                     key={serviceDetails[0].slogan}

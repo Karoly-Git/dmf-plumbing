@@ -8,19 +8,24 @@
     margin: 2rem 0;
 
     img {
-        height: 5rem;
-        margin: 1rem;
+        height: 7rem;
+        margin: 0 2rem;
     }
 
-    #gas-safe {
-        height: 7rem;
+    #checkatrade {
+        padding: 1rem;
+    }
+
+    #vaillant {
+        padding: 0.5rem;
     }
 }
 
 
-@media screen and (max-width: 600px) {
-    $rate1: 15vw;
-    $rate2: 25vw;
+@media screen and (max-width: 900px) {
+    $rate1: 25vw;
+    $rate2: 15vw;
+    $rate3: 25vw;
 
     .certs {
         img {
@@ -29,19 +34,21 @@
             margin: 2vw !important;
         }
 
-        #check-a-trade {
-            width: $rate2;
-            height: calc($rate2 * 70/150) !important;
+        #checkatrade {
+            padding: 0;
+            width: $rate1;
+            height: calc($rate1 * 250/997) !important;
         }
 
-        #gas-safe {
-            width: $rate1;
-            height: calc($rate1 * 98/91.7) !important;
+        #gassafe {
+            width: $rate2;
+            height: calc($rate2 * 539/750) !important;
         }
 
         #vaillant {
-            width: $rate2;
-            height: calc($rate2 * 70/163) !important;
+            padding: 0;
+            width: $rate3;
+            height: calc($rate3 * 127/290) !important;
         }
 
     }

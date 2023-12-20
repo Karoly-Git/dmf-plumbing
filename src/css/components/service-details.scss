@@ -97,6 +97,23 @@
     }
 }
 
+.center {
+    .container {
+        .box {
+            justify-content: center;
+
+            div {
+                width: 40%;
+
+                &:not(&:last-child) {
+                    margin-right: 2rem;
+                }
+            }
+
+        }
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .diagonal {
         .container {
