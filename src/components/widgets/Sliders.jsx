@@ -171,7 +171,7 @@ export function ReviewSlider() {
         nextArrow: <NextArrow />,
         prevArrow: <PreviousArrow />,
 
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 5000,
 
         responsive: [
