@@ -205,29 +205,29 @@ export function ReviewSlider() {
     const reviews = [
         {
             isActive: true,
-            name: "John D.",
-            comment: "I recently had a plumbing emergency at my home in London, and SW London Plumbing and Heating Services came to the rescue. Their experienced plumbers solved the issue quickly and efficiently, leaving my premises clean and tidy. I highly recommend their professional service."
+            name: "Annual service for our boiler",
+            comment: "Dan did a fantastic job servicing our boiler today. He arrived on time, finished the job without any fuss and tidied up after himself. His price was very competitive. I couldn't ask for better service. Highly recommended."
         },
         {
             isActive: true,
-            name: "Sarah H.",
-            comment: "I needed a boiler replacement, and I chose SW London Plumbing and Heating Services. They offered competitive prices and installed a modern Vaillant boiler. Not only did it save me money on heating bills, but their Gas Safe registered engineers provided a safe and hassle-free installation."
+            name: "Replacing a valve",
+            comment: "Dan worked quickly and efficiently to replace a leaking valve in an awkward location in our downstairs WC. Definitely recommend."
         },
         {
             isActive: true,
-            name: "David S.",
-            comment: "When it comes to safety, SW London Plumbing and Heating Services is top-notch. Their Gas Safe registered heating engineers ensure peace of mind for homeowners. Whether you need boiler repair, gas fitting, or a gas safety check for landlords, they have you covered."
+            name: "Remove a plug that was firmly stuck in the bathtub",
+            comment: "I was very happy with the service I received. The plumber was very courteous and efficient. He also cleaned up any mess that was caused by the work. I would highly recommend this company. I have used them numerous times in the past."
         },
         {
             isActive: true,
-            name: "Emily P.",
-            comment: "I had plumbing issues in my rental property, and I needed a Landlord's gas safe certification. SW London Plumbing and Heating Services offered a comprehensive service without any call-out rates. Their professionalism made the entire process hassle-free."
+            name: "Fixing a leaking tap",
+            comment: "Excellent communication, seamless booking, turned up on time, good advice, great customer service and very efficient! Would highly recommend."
         },
         {
             isActive: true,
-            name: "Michael B.",
-            comment: "I've used SW London Plumbing and Heating Services for various plumbing needs, from bathroom fittings to gas inspections. Their team is experienced, transparent, and committed to customer satisfaction. They are my go-to choice for all plumbing and heating services in London."
-        }
+            name: "Cap gas pipe/ reconnect other gas pipe",
+            comment: "Very happy with Dan's work. He was knowledgeable, friendly and efficient. He finished the job professionally and quickly and did all the safety checks while talking us through the process and giving us useful advice. Price was good and the experience also. Great communication with Damian. Would use them again."
+        },
     ];
 
 
@@ -249,10 +249,10 @@ export function ReviewSlider() {
                         <i>
                             <Quotes className="icon" />
                         </i>
-                    </p>
                     <h3>
                         {element.name}
                     </h3>
+                    </p>
                 </div>
             ))}
         </Slider>
