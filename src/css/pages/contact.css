@@ -27,7 +27,7 @@
   min-height: 1.5rem;
   margin-right: 1rem;
 }
-.contact .wrapper .form-container .info-box p a .short {
+.contact .wrapper .form-container .info-box p a .short-email {
   display: none;
 }
 .contact .wrapper .form-container .info-box p a:hover {
@@ -81,7 +81,7 @@
     width: 100%;
   }
   .contact .wrapper .form-container .info-box,
-.contact .wrapper .form-container form {
+  .contact .wrapper .form-container form {
     max-width: unset;
   }
 }
