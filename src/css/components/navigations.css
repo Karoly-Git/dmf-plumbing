@@ -59,16 +59,19 @@
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   text-decoration: none;
-  transition: color 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
-#sec-nav .container .box .link:hover {
+#sec-nav .container .box .internal-link:hover {
   color: #a0adbe;
 }
-#sec-nav .container .box .link .checkatrade-short-logo {
+#sec-nav .container .box .external-link .checkatrade-short-logo {
   width: 1.75rem;
   height: 1.75rem;
   padding: 0.25rem;
   border-radius: 50%;
+}
+#sec-nav .container .box .external-link:hover {
+  transform: scale(1.35);
 }
 
 #third-nav {
