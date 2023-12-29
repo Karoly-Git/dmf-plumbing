@@ -1,7 +1,7 @@
 export const contacts = {
     email: 'info@dmfplumbingandheating.com',
     mobile: '+447794156943',
-    phone: '0800 118 2460',
+    phone: '07 794 156 943',
     twitter: 'http://twitter.com',
     facebook: 'http://facebook.com',
     maps: 'https://www.google.com/maps/place/5+Hammer+Ln,+Haslemere+GU27+3QD/@51.082989,-0.754629,17z/data=!3m1!4b1!4m6!3m5!1s0x487434ae1e1f47ed:0x2bdcb436094b60eb!8m2!3d51.082989!4d-0.7520541!16s%2Fg%2F11kpl9ddxt?entry=ttu',
