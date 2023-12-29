@@ -12,6 +12,7 @@ import { ImMobile as MobileIcon } from "react-icons/im";
 
 // Image Imports
 import logo from '../../img/logo.png';
+import checkatradeShortLogo from '../../img/checkatrade-short-logo-bright.png';
 
 // Data Imports
 import { contacts } from '../../js/contacts';
@@ -162,9 +163,10 @@ export function SecNavigation() {
     ];
 
     const iconLinks = [
-        { http: `tel:${contacts.mobile}`, icon: <PhoneIcon className='icon' /> },
-        { http: `${contacts.twitter}`, icon: <TwitterIcon className='icon' /> },
-        { http: `${contacts.facebook}`, icon: <FacebookIcon className='icon' /> },
+        { isActive: true, http: `tel:${contacts.mobile}`, icon: <PhoneIcon className='icon' /> },
+        { isActive: true, http: `https://www.checkatrade.com/trades/swlondonplumbinglimited`, icon: <img src={checkatradeShortLogo} alt="Checkatrade Logo" className='checkatrade-short-logo'/> },
+        { isActive: false, http: `${contacts.twitter}`, icon: <TwitterIcon className='icon' /> },
+        { isActive: false, http: `${contacts.facebook}`, icon: <FacebookIcon className='icon' /> },
     ];
 
     return (
@@ -178,7 +180,8 @@ export function SecNavigation() {
 
                 <div className='box'>
                     {iconLinks.map((link) => (
-                        <a className='link external-link' key={link.http} href={link.http} target="_blank" rel="noopener noreferrer">{link.icon}</a>
+                        link.isActive &&
+                            <a className='link external-link' key={link.http} href={link.http} target="_blank" rel="noopener noreferrer">{link.icon}</a>
                     ))}
                 </div>
             </div>

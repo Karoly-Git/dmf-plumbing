@@ -51,6 +51,7 @@
 }
 #sec-nav .container .box {
   display: flex;
+  align-items: center;
 }
 #sec-nav .container .box .link {
   color: white;
@@ -62,6 +63,12 @@
 }
 #sec-nav .container .box .link:hover {
   color: #a0adbe;
+}
+#sec-nav .container .box .link .checkatrade-short-logo {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0.25rem;
+  border-radius: 50%;
 }
 
 #third-nav {

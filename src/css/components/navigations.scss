@@ -69,6 +69,7 @@
     .container {
         .box {
             display: flex;
+            align-items: center;
 
             .link {
                 color: white;
@@ -80,6 +81,14 @@
 
                 &:hover {
                     color: $color-extra-Light;
+                }
+
+                .checkatrade-short-logo{
+                    width: 1.75rem;
+                    height: 1.75rem;
+                    padding: 0.25rem;
+                    //background-color: white;
+                    border-radius: 50%;
                 }
             }
         }
