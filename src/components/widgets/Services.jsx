@@ -15,7 +15,7 @@ export default function Services() {
                 alt: 'Close-up of clear water with numerous air bubbles floating upwards.'
             },
             headline: 'Plumbing',
-            paragraph: 'We offer a highly professional service across London with a team of experienced and qualified plumbers who are available and we guarantee to solve everything from a plumbing related problem to the design and creation of new bathrooms.'
+            paragraph: 'We offer a highly professional service and we guarantee to solve everything from a plumbing related problem to the design and creation of new central heating and hot water system in your home.'
         },
         {
             img: {
@@ -23,7 +23,7 @@ export default function Services() {
                 alt: 'Close-up view of a white electric hot water boiler with indicator lights and control buttons.'
             },
             headline: 'Heating & Boilers',
-            paragraph: 'We can assist towards ensuring compliance with the Consumer Protection Act and help you avoid sale cancellations and other possible repercussions.'
+            paragraph: 'We can assist towards keeping you up to date with Gas Safe and Building Regulations requirements so home owners and landlords can keep things up to date and compliant.'
         },
         {
             img: {
@@ -31,7 +31,7 @@ export default function Services() {
                 alt: 'A collection of plumbing tools spread out on an open blueprint.'
             },
             headline: 'Maintenance',
-            paragraph: 'We work cleanly and efficiently with minimal disruption, and will always ensure we leave your premises clean and tidy following our visit.'
+            paragraph: 'We work cleanly and efficiently with minimal disruption, and will always ensure we do our best to leave your premises clean and tidy following our visit.'
         },
     ];
 
