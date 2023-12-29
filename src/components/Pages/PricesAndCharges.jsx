@@ -72,39 +72,63 @@ export default function PricesAndCharges() {
                             </table>
                         </div>
 
-                        <p className='p-style'>
+                        {false && <p className='p-style'>
                             <strong>{contacts.company.tradingName}</strong> is a plumbing and services company that has complete transparent charges and we have an honest, upfront, open, and clear pricing system. Our rates are shown here on our website and our call center staff will make customers fully aware of our rates at the time they book their job if you request them.
-                        </p>
+                        </p>}
 
                         <p className='p-style'>
                             <strong>Please note: All prices are subject to VAT.</strong>
                         </p>
 
-                        <p className='p-style'>We have a one-hour minimum charge but thereafter we bill/charge in 20-minute increments so you're only paying for the time worked by our engineer. Our engineers will always show a comprehensive description of work carried out and a full breakdown of the labour and material charges are shown on all invoices.</p>
+                        <p className='p-style'>
+                            We have a one-hour minimum charge but thereafter we bill/charge in <strong>20-minute</strong> increments 
+                            so you're only paying for the time worked by our engineer. Our engineers will always 
+                            show a comprehensive description of work carried out and a full breakdown of the labour 
+                            and material charges are shown on all invoices.
+                        </p>
 
                         <h3 className='h3-style'>Hourly rates</h3>
-                        <p className='p-style'>There is a minimum charge of one hour on all jobs, thereafter work is charged in 20-minute increments.</p>
+                        <p className='p-style'>
+                            There is a minimum charge of one hour on all jobs, thereafter work is charged in <strong>20-minute</strong> increments.
+                        </p>
 
                         <h3 className='h3-style'>Fixed price</h3>
-                        <p className='p-style'>Any fixed price work undertaken will require a deposit of 50% before any work is undertaken, and the remainder paid upon satisfactory completion of the works.</p>
+                        <p className='p-style'>
+                            Any fixed price work undertaken will require a deposit of 50% before any work is undertaken, and the remainder paid upon satisfactory completion of the works.
+                        </p>
 
                         <h3 className='h3-style'>Material collection</h3>
-                        <p className='p-style'>Material collection time for non-stock items will be kept to a minimum - any charge will not exceed 30 minutes billable time in any 24 hour period.</p>
+                        <p className='p-style'>
+                            Material collection time for non-stock items will be kept to a minimum - any charge will not exceed <strong>60 minutes</strong> billable time in any <strong>24-hour</strong> period.
+                        </p>
 
                         <h3 className='h3-style'>Estimates</h3>
-                        <p className='p-style'>Estimates are available from our engineers or we are happy to make an appointment for an estimator to visit you.</p>
+                        <p className='p-style'>
+                            Estimates are available from our engineers or we are happy to make an appointment for an estimator to visit you if we deem it appropriate to quote on the particular work required. We may offer that the work is only undertaken at the hourly rates appropriate.
+                        </p>
 
                         <h3 className='h3-style'>Invoice</h3>
-                        <p className='p-style'>An invoice will always be produced clearly showing a full description of work carried out - time started/time finished, a full breakdown of the cost of Labour and materials used.</p>
+                        <p className='p-style'>
+                            An invoice will always be produced showing labour and materials and any other incurred costs.
+                        </p>
 
                         <h3 className='h3-style'>Payment</h3>
-                        <p className='p-style'>Payment must be made in full by bank transfer or card upon receipt of the invoice.</p>
+                        <p className='p-style'>
+                            Payment must be made in full by bank transfer or card upon receipt of the invoice.
+                        </p>
 
                         <h3 className='h3-style'>Cancellation</h3>
-                        <p className='p-style'>Cancellations for <strong>emergency call outs</strong> will be chargeable at half a chargeable hour at whatever time of day it may be, IE, a cancellation at 17:00 on Monday afternoon will incur a £51.00 inc VAT fee. Please note that all other cancellations do not carry a fee but we ask you to give as much notice as possible.</p>
+                        <p className='p-style'>
+                            Cancellations for emergency call outs will be chargeable at half a chargeable hour 
+                            at whatever time of day it may be, IE, a cancellation at 17:00 on Monday afternoon 
+                            will incur a £51.00 inc VAT fee. Please note that all other cancellations do not carry 
+                            a fee but we ask you to give as much notice as possible.
+                        </p>
 
                         <h3 className='h3-style'>Rubble disposal</h3>
-                        <p className='p-style'>This is NEVER included unless stipulated by the engineer and pre-quoted for.</p>
+                        <p className='p-style'>
+                            This is NEVER included unless stipulated by the engineer and pre-quoted for.
+                        </p>
 
                     </div>
                 </section >
