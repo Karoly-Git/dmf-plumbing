@@ -26,6 +26,10 @@
 
 @media screen and (max-width: 800px) {
     .slogan-container {
+        .icon {
+            width: 8rem;
+        }
+
         .slogan {
             font-size: 1.75rem;
         }
@@ -34,6 +38,10 @@
 
 @media screen and (max-width: 600px) {
     .slogan-container {
+        .icon {
+            width: 6rem;
+        }
+
         .slogan {
             padding: 0 1rem;
         }
