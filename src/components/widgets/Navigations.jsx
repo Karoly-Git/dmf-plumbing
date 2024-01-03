@@ -164,9 +164,10 @@ export function SecNavigation() {
 
     const iconLinks = [
         { isActive: true, http: `tel:${contacts.mobile}`, icon: <PhoneIcon className='icon' /> },
-        { isActive: true, http: `https://www.checkatrade.com/trades/swlondonplumbinglimited`, icon: <img src={checkatradeShortLogo} alt="Checkatrade Logo" className='checkatrade-short-logo'/> },
+        { isActive: true, http: `https://www.checkatrade.com/trades/swlondonplumbinglimited`, icon: <img src={checkatradeShortLogo} alt="Checkatrade Logo" className='checkatrade-short-logo' /> },
         { isActive: false, http: `${contacts.twitter}`, icon: <TwitterIcon className='icon' /> },
         { isActive: false, http: `${contacts.facebook}`, icon: <FacebookIcon className='icon' /> },
+        { isActive: true, http: `mailto:${contacts.email}`, icon: <MailIcon className='icon' /> },
     ];
 
     return (
@@ -181,7 +182,7 @@ export function SecNavigation() {
                 <div className='box'>
                     {iconLinks.map((link) => (
                         link.isActive &&
-                            <a className='link external-link' key={link.http} href={link.http} target="_blank" rel="noopener noreferrer">{link.icon}</a>
+                        <a className='link external-link' key={link.http} href={link.http} target="_blank" rel="noopener noreferrer">{link.icon}</a>
                     ))}
                 </div>
             </div>
