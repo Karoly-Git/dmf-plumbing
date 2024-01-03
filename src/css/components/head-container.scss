@@ -55,3 +55,27 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .head-container {
+        .box {
+            .content-box {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .head-container {
+        .box {
+            .content-box {
+
+                .head-icon,
+                p {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}

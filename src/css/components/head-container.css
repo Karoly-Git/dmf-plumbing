@@ -41,4 +41,16 @@
 .head-container .box .content-box .icon {
   width: 3.25rem;
   margin-right: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .head-container .box .content-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .head-container .box .content-box .head-icon,
+.head-container .box .content-box p {
+    display: none !important;
+  }
 }/*# sourceMappingURL=head-container.css.map */
