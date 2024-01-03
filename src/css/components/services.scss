@@ -32,14 +32,15 @@
                     display: inline;
                     padding: 0.75rem 1rem;
                     margin-bottom: -4rem;
-                    color: $color-very-Dark  !important;
+                    //color: $color-very-Dark  !important;
                     background-color: rgba(255, 255, 255, 0.7);
+                    background-color: rgba(0, 0, 0, 0.7);
+                    color: white;
                     position: relative;
                     z-index: 10;
                 }
 
                 .main-img {
-                    border-radius: 0;
                     margin-bottom: -3rem;
                 }
 
