@@ -50,7 +50,7 @@
 }
 @media screen and (max-width: 480px) {
   .head-container .box .content-box .head-icon,
-.head-container .box .content-box p {
+  .head-container .box .content-box p {
     display: none !important;
   }
 }/*# sourceMappingURL=head-container.css.map */

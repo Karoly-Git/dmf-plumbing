@@ -76,7 +76,7 @@
 }
 @media screen and (max-width: 600px) {
   .services .container .box .card .main-img,
-.services .container .box .card .img-caption {
+  .services .container .box .card .img-caption {
     position: relative;
     left: -1rem;
     width: calc(100% + 2rem);
