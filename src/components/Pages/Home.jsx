@@ -48,7 +48,7 @@ export default function Home() {
                             If you need to find a qualified and legitimate central heating engineer, or gas fitter,
                             to repair or install a gas appliance, then you can rely on us, as our Gas Safe registered
                             heating engineers are both experienced and fully insured. We are specialists in boiler repair
-                            and replacement and can supply and fit new, energy-efficient boilers throughout London.
+                            and replacement and can supply and fit new, energy-efficient boilers.
                         </p>
                     </div>
                     <div>
