@@ -26,10 +26,11 @@ import SloganContainer from '../widgets/SloganContainer';
 
 
 export default function Contact() {
-    // Automatically detect if running locally
-    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const messageURL = isLocal ? 'http://localhost:8000/message' : 'https://dmf-plumbing-and-heating-ba30ffedf4f1.herokuapp.com/message';
+    const [isStatusBoxOpen, setIsStatusBoxOpen] = useState(false);
+    const [sendingInProgress, setSendingInProgress] = useState(false);
+    const [isSendingError, setIsSendingError] = useState(false);
 
+    const messageURL = '';
 
     const schema = yup.object().shape({
         providedName: yup.string().required("You forgot to give your name."),
@@ -44,51 +45,38 @@ export default function Contact() {
 
     const onSubmit = async (data, event) => {
         event.preventDefault();
+        setIsStatusBoxOpen(true);
+        setSendingInProgress(true);
         try {
-            // Modify the form data to match backend expected keys
-            const newDate = new Date();
-            const localDate = newDate.toLocaleDateString('en-GB', {
-                day: '2-digit',
-                month: '2-digit',
-                year: 'numeric',
-            });
-            const localTime = newDate.toLocaleTimeString('en-GB', {
-                hour: '2-digit',
-                minute: '2-digit',
-                hour12: false
-            });
-            const formData = {
-                senderName: data.providedName,
-                senderEmail: data.providedEmail,
-                senderPhone: "", // Add a field in your form if you collect phone numbers
-                text: data.providedMessage,
-                date: localDate,
-                time: localTime
-            };
-            const result = await fetch(messageURL, {
-                method: 'POST',
-                mode: 'cors',
-                headers: {
-                    'Content-type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+            const result = await fetch(messageURL,
+                {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                }
+            );
 
-            //console.log("Request Sent:", formData);
-            //console.log("Response Status:", result.status);
+            //console.log(result);
 
             if (!result.ok) {
-                const errorText = await result.text(); // Get error message from the response
-                //console.log("Error:", errorText);
-                alert("Oops! Something went wrong. We were unable to send your message. Please try again later or contact us directly.");
-            } else {
                 resetForm();
-                alert("Thank you! Your message has been successfully sent. I will get back to you shortly.");
+                setIsSendingError(true);
             }
-        } catch (error) {
-            console.log(error);
+
+        } catch (err) {
+            //console.log(err.ok);
+            setIsSendingError(true);
+        } finally {
+            setSendingInProgress(false);
         }
     };
+
+    function closeStatusBox() {
+        setIsStatusBoxOpen(false);
+    }
 
     function resetForm() {
         reset({
@@ -147,13 +135,14 @@ export default function Contact() {
 
                     <form onSubmit={handleSubmit(onSubmit)}>
                         {errors.providedName && <span><p className='error'>{errors.providedName?.message}</p></span>}
-                        <input placeholder="Name*" {...register('providedName')} />
+                        <input placeholder="Name*" {...register('providedName')}></input>
 
                         {errors.providedEmail && <span><p className='error'>{errors.providedEmail?.message}</p></span>}
-                        <input placeholder="Email*" {...register('providedEmail')} />
+                        <input placeholder="Email*" {...register('providedEmail')}></input>
 
                         {errors.providedSubject && <span><p className='error'>{errors.providedSubject?.message}</p></span>}
-                        <input placeholder="Subject*" {...register('providedSubject')} />
+                        <input placeholder="Message*" {...register('providedSubject')}></input>
+
 
                         {errors.providedMessage && <span><p className='error'>{errors.providedMessage?.message}</p></span>}
                         <textarea placeholder="Type your message here*" {...register('providedMessage')}></textarea>
