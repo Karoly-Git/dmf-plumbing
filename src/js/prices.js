@@ -1,12 +1,12 @@
 export const netPrices = {
     vat: 1.2,
     weekdays: {
-        dayTime: 85,
-        evening: 125,
-        night: 195,
+        dayTime: 93,
+        evening: 137.5,
+        night: 215,
     },
     weekends: {
-        dayTime: 125,
-        night: 195,
+        dayTime: 137.5,
+        night: 215,
     },
 }
