@@ -31,7 +31,7 @@
                     text-decoration: none;
 
                     .logo {
-                        width: 65px;
+                        width: 250px;
                     }
 
                     div {
@@ -80,21 +80,22 @@
                 transition: all 200ms ease-in-out;
             }
 
-            .internal-link{              
+            .internal-link {
                 &:hover {
                     color: $color-extra-Light;
                 }
             }
-            
-            .external-link{
-                .checkatrade-short-logo{
+
+            .external-link {
+                .checkatrade-short-logo {
                     width: 1.75rem;
                     height: 1.75rem;
                     padding: 0.25rem;
                     //background-color: white;
                     border-radius: 50%;
                 }
-                &:hover{
+
+                &:hover {
                     transform: scale(1.35);
                 }
             }

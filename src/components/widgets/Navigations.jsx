@@ -11,7 +11,7 @@ import { FaArrowDown as ArrowIcon } from "react-icons/fa6";
 import { ImMobile as MobileIcon } from "react-icons/im";
 
 // Image Imports
-import logo from '../../img/logo.png';
+import logo from '../../img/v9_no_bg.png';
 import checkatradeShortLogo from '../../img/checkatrade-short-logo-bright.png';
 
 // Data Imports
@@ -32,10 +32,6 @@ export function MainNavigation() {
                     <h2>
                         <Link to='/'>
                             <img className='logo' src={logo} alt="DMF Plumbing & Heating logo" />
-                            <div>
-                                <span>DMF Plumbing</span>
-                                <span>&#38; Heating</span>
-                            </div>
                         </Link>
                     </h2>
                 </div>
