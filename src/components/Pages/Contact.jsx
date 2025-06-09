@@ -122,14 +122,16 @@ export default function Contact() {
                             </a>
                         </p>
 
-                        <p>If you prefer to reach out via email, you can use the following address:</p>
-                        <p>
-                            <a className='strong' href={`mailto:${contacts.email}`} rel="noopener noreferrer">
-                                <MailIcon className='icon' />
-                                <span className='full-email'>{contacts.email}</span>
-                                <span className='short-email'>{contacts.email.slice(0, 8)}...</span>
-                            </a>
-                        </p>
+                        {false && <>
+                            <p>If you prefer to reach out via email, you can use the following address:</p>
+                            <p>
+                                <a className='strong' href={`mailto:${contacts.email}`} rel="noopener noreferrer">
+                                    <MailIcon className='icon' />
+                                    <span className='full-email'>{contacts.email}</span>
+                                    <span className='short-email'>{contacts.email.slice(0, 8)}...</span>
+                                </a>
+                            </p>
+                        </>}
 
                         <p>You can also visit us at our office located at:</p>
                         <p>
