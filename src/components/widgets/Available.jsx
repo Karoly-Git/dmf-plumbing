@@ -7,16 +7,15 @@ export default function Available() {
         <section className='available'>
             <div className="container">
                 <div className='box'>
-                    <h2>We are Available for you</h2>
+                    <h2>Need a Plumber You Can Rely On?</h2>
                     <p>
-                        Have an emergency? Need a plumber fast? We are on standby for you right now!
+                        From urgent repairs to planned plumbing and heating work, we're here to help with professional, reliable service.
                     </p>
                 </div>
 
                 <div className='box'>
-                    <Link to={'/contact'}>Contact Us</Link>
+                    <Link to={'/contact'}>Get in Touch</Link>
                 </div>
             </div>
-        </section>
-    )
+        </section>)
 }

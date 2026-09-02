@@ -12,7 +12,7 @@ export const contacts = {
         postcode: 'GU27 3QD',
     },
     company: {
-        name: 'SW London Plumbing Limited',
+        name: 'DMF Plumbing and Heating LTD',
         registeredBusinessAddress: '26 High Street, Haslemere, Surrey, GU27 2HW',
         tradingName: 'DMF Plumbing & Heating',
         tradingAddress: '5 Hammer Lane, Haslemere, West Sussex,  GU27 3QD',
