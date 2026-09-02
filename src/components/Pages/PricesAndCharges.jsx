@@ -81,9 +81,9 @@ export default function PricesAndCharges() {
                         </p>
 
                         <p className='p-style'>
-                            We have a one-hour minimum charge but thereafter we bill/charge in <strong>20-minute</strong> increments 
-                            so you're only paying for the time worked by our engineer. Our engineers will always 
-                            show a comprehensive description of work carried out and a full breakdown of the labour 
+                            We have a one-hour minimum charge but thereafter we bill/charge in <strong>20-minute</strong> increments
+                            so you're only paying for the time worked by our engineer. Our engineers will always
+                            show a comprehensive description of work carried out and a full breakdown of the labour
                             and material charges are shown on all invoices.
                         </p>
 
@@ -119,9 +119,9 @@ export default function PricesAndCharges() {
 
                         <h3 className='h3-style'>Cancellation</h3>
                         <p className='p-style'>
-                            Cancellations for emergency call outs will be chargeable at half a chargeable hour 
-                            at whatever time of day it may be, IE, a cancellation at 17:00 on Monday afternoon 
-                            will incur a £51.00 inc VAT fee. Please note that all other cancellations do not carry 
+                            Cancellations for emergency call outs will be chargeable at half a chargeable hour
+                            at whatever time of day it may be, IE, a cancellation at 17:00 on Monday afternoon
+                            will incur a £51.00 inc VAT fee. Please note that all other cancellations do not carry
                             a fee but we ask you to give as much notice as possible.
                         </p>
 

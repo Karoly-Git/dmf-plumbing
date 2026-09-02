@@ -10,10 +10,10 @@ import '../src/css/App.css';
 import cookie from '../src/img/cookie.png';
 
 // Page Imports
-import Contact from './components/pages/Contact';
-import Home from './components/pages/Home';
-import PricesAndCharges from './components/pages/PricesAndCharges';
-import TermsAndConditions from './components/pages/TermsAndConditions';
+import Home from './components/Pages/Home';
+import PricesAndCharges from './components/Pages/PricesAndCharges';
+import TermsAndConditions from './components/Pages/TermsAndConditions';
+import Contact from './components/Pages/Contact';
 
 // Component Imports
 import { MainNavigation, SecNavigation, ThirdNavigation, SideNavigation } from './components/widgets/Navigations';

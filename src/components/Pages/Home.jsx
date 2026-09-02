@@ -27,11 +27,11 @@ export default function Home() {
             details:
                 <>
                     <p className='p-style'>
-                        Today's high-efficiency boilers can save you a small fortune on your heating bills, 
-                        particularly if your boiler is over ten years old. Modern boilers are smaller, 
-                        neater and the latest technology allows for improved efficiency and flow rates. 
-                        <> {contacts.company.tradingName} </> only fit the leading brand of modern boilers, such as Vaillant and Worcester, 
-                        amongst other brands, and as boiler replacement is one of our key services, we can offer our boiler 
+                        Today's high-efficiency boilers can save you a small fortune on your heating bills,
+                        particularly if your boiler is over ten years old. Modern boilers are smaller,
+                        neater and the latest technology allows for improved efficiency and flow rates.
+                        <> {contacts.company.tradingName} </> only fit the leading brand of modern boilers, such as Vaillant and Worcester,
+                        amongst other brands, and as boiler replacement is one of our key services, we can offer our boiler
                         replacement service at keen, value-for-money prices.
                     </p>
                 </>,
@@ -54,9 +54,9 @@ export default function Home() {
                     <div>
                         <h3 className='h3-style'>Gas Safe registered</h3>
                         <p className='p-style'>
-                            If you are not familiar with the term, “Gas Safe registered”, it indicates that all subcontractors 
-                            or engineers who undertake gas related work for and on behalf of DMF Plumbing and Heating have 
-                            achieved expertise in ensuring safety when working with gas, and have qualified for registration with Gas safe. 
+                            If you are not familiar with the term, “Gas Safe registered”, it indicates that all subcontractors
+                            or engineers who undertake gas related work for and on behalf of DMF Plumbing and Heating have
+                            achieved expertise in ensuring safety when working with gas, and have qualified for registration with Gas safe.
                             Gas Safe registration was previously known as “Corgi Registered”
                         </p>
                     </div>
@@ -97,12 +97,12 @@ export default function Home() {
                     <div>
                         <h3 className='h3-style'>Plumbing Services</h3>
                         <p className='p-style'>
-                            Welcome to our Plumbing Services where we offer a comprehensive range of 
-                            solutions to meet all your plumbing and heating needs. Whether you require 
-                            assistance with plumbing, heating, boilers, gas services, maintenance, or commercial 
-                            installations, our certified experts are here to provide top-notch services without 
-                            any call-out rates. From new installations to gas inspections and beyond, we've got 
-                            you covered. Explore our offerings and experience unmatched expertise in the world 
+                            Welcome to our Plumbing Services where we offer a comprehensive range of
+                            solutions to meet all your plumbing and heating needs. Whether you require
+                            assistance with plumbing, heating, boilers, gas services, maintenance, or commercial
+                            installations, our certified experts are here to provide top-notch services without
+                            any call-out rates. From new installations to gas inspections and beyond, we've got
+                            you covered. Explore our offerings and experience unmatched expertise in the world
                             of plumbing and heating.
                         </p>
                         <p className='p-style'>
@@ -125,11 +125,11 @@ export default function Home() {
                     <div>
                         <h3 className='h3-style'>Experience & Professionalism</h3>
                         <p className='p-style'>
-                            Discover the essence of Experience & Professionalism with our plumbing services. 
-                            At our company, we believe in 100% transparent charges, backed by a tight nit, 
-                            amily run team of qualified operatives who provide quality workmanship. With a commitment to 
-                            customer satisfaction, we offer working hours customer support and never impose a call-out charge. 
-                            From boiler breakdowns to shower pump installations, trust us for excellence in most aspects 
+                            Discover the essence of Experience & Professionalism with our plumbing services.
+                            At our company, we believe in 100% transparent charges, backed by a tight nit,
+                            amily run team of qualified operatives who provide quality workmanship. With a commitment to
+                            customer satisfaction, we offer working hours customer support and never impose a call-out charge.
+                            From boiler breakdowns to shower pump installations, trust us for excellence in most aspects
                             of plumbing and heating services.
                         </p>
                         <p className='p-style'>
